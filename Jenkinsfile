@@ -47,6 +47,14 @@ pipeline {
                 '''
             }
         }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                    sudo -u zsphere /home/zsphere/deploy-frontend.sh
+                '''
+            }
+        }
     }
 
     post {
