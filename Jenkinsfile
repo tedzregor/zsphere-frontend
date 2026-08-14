@@ -20,7 +20,7 @@ pipeline {
                     set -e
 
                     export NVM_DIR="$NVM_DIR"
-                    source "$NVM_DIR/nvm.sh"
+                    . "$NVM_DIR/nvm.sh"
 
                     nvm use "$NODE_VERSION"
 
@@ -36,7 +36,7 @@ pipeline {
                     set -e
 
                     export NVM_DIR="$NVM_DIR"
-                    source "$NVM_DIR/nvm.sh"
+                    . "$NVM_DIR/nvm.sh"
 
                     nvm use "$NODE_VERSION"
 
@@ -51,7 +51,7 @@ pipeline {
                     set -e
 
                     export NVM_DIR="$NVM_DIR"
-                    source "$NVM_DIR/nvm.sh"
+                    . "$NVM_DIR/nvm.sh"
 
                     nvm use "$NODE_VERSION"
 
