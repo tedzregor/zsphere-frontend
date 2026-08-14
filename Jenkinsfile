@@ -30,7 +30,7 @@ pipeline {
                     . "$NVM_DIR/nvm.sh"
                     nvm use "$NODE_VERSION"
 
-                    npm ci
+                    npm ci --legacy-peer-deps
                 '''
             }
         }
