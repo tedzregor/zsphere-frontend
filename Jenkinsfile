@@ -8,24 +8,16 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Node Version') {
             steps {
                 sh '''
                     set -e
-
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
-
                     nvm use "$NODE_VERSION"
 
-                    echo "Node: $(node -v)"
-                    echo "NPM:  $(npm -v)"
+                    node -v
+                    npm -v
                 '''
             }
         }
@@ -34,10 +26,8 @@ pipeline {
             steps {
                 sh '''
                     set -e
-
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
-
                     nvm use "$NODE_VERSION"
 
                     npm ci
@@ -49,10 +39,8 @@ pipeline {
             steps {
                 sh '''
                     set -e
-
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
-
                     nvm use "$NODE_VERSION"
 
                     npm run build
