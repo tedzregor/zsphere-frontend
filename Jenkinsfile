@@ -8,16 +8,24 @@ pipeline {
 
     stages {
 
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
         stage('Node Version') {
             steps {
                 sh '''
                     set -e
+
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
-                    node -v
-                    npm -v
+                    echo "Node: $(node -v)"
+                    echo "NPM: $(npm -v)"
                 '''
             }
         }
@@ -26,8 +34,10 @@ pipeline {
             steps {
                 sh '''
                     set -e
+
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
                     npm ci --legacy-peer-deps
@@ -39,8 +49,10 @@ pipeline {
             steps {
                 sh '''
                     set -e
+
                     export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
                     npm run build
@@ -51,6 +63,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
+                    set -e
+
                     sudo -u zsphere /home/zsphere/deploy-frontend.sh
                 '''
             }
@@ -59,11 +73,11 @@ pipeline {
 
     post {
         success {
-            echo 'STAGING Next.js build completed successfully.'
+            echo 'STAGING Next.js build and deployment completed successfully.'
         }
 
         failure {
-            echo 'Next.js build failed.'
+            echo 'Next.js build or deployment failed.'
         }
     }
 }
