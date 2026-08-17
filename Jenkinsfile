@@ -59,7 +59,7 @@ pipeline {
 
     post {
         success {
-            echo 'Next.js build completed successfully.'
+            echo 'STAGING Next.js build completed successfully.'
         }
 
         failure {
