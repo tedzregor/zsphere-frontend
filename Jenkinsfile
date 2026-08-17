@@ -4,17 +4,24 @@ pipeline {
     environment {
         NVM_DIR = '/var/lib/jenkins/.nvm'
         NODE_VERSION = '24.19.0'
-        DEPLOY_DIR = '/home/zsphere/www/zsphere/zsphere-frontend'
     }
 
     stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
 
         stage('Node Version') {
             steps {
                 sh '''
                     set -e
 
+                    export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
                     echo "Node: $(node -v)"
@@ -28,7 +35,9 @@ pipeline {
                 sh '''
                     set -e
 
+                    export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
                     npm ci --legacy-peer-deps
@@ -41,7 +50,9 @@ pipeline {
                 sh '''
                     set -e
 
+                    export NVM_DIR="$NVM_DIR"
                     . "$NVM_DIR/nvm.sh"
+
                     nvm use "$NODE_VERSION"
 
                     npm run build
@@ -54,15 +65,6 @@ pipeline {
                 sh '''
                     set -e
 
-                    echo "Deploying to $DEPLOY_DIR"
-
-                    rsync -a --delete \
-                        --exclude='.git' \
-                        --exclude='node_modules' \
-                        "$WORKSPACE/" "$DEPLOY_DIR/"
-
-                    sudo chown -R zsphere:zsphere "$DEPLOY_DIR"
-
                     sudo -u zsphere /home/zsphere/deploy-frontend.sh
                 '''
             }
@@ -71,11 +73,11 @@ pipeline {
 
     post {
         success {
-            echo 'Next.js deployment completed successfully.'
+            echo 'STAGING Next.js build and deployment completed successfully.'
         }
 
         failure {
-            echo 'Next.js deployment failed.'
+            echo 'Next.js build or deployment failed.'
         }
     }
 }
