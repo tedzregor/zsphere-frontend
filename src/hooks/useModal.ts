@@ -1,35 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+"use client";
+import { useState, useCallback } from "react";
 
-/**
- * Modal state management with outside-click to close.
- *
- * @returns {Object} Modal state and controls
- * @returns {boolean} isOpen - Open state
- * @returns {Function} toggle - Toggle modal
- * @returns {Function} close - Close modal
- * @returns {RefObject} ref - Ref to attach to modal element
- */
-export const useModal = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const ref = useRef<HTMLDivElement>(null);
+export const useModal = (initialState: boolean = false) => {
+  const [isOpen, setIsOpen] = useState(initialState);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const openModal = useCallback(() => setIsOpen(true), []);
+  const closeModal = useCallback(() => setIsOpen(false), []);
+  const toggleModal = useCallback(() => setIsOpen((prev) => !prev), []);
 
-  const close = () => setIsOpen(false);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        close();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  return { isOpen, toggle, close, ref };
+  return { isOpen, openModal, closeModal, toggleModal };
 };
