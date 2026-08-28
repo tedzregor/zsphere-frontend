@@ -80,18 +80,18 @@ export default function HomePage() {
           </a>
         </div>
      
-        <TextType className="mt-4 text-lg md:text-4xl"
-          text={["From custom website and mobile development to hosting, deployment, and infrastructure.", "We provide the technology your business needs to grow."]}
+        <TextType
+          className="mt-4 text-lg md:text-4xl"
+          text={[
+            "From custom website and mobile development to hosting, deployment, and infrastructure.",
+            "We provide the technology your business needs to grow.",
+          ]}
           typingSpeed={40}
           pauseDuration={4500}
           showCursor
           cursorCharacter="_"
-          texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
           deletingSpeed={10}
-          // variableSpeedEnabled={false}
-          variableSpeed={false}
           cursorBlinkDuration={0.5}
-          
         />
         </div>
       </section>
