@@ -93,6 +93,7 @@ export default function HomePage() {
           variableSpeedMin={60}
           variableSpeedMax={120}
           cursorBlinkDuration={0.5}
+          onSentenceComplete={() => {}}
         />
         </div>
       </section>
