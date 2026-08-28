@@ -88,7 +88,8 @@ export default function HomePage() {
           cursorCharacter="_"
           texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
           deletingSpeed={10}
-          variableSpeedEnabled={false}
+          // variableSpeedEnabled={false}
+          variableSpeed={false}
           variableSpeedMin={60}
           variableSpeedMax={120}
           cursorBlinkDuration={0.5}
