@@ -90,10 +90,8 @@ export default function HomePage() {
           deletingSpeed={10}
           // variableSpeedEnabled={false}
           variableSpeed={false}
-          variableSpeedMin={60}
-          variableSpeedMax={120}
           cursorBlinkDuration={0.5}
-          onSentenceComplete={() => {}}
+          
         />
         </div>
       </section>
