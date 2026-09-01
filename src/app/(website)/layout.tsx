@@ -25,8 +25,6 @@ export default function WebsiteLayout({
 
       <main className="w-full">
         {children}
-
-      <InquirySection />
       </main>
 
       <Footer />

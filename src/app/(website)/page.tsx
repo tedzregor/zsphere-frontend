@@ -8,6 +8,7 @@ import Beams from '@/components/Beams';
 import Masonry from '@/components/Masonry';
 import DriftWall from '@/components/DriftWall';
 import ElectricBorder from '@/components/ElectricBorder';
+import InquirySection from "@/components/website/InquirySection";
 
 import ServerPerformanceComparison from '@/components/website/ServerPerformanceComparison';
 import Link from "next/link";
@@ -152,14 +153,16 @@ export default function HomePage() {
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="/contact"
+            href="#inquire-now"
+            // href="/contact"
             className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
           >
             Contact Us
           </a>
 
           <a
-            href="/pricing"
+            href="#inquire-now"
+            // href="/pricing"
             className="rounded-md border border-white bg-transparent px-8 py-2 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
           >
             Get Started
@@ -206,7 +209,8 @@ export default function HomePage() {
 
               <div className="mt-auto pt-6">
               <Link
-                href={`/pricing?service=${encodeURIComponent("Website & Mobile Development")}`}
+                  href="#website-pricing"
+                // href={`/pricing?service=${encodeURIComponent("Website & Mobile Development")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 View Pricing
@@ -232,7 +236,8 @@ export default function HomePage() {
 
               <div className="mt-auto pt-6">
                 <Link
-                  href={`/contact?service=${encodeURIComponent("Shared Cloud Hosting")}`}
+                  href="#hosting-pricing"
+                  // href={`/contact?service=${encodeURIComponent("Shared Cloud Hosting")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   View Pricing
@@ -257,7 +262,8 @@ export default function HomePage() {
 
               <div className="mt-auto pt-6">
                 <Link
-                  href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
+                  href="#inquire-now"
+                  // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
@@ -283,7 +289,8 @@ export default function HomePage() {
 
               <div className="mt-auto pt-6">
                 <Link
-                  href={`/contact?service=${encodeURIComponent("Digital Marketing")}`}
+                  href="#inquire-now"
+                  // href={`/contact?service=${encodeURIComponent("Digital Marketing")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
@@ -308,7 +315,8 @@ export default function HomePage() {
 
               <div className="mt-auto pt-6">
                 <Link
-                  href={`/contact?service=${encodeURIComponent("Point of Sale (POS)")}`}
+                 href="#inquire-now"
+                  // href={`/contact?service=${encodeURIComponent("Point of Sale (POS)")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
@@ -334,7 +342,8 @@ export default function HomePage() {
 
               <div className="mt-6">
                 <Link
-                  href={`/contact?service=${encodeURIComponent("Branding & Design")}`}
+                  href="#inquire-now"
+                  // href={`/contact?service=${encodeURIComponent("Branding & Design")}`}
                   className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
@@ -498,7 +507,7 @@ export default function HomePage() {
       </section>
        
       {/* PRICING */}
-      <section className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
+      <section id="website-pricing" className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
         <div className="mx-auto max-w-7xl">
         
           {/* Section Heading */}
@@ -551,7 +560,8 @@ export default function HomePage() {
 
               {/* Button */}
             <Link
-                href={`/contact?service=${encodeURIComponent("Standard Website")}`}
+                href="#inquire-now"
+                // href={`/contact?service=${encodeURIComponent("Standard Website")}`}
                 className="text-center items-center justify-center  block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Buy Now
@@ -691,7 +701,8 @@ export default function HomePage() {
 
               {/* Button */}
               <Link
-                href={`/contact?service=${encodeURIComponent("E-Commerce Website")}`}
+                href="#inquire-now"
+                // href={`/contact?service=${encodeURIComponent("E-Commerce Website")}`}
                 className="text-center block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Buy Now
@@ -890,7 +901,8 @@ export default function HomePage() {
 
               {/* Button */}
               <Link
-                href={`/contact?service=${encodeURIComponent("Customized Premium Website")}`}
+                href="#inquire-now"
+                // href={`/contact?service=${encodeURIComponent("Customized Premium Website")}`}
                 className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Inquire Now
@@ -1005,7 +1017,7 @@ export default function HomePage() {
 
       {/* Hosting Plans */}
 
-      <section className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
+      <section id="hosting-pricing" className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
             Hosting Plans
@@ -1047,7 +1059,8 @@ export default function HomePage() {
             </div>
 
             <Link
-              href={`/contact?service=${encodeURIComponent("Basic Shared Cloud")}`}
+              href="#inquire-now"
+              // href={`/contact?service=${encodeURIComponent("Basic Shared Cloud")}`}
               className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
             >
               Buy Now
@@ -1098,7 +1111,8 @@ export default function HomePage() {
             </div>
 
             <Link
-              href={`/contact?service=${encodeURIComponent("Business Shared Cloud")}`}
+              href="#inquire-now"
+              // href={`/contact?service=${encodeURIComponent("Business Shared Cloud")}`}
               className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
             >
               Buy Now
@@ -1143,7 +1157,8 @@ export default function HomePage() {
             </div>
 
             <Link
-              href={`/contact?service=${encodeURIComponent("Startup Shared Cloud")}`}
+              href="#inquire-now"
+              // href={`/contact?service=${encodeURIComponent("Startup Shared Cloud")}`}
               className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
             >
               Buy Now
@@ -1189,7 +1204,8 @@ export default function HomePage() {
             </div>
 
             <Link
-              href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
+            href="#inquire-now"
+              // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
               className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
             >
               Inquire Now
@@ -1644,6 +1660,10 @@ export default function HomePage() {
 
   </div>
 </section>
+
+      <section id="inquire-now">
+        <InquirySection />
+      </section>
     </main>
   );
 }
