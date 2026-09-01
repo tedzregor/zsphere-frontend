@@ -66,6 +66,8 @@ pipeline {
                     set -e
 
                     sudo -u zsphere /home/zsphere/deploy-frontend.sh
+
+                    pm2 restart zsphere-frontend
                 '''
             }
         }

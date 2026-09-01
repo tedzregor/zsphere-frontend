@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/website/Navbar";
+import Footer from "@/components/website/Footer";
+import InquirySection from "@/components/website/InquirySection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +25,11 @@ export default function WebsiteLayout({
 
       <main className="w-full">
         {children}
+
+      <InquirySection />
       </main>
+
+      <Footer />
     </div>
   );
 }
