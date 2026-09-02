@@ -511,7 +511,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
         
           {/* Section Heading */}
-          <div className="mx-auto mb-16 max-w-3xl text-center">
+          <div className="mx-auto mb-6 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
               Pricing Plans
             </p>
@@ -526,6 +526,61 @@ export default function HomePage() {
             </p>
 
             <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
+          </div>
+
+
+          {/* Payment Methods */}
+          <div className="mb-4 flex flex-col items-center">
+            <p className="mb-2 text-xs font-bold uppercase tracking-[0.25em] text-slate-400">
+              We Accept
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-1">
+              
+              {/* VISA */}
+              <div className="flex h-10 min-w-[64px] items-center justify-center rounded-lg bg-white px-3 shadow-sm ring-1 ring-slate-200">
+                <span className="text-[17px] font-black italic tracking-tight text-[#1a2b78]">
+                  VISA
+                </span>
+              </div>
+
+              {/* Mastercard */}
+              <div className="flex h-10 min-w-[72px] items-center justify-center rounded-lg bg-white px-3 shadow-sm ring-1 ring-slate-200">
+                <div className="flex items-center">
+                  <span className="h-5 w-5 rounded-full bg-[#eb001b]" />
+                  <span className="-ml-2 h-5 w-5 rounded-full bg-[#f79e1b] opacity-95" />
+                </div>
+              </div>
+
+              {/* JCB */}
+              <div className="flex h-10 min-w-[64px] items-center justify-center rounded-lg bg-white px-3 shadow-sm ring-1 ring-slate-200">
+                <span className="text-[15px] font-extrabold italic text-[#087da9]">
+                  JCB
+                </span>
+              </div>
+
+              {/* American Express */}
+              <div className="flex h-10 min-w-[72px] items-center justify-center rounded-lg bg-[#2878b9] px-3 shadow-sm">
+                <span className="text-[12px] font-black tracking-wide text-white">
+                  AMEX
+                </span>
+              </div>
+
+              {/* PayPal */}
+              <div className="flex h-10 min-w-[78px] items-center justify-center rounded-lg bg-white px-3 shadow-sm ring-1 ring-slate-200">
+                <span className="text-[15px] font-black italic text-[#0070ba]">
+                  <span className="text-[#003087]">P</span>ayPal
+                </span>
+              </div>
+
+              {/* GCash */}
+              <div className="flex h-10 min-w-[72px] items-center justify-center rounded-lg bg-white px-3 shadow-sm ring-1 ring-slate-200">
+                <span className="text-[15px] font-extrabold text-[#0072ce]">
+                  GCash
+                </span>
+              </div>
+
+            </div>
           </div>
 
           {/* Pricing Cards */}
@@ -1032,8 +1087,8 @@ export default function HomePage() {
           website online, protected, and ready to grow with your business.
         </p>
 
-        <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
-        </div>
+        <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" /></div>
+
 
         <div className="grid items-stretch gap-6 md:grid-cols-2 xl:grid-cols-4">
 
