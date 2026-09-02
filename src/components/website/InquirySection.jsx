@@ -287,7 +287,7 @@ export default function InquirySection() {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-[#101828]">
-                    +63 926 773 4945
+                    +63 917 797-7437
                   </p>
                 </div>
 
