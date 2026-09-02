@@ -1674,7 +1674,7 @@ export default function HomePage() {
     ===================================================== */}
 
     {/* System Status */}
-    <div className="absolute right-5 top-8 z-20 hidden w-[290px] rounded-2xl border border-white/40 bg-white/95 p-5 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
+    <div className="absolute right-5 top-58 z-20 hidden w-[290px] rounded-2xl border border-white/40 bg-white/95 p-5 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
 
       <div className="flex items-start justify-between">
 
