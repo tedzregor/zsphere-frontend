@@ -161,34 +161,69 @@ export default function ServerPerformanceComparison() {
   return (
     <section
       id="server-performance"
-      className="w-full overflow-hidden bg-[#101828] py-16 sm:py-20 lg:py-24"
+      className="relative isolate w-full overflow-hidden bg-gradient-to-br from-[#02050a] via-[#050b14] to-[#030712] py-16 sm:py-20 lg:py-24"
     >
+      {/* ================================
+          MODERN BACKGROUND GLOW
+      ================================= */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+
+        {/* Blue glow - left */}
+        <div
+          className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[140px]"
+        />
+
+        {/* Cyan glow - center */}
+        <div
+          className="absolute left-1/2 top-1/3 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[150px]"
+        />
+
+        {/* Indigo glow - right */}
+        <div
+          className="absolute -right-40 bottom-0 h-[550px] w-[550px] rounded-full bg-indigo-600/20 blur-[150px]"
+        />
+
+        {/* Subtle top highlight */}
+        <div
+          className="absolute inset-x-0 top-0 h-[300px] bg-gradient-to-b from-blue-500/5 to-transparent"
+        />
+
+        {/* Subtle bottom fade */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-[250px] bg-gradient-to-t from-black/20 to-transparent"
+        />
+      </div>
+
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
 
         {/* ================================
             SECTION HEADING
         ================================= */}
         <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
-            <ElectricBorder className="py-10"
-            color="#71fff3"
+          <ElectricBorder
+            className="py-10"
+            color="#00b3ce"
             speed={1}
             chaos={0.10}
             thickness={6}
             style={{ borderRadius: 16 }}
-            >
+          >
             <div>
-                <h2 style={{ margin: '6px 0 0', opacity: 0.8 }} className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                    We Never Overload our Servers
-                </h2>
-                <p className="mt-3 text-sm text-gray-400 sm:text-base md:text-lg">
-                    High-performance hosting infrastructure powered by NVMe. No Compromises.
-                </p>
-            </div>
-            </ElectricBorder>
-       
+              <h2
+                style={{ margin: "6px 0 0", opacity: 0.8 }}
+                className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+              >
+                We Never Overload our Servers
+              </h2>
 
-         
+              <p className="mt-3 text-sm text-gray-400 sm:text-base md:text-lg">
+                High-performance hosting infrastructure powered by NVMe. No
+                Compromises.
+              </p>
+            </div>
+          </ElectricBorder>
         </div>
+
 
         {/* ================================
             SERVER COMPARISON

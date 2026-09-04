@@ -343,7 +343,7 @@ export default function HomePage() {
         <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '6rem' }}>
           <LogoLoop
             logos={imageLogos}
-            speed={40}
+            speed={30}
             direction="left"
             logoHeight={60}
             gap={60}
@@ -454,32 +454,18 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Masonry and Drift Wall */}
-        {/* <div className="relative mt-16 h-[680px] w-full px-4 md:h-[550px] md:px-6 lg:h-[450px]">
-          <Masonry
-            items={items}
-            ease="power3.out"
-            duration={0.6}
-            stagger={0.05}
-            animateFrom="bottom"
-            scaleOnHover
-            hoverScale={0.95}
-            blurToFocus
-            colorShiftOnHover={false}
-          /> 
-        </div>*/}
         <div style={{ height: 520 }}>
           <DriftWall
               items={driftwall_items}
-              columns={4}
+              columns={3}
               tileWidth={450}
               tileHeight={300}
               gap={18}
               tilt={22}
-              turn={-2}
+              turn={0}
               perspective={1200}
               depth={120}
-              speed={44}
+              speed={30}
               direction="up"
               variance={0.45}
               parallax={0.6}
