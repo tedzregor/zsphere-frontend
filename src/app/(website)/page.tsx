@@ -482,7 +482,140 @@ export default function HomePage() {
       </section>
        
       {/* PRICING */}
-      <section id="website-pricing" className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
+        <section id="website-pricing" className=" relative z-20 overflow-hidden bg-[#f8fcff]px-6 py-15">
+          {/* Background */}
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+
+            {/* Top-left blue glow */}
+            <div
+              className="
+                absolute -left-[180px] -top-[180px]
+                h-[500px] w-[500px]
+                rounded-full
+                bg-blue-200/45
+                blur-[90px]
+              "
+            />
+
+            {/* Top-right blue glow */}
+            <div
+              className="
+                absolute -right-[180px] -top-[100px]
+                h-[450px] w-[450px]
+                rounded-full
+                bg-sky-200/35
+                blur-[100px]
+              "
+            />
+
+            {/* Center soft glow */}
+            <div
+              className="
+                absolute left-1/2 top-[35%]
+                h-[500px] w-[700px]
+                -translate-x-1/2
+                rounded-full
+                bg-white
+                blur-[100px]
+              "
+            />
+
+            {/* Bottom-left blue glow */}
+            <div
+              className="
+                absolute -left-[200px] bottom-[-150px]
+                h-[500px] w-[600px]
+                rounded-full
+                bg-sky-200/40
+                blur-[100px]
+              "
+            />
+
+            {/* Bottom-right blue glow */}
+            <div
+              className="
+                absolute -right-[180px] bottom-[-180px]
+                h-[550px] w-[550px]
+                rounded-full
+                bg-blue-300/35
+                blur-[110px]
+              "
+            />
+
+            {/* Flowing wave */}
+            <svg
+              className="absolute left-0 top-[80px] h-[300px] w-full opacity-30"
+              viewBox="0 0 1440 300"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="
+                  M0,180
+                  C180,280 280,40 500,120
+                  C700,200 780,260 980,150
+                  C1150,60 1280,40 1440,100
+                "
+                fill="none"
+                stroke="white"
+                strokeWidth="3"
+              />
+
+              <path
+                d="
+                  M0,195
+                  C180,295 280,55 500,135
+                  C700,215 780,275 980,165
+                  C1150,75 1280,55 1440,115
+                "
+                fill="none"
+                stroke="#bfdbfe"
+                strokeWidth="2"
+              />
+
+              <path
+                d="
+                  M0,210
+                  C180,310 280,70 500,150
+                  C700,230 780,290 980,180
+                  C1150,90 1280,70 1440,130
+                "
+                fill="none"
+                stroke="white"
+                strokeWidth="1.5"
+              />
+            </svg>
+
+            {/* Bottom flowing wave */}
+            <svg
+              className="absolute bottom-[-20px] left-0 h-[280px] w-full opacity-25"
+              viewBox="0 0 1440 280"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="
+                  M0,180
+                  C200,80 300,250 520,170
+                  C730,90 850,60 1050,170
+                  C1210,260 1320,220 1440,140
+                "
+                fill="none"
+                stroke="#93c5fd"
+                strokeWidth="4"
+              />
+
+              <path
+                d="
+                  M0,195
+                  C200,95 300,265 520,185
+                  C730,105 850,75 1050,185
+                  C1210,275 1320,235 1440,155
+                "
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
         <div className="mx-auto max-w-7xl">
         
           {/* Section Heading */}
@@ -1047,9 +1180,144 @@ export default function HomePage() {
 
 
       {/* Hosting Plans */}
+      <section id="hosting-pricing" className="mt-0 w-full relative z-20 overflow-hidden bg-[#f8fcff]px-6 py-15">
+        {/* Background */}
+        <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
-      <section id="hosting-pricing" className="mt-0 w-full bg-[#f8fafc] px-6 py-15">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+          {/* Top-left blue glow */}
+          <div
+            className="
+              absolute -left-[180px] -top-[180px]
+              h-[500px] w-[500px]
+              rounded-full
+              bg-blue-200/45
+              blur-[90px]
+            "
+          />
+
+          {/* Top-right blue glow */}
+          <div
+            className="
+              absolute -right-[180px] -top-[100px]
+              h-[450px] w-[450px]
+              rounded-full
+              bg-sky-200/35
+              blur-[100px]
+            "
+          />
+
+          {/* Center soft glow */}
+          <div
+            className="
+              absolute left-1/2 top-[35%]
+              h-[500px] w-[700px]
+              -translate-x-1/2
+              rounded-full
+              bg-white
+              blur-[100px]
+            "
+          />
+
+          {/* Bottom-left blue glow */}
+          <div
+            className="
+              absolute -left-[200px] bottom-[-150px]
+              h-[500px] w-[600px]
+              rounded-full
+              bg-sky-200/40
+              blur-[100px]
+            "
+          />
+
+          {/* Bottom-right blue glow */}
+          <div
+            className="
+              absolute -right-[180px] bottom-[-180px]
+              h-[550px] w-[550px]
+              rounded-full
+              bg-blue-300/35
+              blur-[110px]
+            "
+          />
+
+          {/* Flowing wave */}
+          <svg
+            className="absolute left-0 top-[80px] h-[300px] w-full opacity-30"
+            viewBox="0 0 1440 300"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="
+                M0,180
+                C180,280 280,40 500,120
+                C700,200 780,260 980,150
+                C1150,60 1280,40 1440,100
+              "
+              fill="none"
+              stroke="white"
+              strokeWidth="3"
+            />
+
+            <path
+              d="
+                M0,195
+                C180,295 280,55 500,135
+                C700,215 780,275 980,165
+                C1150,75 1280,55 1440,115
+              "
+              fill="none"
+              stroke="#bfdbfe"
+              strokeWidth="2"
+            />
+
+            <path
+              d="
+                M0,210
+                C180,310 280,70 500,150
+                C700,230 780,290 980,180
+                C1150,90 1280,70 1440,130
+              "
+              fill="none"
+              stroke="white"
+              strokeWidth="1.5"
+            />
+          </svg>
+
+          {/* Bottom flowing wave */}
+          <svg
+            className="absolute bottom-[-20px] left-0 h-[280px] w-full opacity-25"
+            viewBox="0 0 1440 280"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="
+                M0,180
+                C200,80 300,250 520,170
+                C730,90 850,60 1050,170
+                C1210,260 1320,220 1440,140
+              "
+              fill="none"
+              stroke="#93c5fd"
+              strokeWidth="4"
+            />
+
+            <path
+              d="
+                M0,195
+                C200,95 300,265 520,185
+                C730,105 850,75 1050,185
+                C1210,275 1320,235 1440,155
+              "
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
+
+
+        <div className="mt-20 mx-auto mb-16 max-w-3xl text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
             Hosting Plans
           </p>
