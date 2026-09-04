@@ -10,6 +10,8 @@ import DriftWall from '@/components/DriftWall';
 import ElectricBorder from '@/components/ElectricBorder';
 import InquirySection from "@/components/website/InquirySection";
 
+import Image from "next/image";
+
 import ServerPerformanceComparison from '@/components/website/ServerPerformanceComparison';
 import Link from "next/link";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiGooglecloud, SiCloudflare, SiServerfault } from 'react-icons/si';
@@ -193,8 +195,14 @@ export default function HomePage() {
 
             {/* Website & Mobile Development */}
             <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <SiReact className="text-5xl text-blue-500" />
+              <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                <Image
+                  src="/images/website/services/web-mobile-dev-icon.png"
+                  alt="Website & Mobile Development"
+                  width={128}
+                  height={128}
+                  className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
@@ -220,9 +228,16 @@ export default function HomePage() {
 
             {/* Shared Cloud Hosting */}
             <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <SiCloudflare className="text-5xl text-orange-500" />
+              <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                <Image
+                  src="/images/website/services/hosting-shared-icon.png"
+                  alt="Shared NVMe Cloud Hosting"
+                  width={128}
+                  height={128}
+                  className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
+
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
                 Shared NVMe Cloud Hosting
@@ -247,8 +262,14 @@ export default function HomePage() {
 
             {/* Dedicated Cloud Server */}
           <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <SiServerfault className="text-5xl text-green-600" />
+               <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                  <Image
+                    src="/images/website/services/dedicated-server-icon.png"
+                    alt="Dedicated Server Hosting"
+                    width={128}
+                    height={128}
+                    className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
@@ -273,8 +294,14 @@ export default function HomePage() {
 
             {/* Digital Marketing */}
           <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <FaBullhorn className="text-5xl text-purple-500" />
+              <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                <Image
+                  src="/images/website/services/digital-marketing-icon.png"
+                  alt="Digital Marketing"
+                  width={128}
+                  height={128}
+                  className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
@@ -300,8 +327,14 @@ export default function HomePage() {
 
             {/* Point of Sale */}
             <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <FaCashRegister className="text-5xl text-green-500" />
+              <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                <Image
+                  src="/images/website/services/point-of-sale-icon.png"
+                  alt="Point of Sale (POS)"
+                  width={128}
+                  height={128}
+                  className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
@@ -326,8 +359,14 @@ export default function HomePage() {
 
             {/* Branding & Design */}
             <div className="group flex h-full flex-col rounded-3xl bg-white p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
-                <FaPalette className="text-5xl text-pink-500" />
+              <div className="mx-auto mb-0 flex h-32 w-32 items-center justify-center">
+                <Image
+                  src="/images/website/services/branding-and-design-icon.png"
+                  alt="branding & design"
+                  width={128}
+                  height={128}
+                  className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
