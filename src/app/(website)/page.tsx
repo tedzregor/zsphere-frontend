@@ -131,7 +131,7 @@ export default function HomePage() {
       <section
         className="relative flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/website/homepage-banner9.png')",
+          backgroundImage: "url('/images/website/homepage-banner19.png')",
         }}
       >
         {/* Overlay */}
@@ -1293,7 +1293,6 @@ export default function HomePage() {
       <section className="w-full overflow-hidden bg-blue-50">
         <ServerPerformanceComparison />
       </section>
-
 
 {/* =========================================================
     ZCARE+ SUPPORT & MAINTENANCE
