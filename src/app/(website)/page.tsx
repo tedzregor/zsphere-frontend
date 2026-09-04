@@ -1,28 +1,19 @@
 import TextType from '@/components/website/TextType';
-import SplitFlapText from '@/components/SplitFlapText';
-import StrokeText from '@/components/website/StrokeText';
-import TrueFocus from '@/components/website/TrueFocus';
 import LogoLoop from '@/components/LogoLoop';
 import GradientText from '@/components/GradientText';
-import Beams from '@/components/Beams';
-import Masonry from '@/components/Masonry';
 import DriftWall from '@/components/DriftWall';
-import ElectricBorder from '@/components/ElectricBorder';
 import InquirySection from "@/components/website/InquirySection";
 
 import Image from "next/image";
 
 import ServerPerformanceComparison from '@/components/website/ServerPerformanceComparison';
 import Link from "next/link";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiGooglecloud, SiCloudflare, SiServerfault } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 import {
   FaComments,
   FaLaptopCode,
   FaCloudUploadAlt,
-  FaBullhorn,
-  FaCashRegister,
-  FaPalette,
 } from 'react-icons/fa';
 
 
@@ -45,47 +36,6 @@ const imageLogos = [
   { src: "/images/website/mysql-logo.png", alt: "MySQL Hosting", href: "https://company1.com" },
   { src: "/images/website/ubuntu-logo.png", alt: "Ubuntu Server Hosting", href: "https://company1.com" },
   { src: "/images/website/cpanel-logo.png", alt: "Cpanel Hosting", href: "https://company1.com" },
-];
-
-// Items for the masonry layout
-const items = [
-    {
-      id: "1",
-      img: "/images/website/pamico-website.png",
-      url: "https://pinoyofwinsurance.ph",
-      height: 400,
-    },
-    {
-      id: "2",
-      img: "/images/website/pamico-website-admin.png",
-      url: "https://pinoyofwinsurance.ph",
-      height: 250,
-    },
-    {
-      id: "3",
-      img: "/images/website/zsphere-website.png",
-      url: "https://zspheretech.com",
-      height: 600,
-    },
-    {
-      id: "4",
-      img: "/images/website/homepage-banner9.png",
-      url: "https://example.com/three",
-      height: 400,
-    },
-        {
-      id: "5",
-      img: "/images/website/homepage-banner9.png",
-      url: "https://example.com/three",
-      height: 600,
-    },
-    {
-      id: "6",
-      img: "/images/website/homepage-banner9.png",
-      url: "https://example.com/three",
-      height: 500,
-    },
-    // ... more items
 ];
 
 const driftwall_items = [
@@ -141,7 +91,6 @@ export default function HomePage() {
 
         {/* Content */}
        
-
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
           
         <GradientText
@@ -394,7 +343,7 @@ export default function HomePage() {
         <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '6rem' }}>
           <LogoLoop
             logos={imageLogos}
-            speed={50}
+            speed={40}
             direction="left"
             logoHeight={60}
             gap={60}
@@ -409,6 +358,7 @@ export default function HomePage() {
           <LogoLoop
             logos={imageLogos}
             useCustomRender={false}
+            speed={70}
           />
         </div>
       </section>
