@@ -9,6 +9,7 @@ import Image from "next/image";
 import ServerPerformanceComparison from '@/components/website/ServerPerformanceComparison';
 import Link from "next/link";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { ArrowRight } from "lucide-react";
 
 import {
   FaComments,
@@ -165,14 +166,18 @@ export default function HomePage() {
               </p>
 
               <div className="mt-auto pt-6">
-              <Link
+                <Link
                   href="#website-pricing"
-                // href={`/pricing?service=${encodeURIComponent("Website & Mobile Development")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-              >
-                View Pricing
-              </Link>
-            </div>
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                >
+                  <span>View Pricing</span>
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+                </Link>
+              </div>
             </div>
 
             {/* Shared Cloud Hosting */}
@@ -202,9 +207,14 @@ export default function HomePage() {
                 <Link
                   href="#hosting-pricing"
                   // href={`/contact?service=${encodeURIComponent("Shared Cloud Hosting")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   View Pricing
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
                 </Link>
               </div>
             </div>
@@ -234,9 +244,14 @@ export default function HomePage() {
                 <Link
                   href="#inquire-now"
                   // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
                 </Link>
               </div>
             </div>
@@ -267,9 +282,14 @@ export default function HomePage() {
                 <Link
                   href="#inquire-now"
                   // href={`/contact?service=${encodeURIComponent("Digital Marketing")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
                 </Link>
               </div>
             </div>
@@ -299,9 +319,14 @@ export default function HomePage() {
                 <Link
                  href="#inquire-now"
                   // href={`/contact?service=${encodeURIComponent("Point of Sale (POS)")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
                 </Link>
               </div>
             </div>
@@ -332,9 +357,15 @@ export default function HomePage() {
                 <Link
                   href="#inquire-now"
                   // href={`/contact?service=${encodeURIComponent("Branding & Design")}`}
-                  className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+
                 </Link>
               </div>
             </div>
@@ -670,9 +701,14 @@ export default function HomePage() {
             <Link
                 href="#inquire-now"
                 // href={`/contact?service=${encodeURIComponent("Standard Website")}`}
-                className="text-center items-center justify-center  block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Buy Now
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />
               </Link>
 
               <div className="my-7 h-px bg-gray-200" />
@@ -811,9 +847,14 @@ export default function HomePage() {
               <Link
                 href="#inquire-now"
                 // href={`/contact?service=${encodeURIComponent("E-Commerce Website")}`}
-                className="text-center block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Buy Now
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />  
               </Link>
 
               <div className="my-7 h-px bg-white/10" />
@@ -1011,9 +1052,14 @@ export default function HomePage() {
               <Link
                 href="#inquire-now"
                 // href={`/contact?service=${encodeURIComponent("Customized Premium Website")}`}
-                className="block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Inquire Now
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />
               </Link>
               <div className="my-7 h-px bg-gray-200" />
 
@@ -1360,9 +1406,14 @@ export default function HomePage() {
             <Link
               href="#inquire-now"
               // href={`/contact?service=${encodeURIComponent("Basic Shared Cloud")}`}
-              className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
-            >
+              className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
               Buy Now
+              <ArrowRight
+                size={24}
+                strokeWidth={2.5}
+                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+              />
+              
             </Link>
 
             <div className="my-7 h-px bg-gray-200" />
@@ -1412,9 +1463,13 @@ export default function HomePage() {
             <Link
               href="#inquire-now"
               // href={`/contact?service=${encodeURIComponent("Business Shared Cloud")}`}
-              className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
-            >
+             className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
               Buy Now
+              <ArrowRight
+                size={24}
+                strokeWidth={2.5}
+                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+              />
             </Link>
 
             <div className="my-7 h-px bg-white/10" />
@@ -1458,9 +1513,13 @@ export default function HomePage() {
             <Link
               href="#inquire-now"
               // href={`/contact?service=${encodeURIComponent("Startup Shared Cloud")}`}
-              className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
-            >
+              className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
               Buy Now
+              <ArrowRight
+                size={24}
+                strokeWidth={2.5}
+                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+              />
             </Link>
 
             <div className="my-7 h-px bg-gray-200" />
@@ -1505,9 +1564,13 @@ export default function HomePage() {
             <Link
             href="#inquire-now"
               // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
-              className="mt-6 block w-full bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
-            >
+             className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
               Inquire Now
+              <ArrowRight
+                size={24}
+                strokeWidth={2.5}
+                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+              />
             </Link>
 
             <div className="my-7 h-px bg-gray-200" />
@@ -1537,309 +1600,416 @@ export default function HomePage() {
         <ServerPerformanceComparison />
       </section>
 
-{/* =========================================================
-    ZCARE+ SUPPORT & MAINTENANCE
-========================================================= */}
-{/* =========================================================
-    ZCARE+ SUPPORT & MAINTENANCE
-========================================================= */}
-<section className="relative w-full overflow-hidden">
+      {/* =========================================================
+          ZCARE+ SUPPORT & MAINTENANCE
+      ========================================================= */}
+      <section className="relative w-full overflow-hidden">
 
-  {/* =====================================================
-      FULL-WIDTH BACKGROUND IMAGE
-  ===================================================== */}
-  <div
-    className="absolute inset-0 bg-cover bg-center opacity-[0.58]"
-    style={{
-      backgroundImage:
-        "url('/images/website/zsphere-support-bg.png')",
-    }}
-  />
+        {/* =====================================================
+            FULL-WIDTH BACKGROUND IMAGE
+        ===================================================== */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-[0.58]"
+          style={{
+            backgroundImage:
+              "url('/images/website/zsphere-support-bg.png')",
+          }}
+        />
 
-  {/* Dark/light overlay for readability */}
-  <div className="absolute inset-0 bg-white/20" />
+        {/* Dark/light overlay for readability */}
+        <div className="absolute inset-0 bg-white/20" />
 
-  {/* =====================================================
-      CONTENT
-  ===================================================== */}
-  <div className="relative z-10 mx-auto flex min-h-[720px] max-w-[1600px] items-center px-6 py-16 sm:px-10 lg:px-14 xl:px-20">
+        {/* =====================================================
+            CONTENT
+        ===================================================== */}
+        <div className="relative z-10 mx-auto flex min-h-[720px] max-w-[1600px] items-center px-6 py-16 sm:px-10 lg:px-14 xl:px-20">
 
-    {/* ===================================================
-        LEFT — ZCARE+ CONTENT PANEL
-    =================================================== */}
-    <div className="w-full max-w-[760px] rounded-[2rem] bg-white/95 p-7 shadow-2xl backdrop-blur-md sm:p-10 lg:p-12">
+          {/* ===================================================
+              LEFT — ZCARE+ CONTENT PANEL
+          =================================================== */}
+          <div className="w-full max-w-[760px] rounded-[2rem] bg-white/95 p-7 shadow-2xl backdrop-blur-md sm:p-10 lg:p-12">
 
-      {/* Label */}
-      <div className="mb-6 inline-flex items-center gap-3 rounded-full bg-blue-50 px-4 py-2">
+            {/* Label */}
+            <div className="mb-6 inline-flex items-center gap-3 rounded-full bg-blue-50 px-4 py-2">
 
-        <span className="h-2 w-2 rounded-full bg-blue-600" />
+              <span className="h-2 w-2 rounded-full bg-blue-600" />
 
-        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-600 sm:text-sm">
-          ZCare+ Support & Maintenance
-        </span>
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-600 sm:text-sm">
+                ZCare+ Support & Maintenance
+              </span>
 
-      </div>
+            </div>
 
 
-      {/* Heading */}
-      <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-[#101828] sm:text-5xl xl:text-6xl">
+            {/* Heading */}
+            <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-[#101828] sm:text-5xl xl:text-6xl">
 
-        Reliable Support for
+              Reliable Support for
 
-        <span className="block text-blue-600">
-          Your Digital Platform
-        </span>
+              <span className="block text-blue-600">
+                Your Digital Platform
+              </span>
 
-      </h2>
+            </h2>
 
 
-      {/* Description */}
-      <p className="mt-6 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
-        Reliable after-sales support for your website and hosting.
-        ZCare+ helps keep your digital platform secure, optimized,
-        monitored, and available when your customers need it most.
-      </p>
-
-
-      {/* =================================================
-          BENEFITS
-      ================================================= */}
-      <div className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">
-
-
-        {/* Proactive Monitoring */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <path d="M3 12h4l2-7 4 14 2-7h6" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Proactive Monitoring
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Continuous monitoring helps identify potential issues
-              before they affect your business.
-            </p>
-          </div>
-
-        </div>
-
-
-        {/* Priority Support */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <path d="M4 13a8 8 0 0 1 16 0" />
-              <path d="M4 13v4a2 2 0 0 0 2 2h1v-6H4z" />
-              <path d="M20 13v4a2 2 0 0 1-2 2h-1v-6h3z" />
-              <path d="M9 19h6" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Priority Technical Support
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Get timely assistance from our technical team whenever
-              technical concerns arise.
-            </p>
-          </div>
-
-        </div>
-
-
-        {/* Routine Maintenance */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.8-2.8 2-2.4z" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Routine Maintenance
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Regular updates, optimization, and system checks keep
-              your website stable and efficient.
-            </p>
-          </div>
-
-        </div>
-
-
-        {/* Enhanced Security */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <path d="M12 3l8 3v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z" />
-              <path d="M9 12l2 2 4-4" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Enhanced Security
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Security best practices and monitoring help protect
-              your website against potential threats.
-            </p>
-          </div>
-
-        </div>
-
-
-        {/* Backup & Recovery */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <ellipse cx="12" cy="5" rx="7" ry="3" />
-              <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5" />
-              <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Backup & Recovery
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Recovery assistance helps minimize downtime and maintain
-              business continuity.
-            </p>
-          </div>
-
-        </div>
-
-
-        {/* Reduced IT Costs */}
-        <div className="flex gap-4">
-
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-            >
-              <circle cx="12" cy="12" r="8" />
-              <path d="M12 7v10M15 9.5c-.5-1-1.5-1.5-3-1.5-1.7 0-3 .8-3 2s1.2 2 3 2 3 .8 3 2-1.3 2-3 2c-1.5 0-2.5-.5-3-1.5" />
-            </svg>
-
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-[#101828]">
-              Reduced IT Costs
-            </h3>
-
-            <p className="mt-1.5 text-sm leading-6 text-gray-500">
-              Reduce the need for a dedicated in-house IT team with
-              professional support.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* =================================================
-          FOCUS ON GROWING
-      ================================================= */}
-      <div className="mt-10 rounded-2xl bg-gray-50 p-5 sm:p-6">
-
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-
-          <div className="max-w-lg">
-
-            <h3 className="flex items-center gap-2 font-semibold text-[#101828]">
-              <span className="text-blue-600">✦</span>
-              Focus on Growing Your Business
-            </h3>
-
-            <p className="mt-2 text-sm leading-6 text-gray-500">
-              We handle the technical responsibilities so you can
-              focus on innovation, customers, and growth.
+            {/* Description */}
+            <p className="mt-6 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
+              Reliable after-sales support for your website and hosting.
+              ZCare+ helps keep your digital platform secure, optimized,
+              monitored, and available when your customers need it most.
             </p>
 
-          </div>
+
+            {/* =================================================
+                BENEFITS
+            ================================================= */}
+            <div className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">
 
 
-          <div className="border-t border-gray-200 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0">
+              {/* Proactive Monitoring */}
+              <div className="flex gap-4">
 
-            <p className="mb-2 text-xs font-semibold text-gray-400">
-              INCLUDED WITH
-            </p>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
 
-            <div className="space-y-1.5 text-sm text-gray-600">
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <path d="M3 12h4l2-7 4 14 2-7h6" />
+                  </svg>
 
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600">✓</span>
-                Premium Shared Cloud
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Proactive Monitoring
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Continuous monitoring helps identify potential issues
+                    before they affect your business.
+                  </p>
+                </div>
+
               </div>
 
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600">✓</span>
-                Dedicated Cloud Server
+
+              {/* Priority Support */}
+              <div className="flex gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <path d="M4 13a8 8 0 0 1 16 0" />
+                    <path d="M4 13v4a2 2 0 0 0 2 2h1v-6H4z" />
+                    <path d="M20 13v4a2 2 0 0 1-2 2h-1v-6h3z" />
+                    <path d="M9 19h6" />
+                  </svg>
+
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Priority Technical Support
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Get timely assistance from our technical team whenever
+                    technical concerns arise.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Routine Maintenance */}
+              <div className="flex gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.8-2.8 2-2.4z" />
+                  </svg>
+
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Routine Maintenance
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Regular updates, optimization, and system checks keep
+                    your website stable and efficient.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Enhanced Security */}
+              <div className="flex gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <path d="M12 3l8 3v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Enhanced Security
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Security best practices and monitoring help protect
+                    your website against potential threats.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Backup & Recovery */}
+              <div className="flex gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <ellipse cx="12" cy="5" rx="7" ry="3" />
+                    <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5" />
+                    <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
+                  </svg>
+
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Backup & Recovery
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Recovery assistance helps minimize downtime and maintain
+                    business continuity.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Reduced IT Costs */}
+              <div className="flex gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
+                    <circle cx="12" cy="12" r="8" />
+                    <path d="M12 7v10M15 9.5c-.5-1-1.5-1.5-3-1.5-1.7 0-3 .8-3 2s1.2 2 3 2 3 .8 3 2-1.3 2-3 2c-1.5 0-2.5-.5-3-1.5" />
+                  </svg>
+
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-[#101828]">
+                    Reduced IT Costs
+                  </h3>
+
+                  <p className="mt-1.5 text-sm leading-6 text-gray-500">
+                    Reduce the need for a dedicated in-house IT team with
+                    professional support.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* =================================================
+                FOCUS ON GROWING
+            ================================================= */}
+            <div className="mt-10 rounded-2xl bg-gray-50 p-5 sm:p-6">
+
+              <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <div className="max-w-lg">
+
+                  <h3 className="flex items-center gap-2 font-semibold text-[#101828]">
+                    <span className="text-blue-600">✦</span>
+                    Focus on Growing Your Business
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-6 text-gray-500">
+                    We handle the technical responsibilities so you can
+                    focus on innovation, customers, and growth.
+                  </p>
+
+                </div>
+
+
+                <div className="border-t border-gray-200 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0">
+
+                  <p className="mb-2 text-xs font-semibold text-gray-400">
+                    INCLUDED WITH
+                  </p>
+
+                  <div className="space-y-1.5 text-sm text-gray-600">
+
+                    <div className="flex items-center gap-2">
+                      <span className="text-blue-600">✓</span>
+                      Premium Shared Cloud
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <span className="text-blue-600">✓</span>
+                      Dedicated Cloud Server
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              RIGHT-SIDE IMAGE INFORMATION CARDS
+              These sit directly over the full background image.
+          ===================================================== */}
+
+          {/* System Status */}
+          <div className="absolute right-5 top-58 z-20 hidden w-[290px] rounded-2xl border border-white/40 bg-white/95 p-5 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
+
+            <div className="flex items-start justify-between">
+
+              <div>
+                <p className="text-xs uppercase tracking-[0.12em] text-gray-400">
+                  System Status
+                </p>
+
+                <p className="mt-1 font-semibold text-[#101828]">
+                  All Systems Operational
+                </p>
+              </div>
+
+              <span className="mt-1 h-3 w-3 rounded-full bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.6)]" />
+
+            </div>
+
+            <div className="mt-5 grid grid-cols-3 divide-x divide-gray-200">
+
+              <div className="pr-3">
+                <p className="text-[10px] text-gray-400">
+                  UPTIME
+                </p>
+
+                <p className="mt-1 text-lg font-bold text-[#101828]">
+                  99.9%
+                </p>
+              </div>
+
+              <div className="px-3">
+                <p className="text-[10px] text-gray-400">
+                  CPU
+                </p>
+
+                <p className="mt-1 text-lg font-bold text-[#101828]">
+                  32%
+                </p>
+              </div>
+
+              <div className="pl-3">
+                <p className="text-[10px] text-gray-400">
+                  STATUS
+                </p>
+
+                <p className="mt-1 text-lg font-bold text-emerald-600">
+                  LIVE
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* Security Monitoring */}
+          <div className="absolute bottom-10 right-5 z-20 hidden w-[275px] rounded-2xl border border-white/40 bg-white/95 p-4 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
+
+            <div className="flex items-center gap-3">
+
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <path d="M12 3l8 3v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+
+              </div>
+
+              <div>
+
+                <p className="text-xs text-gray-400">
+                  Security Monitoring
+                </p>
+
+                <div className="mt-1 flex items-center gap-2">
+
+                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
+
+                  <p className="font-semibold text-[#101828]">
+                    Protection Active
+                  </p>
+
+                </div>
+
               </div>
 
             </div>
@@ -1847,117 +2017,7 @@ export default function HomePage() {
           </div>
 
         </div>
-
-      </div>
-
-    </div>
-
-
-    {/* =====================================================
-        RIGHT-SIDE IMAGE INFORMATION CARDS
-        These sit directly over the full background image.
-    ===================================================== */}
-
-    {/* System Status */}
-    <div className="absolute right-5 top-58 z-20 hidden w-[290px] rounded-2xl border border-white/40 bg-white/95 p-5 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
-
-      <div className="flex items-start justify-between">
-
-        <div>
-          <p className="text-xs uppercase tracking-[0.12em] text-gray-400">
-            System Status
-          </p>
-
-          <p className="mt-1 font-semibold text-[#101828]">
-            All Systems Operational
-          </p>
-        </div>
-
-        <span className="mt-1 h-3 w-3 rounded-full bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.6)]" />
-
-      </div>
-
-      <div className="mt-5 grid grid-cols-3 divide-x divide-gray-200">
-
-        <div className="pr-3">
-          <p className="text-[10px] text-gray-400">
-            UPTIME
-          </p>
-
-          <p className="mt-1 text-lg font-bold text-[#101828]">
-            99.9%
-          </p>
-        </div>
-
-        <div className="px-3">
-          <p className="text-[10px] text-gray-400">
-            CPU
-          </p>
-
-          <p className="mt-1 text-lg font-bold text-[#101828]">
-            32%
-          </p>
-        </div>
-
-        <div className="pl-3">
-          <p className="text-[10px] text-gray-400">
-            STATUS
-          </p>
-
-          <p className="mt-1 text-lg font-bold text-emerald-600">
-            LIVE
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Security Monitoring */}
-    <div className="absolute bottom-10 right-5 z-20 hidden w-[275px] rounded-2xl border border-white/40 bg-white/95 p-4 shadow-2xl backdrop-blur-xl md:block lg:right-10 xl:right-16">
-
-      <div className="flex items-center gap-3">
-
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-
-          <svg
-            className="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-          >
-            <path d="M12 3l8 3v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z" />
-            <path d="M9 12l2 2 4-4" />
-          </svg>
-
-        </div>
-
-        <div>
-
-          <p className="text-xs text-gray-400">
-            Security Monitoring
-          </p>
-
-          <div className="mt-1 flex items-center gap-2">
-
-            <span className="h-2 w-2 rounded-full bg-emerald-500" />
-
-            <p className="font-semibold text-[#101828]">
-              Protection Active
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
       <section id="inquire-now">
         <InquirySection />
