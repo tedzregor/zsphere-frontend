@@ -15,6 +15,7 @@ import {
   FaComments,
   FaLaptopCode,
   FaCloudUploadAlt,
+  FaFacebookMessenger
 } from 'react-icons/fa';
 
 
@@ -81,6 +82,35 @@ const driftwall_items = [
 export default function HomePage() {
   return (
     <main>
+      {/* Floating Messenger Button */}
+      <a
+        href="https://www.facebook.com/profile.php?id=61576055979505"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on Facebook"
+        className="
+          fixed
+          bottom-6
+          right-6
+          z-50
+          flex
+          h-16
+          w-16
+          items-center
+          justify-center
+          rounded-full
+          bg-[#0084FF]
+          text-white
+          shadow-[0_10px_30px_rgba(0,132,255,0.45)]
+          transition-all
+          duration-300
+          hover:scale-110
+          hover:shadow-[0_15px_40px_rgba(0,132,255,0.65)]
+        "
+      >
+        <FaFacebookMessenger className="text-4xl" />
+      </a>
+
       <section
         className="relative flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
