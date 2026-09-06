@@ -12,7 +12,7 @@ export default function Footer() {
       ===================================================== */}
       <div className="mx-auto max-w-7xl px-6 py-14 md:px-8 lg:px-10">
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-6">
 
           {/* =================================================
               ZSPHERE BRAND
@@ -282,6 +282,33 @@ export default function Footer() {
               </li>
 
             </ul>
+
+          </div>
+
+          {/* =================================================
+              DATA PRIVACY COMPLIANCE
+          ================================================= */}
+          <div className="flex flex-col items-center lg:items-end">
+
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+              DATA PRIVACY
+            </h3>
+
+            <div className="mt-5 h-0.5 w-7 bg-blue-500" />
+
+            <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all duration-300 hover:border-blue-400/40">
+              <Image
+                src="/images/website/dpo-dps2.png"
+                alt="NPC DPO/DPS Registered"
+                width={180}
+                height={260}
+                className="h-auto w-32 transition-all duration-300 hover:scale-105"
+              />
+            </div>
+
+            <p className="mt-3 text-center text-xs leading-5 text-blue-100/60 lg:text-right">
+              Registered with the National Privacy Commission
+            </p>
 
           </div>
 
