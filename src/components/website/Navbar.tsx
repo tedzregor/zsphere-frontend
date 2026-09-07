@@ -54,7 +54,7 @@ export default function Navbar() {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/people/Zirata-Sphere/pfbid0yp3c4qv4EiQNQYtiaRrN3QadjyA3niNNjvecS5wRYYT6a5KzwxNYcg26Nc5yJBzdl/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
