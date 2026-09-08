@@ -433,7 +433,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '6rem' }}>
+        <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '4rem' }}>
           <LogoLoop
             logos={imageLogos}
             speed={30}
