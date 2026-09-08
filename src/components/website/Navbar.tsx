@@ -144,21 +144,21 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/services"
+            href="#services"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
             Services
           </Link>
 
-          <Link
+          {/* <Link
             href="/about-us"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
             About Us
-          </Link>
+          </Link> */}
 
           <Link
-            href="/contact-us"
+            href="#inquire-now"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
             Contact Us
@@ -318,18 +318,17 @@ export default function Navbar() {
             Sign Up
           </Link> */}
 
-              <Link
-                  href="#inquire-now"
-                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-                >
-                  <span>Get In Touch With Us</span>
-                  <ArrowRight
-                    size={24}
-                    strokeWidth={2.5}
-                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-                  />
-                </Link>
-
+          <Link
+            href="#inquire-now"
+            className="group hidden w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg md:flex"
+          >
+            <span>Get In Touch With Us</span>
+            <ArrowRight
+              size={24}
+              strokeWidth={2.5}
+              className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+            />
+          </Link>
 
           {/* =================================================
               MOBILE MENU BUTTON

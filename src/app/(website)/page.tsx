@@ -184,7 +184,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative z-20 -mt-[21vh] px-6 pb-5">
+      <section id="services" className="relative z-20 -mt-[21vh] px-6 pb-5">
         <div className="mx-auto max-w-7xl">
   
           {/* SERVICES */}
