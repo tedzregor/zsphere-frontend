@@ -424,124 +424,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Web Development Process */}
-      <section className="mt-10 w-full bg-[#101828] px-6 py-14">
-        <div className="mx-auto max-w-6xl">
-
-          {/* Section Heading */}
-          <div className="mb-10 text-center text-white">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-              Our Process
-            </p>
-
-            <h2 className="text-3xl font-bold md:text-5xl">
-              How We Build Your Website
-            </h2>
-
-            <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
-          </div>
-
-          {/* Process Steps */}
-          <div className="relative">
-
-            {/* Connecting Line - Desktop */}
-            <div className="absolute left-[16.66%] right-[16.66%] top-10 hidden h-px bg-white/20 md:block" />
-
-            <div className="grid gap-12 md:grid-cols-3 mb-6">
-
-              {/* Step 1 */}
-              <div className="relative text-center text-white">
-
-                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
-                  <FaComments className="text-3xl" />
-
-                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
-                    1
-                  </span>
-                </div>
-
-                <h3 className="mb-4 text-2xl font-bold">
-                  Consultation
-                </h3>
-
-                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  We learn about your business, goals, audience, and requirements
-                  to create the right strategy for your website.
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="relative text-center text-white">
-
-                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
-                  <FaLaptopCode className="text-3xl" />
-
-                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
-                    2
-                  </span>
-                </div>
-
-                <h3 className="mb-4 text-2xl font-bold">
-                  Design & Development
-                </h3>
-
-                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  We transform the strategy into a modern design and develop a
-                  responsive, fast, and scalable website.
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative text-center text-white">
-
-                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
-                  <FaCloudUploadAlt className="text-3xl" />
-
-                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
-                    3
-                  </span>
-                </div>
-
-                <h3 className="mb-4 text-2xl font-bold">
-                  Deployment & Hosting
-                </h3>
-
-                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  Once everything is ready, we deploy your website and configure
-                  secure, reliable hosting for your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ height: 520 }}>
-          <DriftWall
-              items={driftwall_items}
-              columns={3}
-              tileWidth={450}
-              tileHeight={300}
-              gap={18}
-              tilt={22}
-              turn={0}
-              perspective={1200}
-              depth={120}
-              speed={30}
-              direction="up"
-              variance={0.45}
-              parallax={0.6}
-              lift={64}
-              fade={0.15}
-              dim={2}
-              overlayColor="#fefefe"
-              radius={14}
-              roll={0}
-              pauseOnHover={false}
-              grayscale={false}
-          />
-        </div>
-      </section>
-       
       {/* PRICING */}
         <section id="website-pricing" className=" relative z-20 overflow-hidden bg-[#f8fcff]px-6 py-20">
           {/* Background */}
@@ -1251,7 +1133,6 @@ export default function HomePage() {
           </div>
         </div>
         {/* End of payment methods */}
-
       </section>
 
 
@@ -1677,6 +1558,126 @@ export default function HomePage() {
         {/* End of payment methods */}
       </section>
 
+      {/* Web Development Process */}
+      <section className="mt-0 w-full bg-[#101828] px-6 py-14">
+        <div className="mx-auto max-w-6xl">
+
+          {/* Section Heading */}
+          <div className="mb-10 text-center text-white">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+              Our Process
+            </p>
+
+            <h2 className="text-3xl font-bold md:text-5xl">
+              How We Build Your Website
+            </h2>
+
+            <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
+          </div>
+
+          {/* Process Steps */}
+          <div className="relative">
+
+            {/* Connecting Line - Desktop */}
+            <div className="absolute left-[16.66%] right-[16.66%] top-10 hidden h-px bg-white/20 md:block" />
+
+            <div className="grid gap-12 md:grid-cols-3 mb-6">
+
+              {/* Step 1 */}
+              <div className="relative text-center text-white">
+
+                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
+                  <FaComments className="text-3xl" />
+
+                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
+                    1
+                  </span>
+                </div>
+
+                <h3 className="mb-4 text-2xl font-bold">
+                  Consultation
+                </h3>
+
+                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
+                  We learn about your business, goals, audience, and requirements
+                  to create the right strategy for your website.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative text-center text-white">
+
+                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
+                  <FaLaptopCode className="text-3xl" />
+
+                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
+                    2
+                  </span>
+                </div>
+
+                <h3 className="mb-4 text-2xl font-bold">
+                  Design & Development
+                </h3>
+
+                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
+                  We transform the strategy into a modern design and develop a
+                  responsive, fast, and scalable website.
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative text-center text-white">
+
+                <div className="relative z-10 mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600 shadow-lg shadow-blue-500/20">
+                  <FaCloudUploadAlt className="text-3xl" />
+
+                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-blue-600">
+                    3
+                  </span>
+                </div>
+
+                <h3 className="mb-4 text-2xl font-bold">
+                  Deployment & Hosting
+                </h3>
+
+                <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
+                  Once everything is ready, we deploy your website and configure
+                  secure, reliable hosting for your business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ height: 520 }}>
+          <DriftWall
+              items={driftwall_items}
+              columns={3}
+              tileWidth={450}
+              tileHeight={300}
+              gap={18}
+              tilt={22}
+              turn={0}
+              perspective={1200}
+              depth={120}
+              speed={30}
+              direction="up"
+              variance={0.45}
+              parallax={0.6}
+              lift={64}
+              fade={0.15}
+              dim={2}
+              overlayColor="#fefefe"
+              radius={14}
+              roll={0}
+              pauseOnHover={false}
+              grayscale={false}
+          />
+        </div>
+      </section>
+       
+      
+
       {/* Server Performance Comparison */}
       <section className="w-full overflow-hidden bg-blue-50">
         <ServerPerformanceComparison />
@@ -1734,14 +1735,12 @@ export default function HomePage() {
 
             </h2>
 
-
             {/* Description */}
             <p className="mt-6 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
               Reliable after-sales support for your website and hosting.
               ZCare+ helps keep your digital platform secure, optimized,
               monitored, and available when your customers need it most.
             </p>
-
 
             {/* =================================================
                 BENEFITS
@@ -1779,7 +1778,6 @@ export default function HomePage() {
 
               </div>
 
-
               {/* Priority Support */}
               <div className="flex gap-4">
 
@@ -1810,9 +1808,7 @@ export default function HomePage() {
                     technical concerns arise.
                   </p>
                 </div>
-
               </div>
-
 
               {/* Routine Maintenance */}
               <div className="flex gap-4">
@@ -1843,7 +1839,6 @@ export default function HomePage() {
                 </div>
 
               </div>
-
 
               {/* Enhanced Security */}
               <div className="flex gap-4">
@@ -1876,7 +1871,6 @@ export default function HomePage() {
 
               </div>
 
-
               {/* Backup & Recovery */}
               <div className="flex gap-4">
 
@@ -1908,7 +1902,6 @@ export default function HomePage() {
                 </div>
 
               </div>
-
 
               {/* Reduced IT Costs */}
               <div className="flex gap-4">
