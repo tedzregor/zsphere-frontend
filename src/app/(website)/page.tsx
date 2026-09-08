@@ -184,7 +184,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative z-20 -mt-[21vh] px-6 pb-20">
+      <section className="relative z-20 -mt-[21vh] px-6 pb-5">
         <div className="mx-auto max-w-7xl">
   
           {/* SERVICES */}
@@ -457,7 +457,7 @@ export default function HomePage() {
       </section>
 
       {/* PRICING */}
-        <section id="website-pricing" className=" relative z-20 overflow-hidden bg-[#f8fcff]px-6 py-20">
+        <section id="website-pricing" className=" relative z-20 overflow-hidden bg-[#f8fcff]px-6 py-15">
           {/* Background */}
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
