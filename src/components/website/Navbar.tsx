@@ -172,7 +172,7 @@ export default function Navbar() {
         <div className="ml-auto flex items-center gap-3 sm:gap-4 lg:ml-8 lg:gap-5">
 
           {/* Shopping Cart */}
-          <ShoppingCartIcon />
+          {/* <ShoppingCartIcon /> */}
 
 
           {/* =================================================
@@ -299,22 +299,29 @@ export default function Navbar() {
           {/* =================================================
               SIGN IN
           ================================================= */}
-          <Link
+          {/* <Link
             href="/sign-in"
             className="hidden text-sm font-medium text-white transition hover:text-blue-300 md:block xl:text-base"
           >
             Sign In
-          </Link>
+          </Link> */}
 
 
           {/* =================================================
               SIGN UP
           ================================================= */}
-          <Link
+          {/* <Link
             href="/sign-up"
             className="hidden rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 md:block xl:px-5 xl:py-2.5 xl:text-base"
           >
             Sign Up
+          </Link> */}
+
+                <Link
+            href="#inquire-now"
+            className="hidden rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 md:block xl:px-5 xl:py-2.5 xl:text-base"
+          >
+            Get In Touch With Us
           </Link>
 
 

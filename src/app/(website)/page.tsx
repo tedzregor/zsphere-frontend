@@ -1,8 +1,14 @@
+'use client'
+
+import { useState } from "react";
+
+
 import TextType from '@/components/website/TextType';
 import LogoLoop from '@/components/LogoLoop';
 import GradientText from '@/components/GradientText';
 import DriftWall from '@/components/DriftWall';
 import InquirySection from "@/components/website/InquirySection";
+import PricingInquiryModal from "@/components/website/PricingInquiryModal";
 
 import Image from "next/image";
 
@@ -80,6 +86,17 @@ const driftwall_items = [
 ];
 
 export default function HomePage() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+  const [selectedPrice, setSelectedPrice] = useState("");
+
+  const handleBuyNow = (service: string, price: string) => {
+    setSelectedService(service);
+    setSelectedPrice(price);
+    setIsModalOpen(true);
+  };
+
   return (
     <main>
       {/* Floating Messenger Button */}
@@ -139,16 +156,16 @@ export default function HomePage() {
             // href="/contact"
             className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
           >
-            Contact Us
+            Get Started
           </a>
 
-          <a
+          {/* <a
             href="#inquire-now"
             // href="/pricing"
             className="rounded-md border border-white bg-transparent px-8 py-2 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
           >
             Get Started
-          </a>
+          </a> */}
         </div>
      
         <TextType
@@ -271,18 +288,22 @@ export default function HomePage() {
               </p>
 
               <div className="mt-auto pt-6">
-                <Link
-                  href="#inquire-now"
-                  // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
+                {/* Button */}
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Dedicated Cloud Server", "Custom")
+                  }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
                     className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
                   />
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -309,18 +330,22 @@ export default function HomePage() {
               </p>
 
               <div className="mt-auto pt-6">
-                <Link
-                  href="#inquire-now"
-                  // href={`/contact?service=${encodeURIComponent("Digital Marketing")}`}
+                {/* Button */}
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Digital Advertising & Marketing", "--")
+                  }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
                     className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
                   />
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -346,18 +371,22 @@ export default function HomePage() {
               </p>
 
               <div className="mt-auto pt-6">
-                <Link
-                 href="#inquire-now"
-                  // href={`/contact?service=${encodeURIComponent("Point of Sale (POS)")}`}
+                {/* Button */}
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Point Of Sale (POS)", "--")
+                  }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
                     className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
                   />
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -384,19 +413,22 @@ export default function HomePage() {
               </p>
 
               <div className="mt-6">
-                <Link
-                  href="#inquire-now"
-                  // href={`/contact?service=${encodeURIComponent("Branding & Design")}`}
+              {/* Button */}
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Branding & Design", "--")
+                  }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
                   Inquire Now
+
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
                     className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
                   />
-
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -610,18 +642,21 @@ export default function HomePage() {
               </div>
 
               {/* Button */}
-            <Link
-                href="#inquire-now"
-                // href={`/contact?service=${encodeURIComponent("Standard Website")}`}
-                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-              >
-                Buy Now
-                <ArrowRight
-                  size={24}
-                  strokeWidth={2.5}
-                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-                />
-              </Link>
+              <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Standard Website", "₱19,998")
+                  }
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                >
+                  Buy Now
+
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+                </button>
 
               <div className="my-7 h-px bg-gray-200" />
 
@@ -754,20 +789,23 @@ export default function HomePage() {
                   One-time website development
                 </p>
               </div>
-
+             
               {/* Button */}
-              <Link
-                href="#inquire-now"
-                // href={`/contact?service=${encodeURIComponent("E-Commerce Website")}`}
-                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-              >
-                Buy Now
-                <ArrowRight
-                  size={24}
-                  strokeWidth={2.5}
-                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-                />  
-              </Link>
+              <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("E-Commerce Website", "₱54,998")
+                  }
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                >
+                  Buy Now
+
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+                </button>
 
               <div className="my-7 h-px bg-white/10" />
 
@@ -961,19 +999,21 @@ export default function HomePage() {
               </div>
 
               {/* Button */}
-              <Link
-                href="#inquire-now"
-                // href={`/contact?service=${encodeURIComponent("Customized Premium Website")}`}
-                className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-              >
-                Inquire Now
-                <ArrowRight
-                  size={24}
-                  strokeWidth={2.5}
-                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-                />
-              </Link>
-              <div className="my-7 h-px bg-gray-200" />
+              <button
+                  type="button"
+                  onClick={() =>
+                    handleBuyNow("Customized Premium Website", "Custom")
+                  }
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                >
+                  Buy Now
+
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+                </button>
 
               <p className="mb-5 text-sm font-semibold text-[#101828]">
                 What's included:
@@ -1311,18 +1351,22 @@ export default function HomePage() {
               </p>
             </div>
 
-            <Link
-              href="#inquire-now"
-              // href={`/contact?service=${encodeURIComponent("Basic Shared Cloud")}`}
-              className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
-              Buy Now
-              <ArrowRight
-                size={24}
-                strokeWidth={2.5}
-                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-              />
-              
-            </Link>
+            {/* Button */}
+            <button
+                type="button"
+                onClick={() =>
+                  handleBuyNow("Basic Shared Cloud", "8,998")
+                }
+                className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+              >
+                Buy Now
+
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />
+              </button>
 
             <div className="my-7 h-px bg-gray-200" />
 
@@ -1368,17 +1412,22 @@ export default function HomePage() {
               </p>
             </div>
 
-            <Link
-              href="#inquire-now"
-              // href={`/contact?service=${encodeURIComponent("Business Shared Cloud")}`}
-             className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
-              Buy Now
-              <ArrowRight
-                size={24}
-                strokeWidth={2.5}
-                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-              />
-            </Link>
+            {/* Button */}
+            <button
+                type="button"
+                onClick={() =>
+                  handleBuyNow("Business Shared Cloud", "14,998")
+                }
+                className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+              >
+                Buy Now
+
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />
+              </button>
 
             <div className="my-7 h-px bg-white/10" />
 
@@ -1418,17 +1467,22 @@ export default function HomePage() {
               </p>
             </div>
 
-            <Link
-              href="#inquire-now"
-              // href={`/contact?service=${encodeURIComponent("Startup Shared Cloud")}`}
-              className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
-              Buy Now
-              <ArrowRight
-                size={24}
-                strokeWidth={2.5}
-                className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
-              />
-            </Link>
+            {/* Button */}
+            <button
+                type="button"
+                onClick={() =>
+                  handleBuyNow("Premium Shared Cloud", "49,998")
+                }
+                className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+              >
+                Buy Now
+
+                <ArrowRight
+                  size={24}
+                  strokeWidth={2.5}
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                />
+              </button>
 
             <div className="my-7 h-px bg-gray-200" />
 
@@ -1469,17 +1523,22 @@ export default function HomePage() {
               </p>
             </div>
 
-            <Link
-            href="#inquire-now"
-              // href={`/contact?service=${encodeURIComponent("Dedicated Cloud Server")}`}
-             className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"            >
-              Inquire Now
+            {/* Button */}
+            <button
+              type="button"
+              onClick={() =>
+                handleBuyNow("Dedicated Cloud Server", "Custom")
+              }
+              className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+            >
+              Buy Now
+
               <ArrowRight
                 size={24}
                 strokeWidth={2.5}
                 className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
               />
-            </Link>
+            </button>
 
             <div className="my-7 h-px bg-gray-200" />
 
@@ -1501,6 +1560,13 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
+
+        <PricingInquiryModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          service={selectedService}
+          price={selectedPrice}
+        />
 
         {/* Payment Methods */}
         <div className="mb-0 mt-4 flex flex-col items-center">
@@ -1746,7 +1812,6 @@ export default function HomePage() {
                 BENEFITS
             ================================================= */}
             <div className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">
-
 
               {/* Proactive Monitoring */}
               <div className="flex gap-4">
