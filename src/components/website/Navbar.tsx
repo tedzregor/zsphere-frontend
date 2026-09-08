@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import ShoppingCartIcon from "./ShoppingCartIcon";
+import { ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -317,12 +318,17 @@ export default function Navbar() {
             Sign Up
           </Link> */}
 
-                <Link
-            href="#inquire-now"
-            className="hidden rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 md:block xl:px-5 xl:py-2.5 xl:text-base"
-          >
-            Get In Touch With Us
-          </Link>
+              <Link
+                  href="#inquire-now"
+                  className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+                >
+                  <span>Get In Touch With Us</span>
+                  <ArrowRight
+                    size={24}
+                    strokeWidth={2.5}
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-3"
+                  />
+                </Link>
 
 
           {/* =================================================
