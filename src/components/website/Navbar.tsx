@@ -473,7 +473,7 @@ export default function Navbar() {
             {/* =================================================
                 MOBILE AUTH
             ================================================= */}
-            <div className="grid grid-cols-2 gap-3 pt-2">
+            {/* <div className="grid grid-cols-2 gap-3 pt-2">
 
               <Link
                 href="/sign-in"
@@ -491,7 +491,7 @@ export default function Navbar() {
                 Sign Up
               </Link>
 
-            </div>
+            </div> */}
 
 
             {/* =================================================
