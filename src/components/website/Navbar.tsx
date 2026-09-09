@@ -377,16 +377,16 @@ export default function Navbar() {
               Services
             </Link>
 
-            <Link
+            {/* <Link
               href="/about-us"
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
               About Us
-            </Link>
+            </Link> */}
 
             <Link
-              href="/contact-us"
+              href="#inquire-now"
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
