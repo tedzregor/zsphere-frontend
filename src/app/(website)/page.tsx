@@ -152,7 +152,7 @@ export default function HomePage() {
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#inquire-now"
+            href="#website-pricing"
             // href="/contact"
             className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
           >
