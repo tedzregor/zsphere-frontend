@@ -46,7 +46,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=61576194366880"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -64,7 +64,7 @@ export default function Footer() {
 
               {/* YouTube */}
               <a
-                href="https://www.youtube.com/"
+                href="https://www.facebook.com/profile.php?id=61576194366880"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -82,7 +82,7 @@ export default function Footer() {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/"
+                href="https://www.facebook.com/profile.php?id=61576194366880"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"

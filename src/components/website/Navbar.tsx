@@ -55,7 +55,7 @@ export default function Navbar() {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/people/Zirata-Sphere/pfbid0yp3c4qv4EiQNQYtiaRrN3QadjyA3niNNjvecS5wRYYT6a5KzwxNYcg26Nc5yJBzdl/"
+            href="https://www.facebook.com/profile.php?id=61576194366880"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -73,7 +73,7 @@ export default function Navbar() {
 
           {/* YouTube */}
           <a
-            href="https://www.youtube.com/"
+            href="https://www.facebook.com/profile.php?id=61576194366880"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
@@ -91,7 +91,7 @@ export default function Navbar() {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/"
+            href="https://www.facebook.com/profile.php?id=61576194366880"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
