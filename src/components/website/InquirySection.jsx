@@ -267,7 +267,7 @@ export default function InquirySection() {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-[#101828]">
-                    support@zsphere.com
+                    admin@zspheretech.com
                   </p>
                 </div>
 
