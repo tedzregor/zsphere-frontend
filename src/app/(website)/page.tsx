@@ -699,7 +699,7 @@ export default function HomePage() {
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  5 Pages Ready (Home, About, Services, Contact, News)
+                  5 Starting Pages Ready (Home, About, Services, Contact, News)
                 </li>
 
                 <li className="flex gap-3">
