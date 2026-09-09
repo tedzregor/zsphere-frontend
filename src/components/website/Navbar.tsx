@@ -584,11 +584,8 @@ export default function Navbar() {
                     />
                   </svg>
                 </a>
-
               </div>
-
             </div>
-
           </div>
         </div>
       )}

@@ -296,7 +296,7 @@ export default function Footer() {
 
             <div className="mt-5 h-0.5 w-7 bg-blue-500" />
 
-            <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all duration-300 hover:border-blue-400/40">
+            {/* <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all duration-300 hover:border-blue-400/40">
               <Image
                 src="/images/website/dpo-dps2.png"
                 alt="NPC DPO/DPS Registered"
@@ -304,7 +304,7 @@ export default function Footer() {
                 height={260}
                 className="h-auto w-32 transition-all duration-300 hover:scale-105"
               />
-            </div>
+            </div> */}
 
             <p className="mt-3 text-center text-xs leading-5 text-blue-100/60 lg:text-right">
               Registered with the National Privacy Commission
