@@ -68,6 +68,7 @@ export default function InquirySection() {
       phone: formData.phone || null,
       service: formData.service,
       status: "New",
+      source: "Web",
       message: formData.message,
     });
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { submitInquiry, InquiryApiError } from "@/services/inquiry.service";
+
 import { useEffect, useState } from "react";
 import { CheckCircle2, X } from "lucide-react";
 
@@ -18,6 +20,8 @@ export default function PricingInquiryModal({
 }: PricingInquiryModalProps) {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+  const [errors, setErrors] = useState<Record<string, string[]>>({});
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -39,18 +43,48 @@ export default function PricingInquiryModal({
 
   if (!isOpen) return null;
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
+  setSubmitError("");
+  setErrors({});
 
-    try {
-      // TODO: Replace this with your API request
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+  try {
+    const data = await submitInquiry({
+      name: formData.fullName,
+      email: formData.email,
+      phone: formData.contactNumber,
+      status: "New",
+      source: "Web",
+      service: service,
+      message: `I am interested in ${service} with a listed price of ${price}.`,
+    });
 
-      setSubmitted(true);
-    } catch (error) {
-      console.error("Inquiry submission failed:", error);
+    console.log("Inquiry submitted:", data);
+
+    setSubmitted(true);
+  } catch (error) {
+    console.error("Inquiry submission failed:", error);
+
+    if (error instanceof InquiryApiError) {
+      // Laravel validation errors
+      if (error.status === 422 && error.errors) {
+        setErrors(error.errors);
+        return;
+      }
+
+      setSubmitError(
+        error.message ||
+          "Something went wrong while submitting your inquiry."
+      );
+
+      return;
+    }
+
+    setSubmitError(
+      "Unable to connect to our server. Please check your connection and try again."
+    );
     } finally {
       setIsSubmitting(false);
     }
@@ -111,12 +145,22 @@ export default function PricingInquiryModal({
             </div>
 
             {/* Form */}
+            {submitError && (
+              <div className="mb-5 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                {submitError}
+              </div>
+            )}
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* Full Name */}
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-700">
                   Full Name
                 </label>
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-600">
+                    {errors.name[0]}
+                  </p>
+                )}
 
                 <input
                   type="text"
@@ -139,6 +183,12 @@ export default function PricingInquiryModal({
                   Email Address
                 </label>
 
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-600">
+                    {errors.email[0]}
+                  </p>
+                )}
+
                 <input
                   type="email"
                   required
@@ -159,6 +209,12 @@ export default function PricingInquiryModal({
                 <label className="mb-2 block text-sm font-medium text-gray-700">
                   Contact Number
                 </label>
+
+                {errors.phone && (
+                  <p className="mt-1 text-sm text-red-600">
+                    {errors.phone[0]}
+                  </p>
+                )}
 
                 <input
                   type="tel"

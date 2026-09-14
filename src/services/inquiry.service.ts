@@ -6,6 +6,8 @@ export interface InquiryPayload {
   phone?: string | null;
   service: string;
   company?: string | null;
+  status?: string | null;
+  source?: string | null;
   message: string;
 }
 
