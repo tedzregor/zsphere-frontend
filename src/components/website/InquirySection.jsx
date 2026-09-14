@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 import {
+  submitInquiry,
+  InquiryApiError,
+} from "@/services/inquiry.service";
+
+import {
   ArrowRight,
   CheckCircle2,
   Mail,
@@ -49,126 +54,58 @@ export default function InquirySection() {
 
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setIsSubmitting(true);
-    setErrors({});
-    setSubmitError("");
-    setSuccessMessage("");
+  setIsSubmitting(true);
+  setErrors({});
+  setSubmitError("");
+  setSuccessMessage("");
 
+  try {
+    const data = await submitInquiry({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || null,
+      service: formData.service,
+      status: "New",
+      message: formData.message,
+    });
 
-    try {
-      /*
-       * =====================================================
-       * LARAVEL API ENDPOINT
-       * =====================================================
-       *
-       * Add this to your .env.local:
-       *
-       * NEXT_PUBLIC_API_URL=https://api.yourdomain.com
-       *
-       * Then Laravel endpoint:
-       *
-       * POST /api/inquiries
-       *
-       */
+    setSuccessMessage(
+      //data.message ||
+        "Thank you! Your inquiry has been submitted successfully. Our team will get back to you within 24 hours."
+    );
 
-      const API_URL =
-        process.env.NEXT_PUBLIC_API_URL ||
-        "http://localhost:8000";
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    });
+  } catch (error) {
+    console.error("Inquiry submission error:", error);
 
-
-      const response = await fetch(
-        `${API_URL}/api/inquiries`,
-        {
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone || null,
-            service: formData.service,
-            message: formData.message,
-          }),
-        }
-      );
-
-
-      const data = await response.json();
-
-
-      /*
-       * =====================================================
-       * SUCCESS
-       * =====================================================
-       */
-
-      if (response.ok) {
-        setSuccessMessage(
-          data.message ||
-            "Thank you! Your inquiry has been submitted successfully. Our team will get back to you soon."
-        );
-
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          service: "",
-          message: "",
-        });
-
+    if (error instanceof InquiryApiError) {
+      // Laravel validation error
+      if (error.status === 422 && error.errors) {
+        setErrors(error.errors);
         return;
       }
 
-
-      /*
-       * =====================================================
-       * LARAVEL VALIDATION ERRORS
-       *
-       * Laravel normally returns:
-       *
-       * {
-       *   "message": "The given data was invalid.",
-       *   "errors": {
-       *      "email": [
-       *         "The email field must be a valid email address."
-       *      ]
-       *   }
-       * }
-       *
-       * =====================================================
-       */
-
-      if (response.status === 422 && data.errors) {
-        setErrors(data.errors);
-        return;
-      }
-
-
-      /*
-       * =====================================================
-       * GENERAL API ERROR
-       * =====================================================
-       */
-
+      // Other Laravel API error
       setSubmitError(
-        data.message ||
+        error.message ||
           "Something went wrong while sending your inquiry. Please try again."
       );
 
-    } catch (error) {
+      return;
+    }
 
-      console.error("Inquiry submission error:", error);
-
-      setSubmitError(
-        "Unable to connect to our server. Please check your connection and try again."
-      );
-
+    // Network / unexpected error
+    setSubmitError(
+      "Unable to connect to our server. Please check your connection and try again."
+    );
     } finally {
       setIsSubmitting(false);
     }
