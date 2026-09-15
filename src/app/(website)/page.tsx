@@ -1736,8 +1736,6 @@ export default function HomePage() {
           />
         </div>
       </section>
-       
-      
 
       {/* Server Performance Comparison */}
       <section id="zsphere-server" className="w-full overflow-hidden bg-blue-50">
