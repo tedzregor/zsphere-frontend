@@ -220,7 +220,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="zcare-support"
+                  href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   ZCare+ Support
@@ -274,7 +274,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="#"
+                  href="#zsphere-server"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   System Status
