@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react";
-
 import TextType from '@/components/website/TextType';
 import LogoLoop from '@/components/LogoLoop';
 import GradientText from '@/components/GradientText';
@@ -22,7 +21,6 @@ import {
   FaCloudUploadAlt,
   FaFacebookMessenger
 } from 'react-icons/fa';
-
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
