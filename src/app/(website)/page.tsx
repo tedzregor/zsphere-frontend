@@ -999,6 +999,8 @@ export default function HomePage() {
                   />
                 </button>
 
+              <div className="my-7 h-px bg-gray-200" />
+
               <p className="mb-5 text-sm font-semibold text-[#101828]">
                 {t("web_pricing.plans.custom_whats_included")}
               </p>
