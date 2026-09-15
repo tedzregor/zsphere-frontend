@@ -139,7 +139,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/about-us"
+                  href="#about-us"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   About Us
@@ -148,7 +148,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/services"
+                  href="#services"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Services
@@ -157,7 +157,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/contact-us"
+                  href="#inquire-now"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Contact Us
@@ -166,7 +166,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/blog"
+                  href="#blog"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Blog
@@ -193,7 +193,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/services/web-development"
+                  href="#website-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Web Development
@@ -202,7 +202,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/services/web-hosting"
+                  href="#hosting-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Web Hosting
@@ -211,7 +211,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/services/cloud"
+                  href="#hosting-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Cloud Solutions
@@ -220,7 +220,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/services/support"
+                  href="zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   ZCare+ Support
@@ -247,7 +247,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/support"
+                  href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Support Center
@@ -256,7 +256,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/knowledge-base"
+                  href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Knowledge Base
@@ -265,7 +265,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/contact-us"
+                  href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   Get Support
@@ -274,7 +274,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/status"
+                  href="#"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
                   System Status
@@ -427,21 +427,21 @@ export default function Footer() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
 
             <Link
-              href="/terms-of-service"
+              href="#"
               className="text-blue-100/50 transition hover:text-white"
             >
               Terms of Service
             </Link>
 
             <Link
-              href="/privacy-policy"
+              href="#"
               className="text-blue-100/50 transition hover:text-white"
             >
               Privacy Policy
             </Link>
 
             <Link
-              href="/contact-us"
+              href="#inquire-now"
               className="text-blue-100/50 transition hover:text-white"
             >
               Contact Us

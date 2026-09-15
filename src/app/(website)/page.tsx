@@ -1752,7 +1752,7 @@ export default function HomePage() {
       {/* =========================================================
           ZCARE+ SUPPORT & MAINTENANCE
       ========================================================= */}
-      <section className="relative w-full overflow-hidden">
+      <section id="zcare-support" className="relative w-full overflow-hidden">
 
         {/* =====================================================
             FULL-WIDTH BACKGROUND IMAGE

@@ -370,7 +370,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/services"
+              href="#services"
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
