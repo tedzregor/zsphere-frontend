@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/website/Navbar";
 import Footer from "@/components/website/Footer";
-import InquirySection from "@/components/website/InquirySection";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,14 +20,14 @@ export default function WebsiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="website-theme min-h-screen w-full">
-      <Navbar />
-
-      <main className="w-full">
-        {children}
-      </main>
-
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="website-theme min-h-screen w-full">
+        <Navbar />
+        <main className="w-full">
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }

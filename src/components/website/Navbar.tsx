@@ -7,17 +7,27 @@ import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import ShoppingCartIcon from "./ShoppingCartIcon";
 import { ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/context/LanguageContext";
+
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
+
+  const {
+    language,
+    setLanguage,
+    t,
+  } = useLanguage();
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
-  const selectLanguage = (lang) => {
-    setLanguage(lang);
+  const selectLanguage = (
+    language: "EN" | "KO" | "JA"
+  ) => {
+    setLanguage(language);
     setLanguageOpen(false);
   };
 
@@ -140,14 +150,14 @@ export default function Navbar() {
             href="/"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
-            Home
+             {t("navbar.home")}
           </Link>
 
           <Link
             href="#services"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
-            Services
+           {t("navbar.services")}
           </Link>
 
           {/* <Link
@@ -161,7 +171,7 @@ export default function Navbar() {
             href="#inquire-now"
             className="text-sm font-medium text-white transition hover:text-blue-300 xl:text-base"
           >
-            Contact Us
+            {t("navbar.contact")}
           </Link>
 
         </div>
@@ -322,7 +332,7 @@ export default function Navbar() {
             href="#inquire-now"
             className="group hidden w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg md:flex"
           >
-            <span>Get In Touch With Us</span>
+            <span>{t("navbar.get_in_touch")}</span>
             <ArrowRight
               size={24}
               strokeWidth={2.5}
@@ -366,7 +376,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Home
+              {t("navbar.home")}
             </Link>
 
             <Link
@@ -374,7 +384,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Services
+              {t("navbar.services")}
             </Link>
 
             {/* <Link
@@ -390,7 +400,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="rounded-lg px-4 py-3 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Contact Us
+              {t("navbar.contact")}
             </Link>
 
 
@@ -404,7 +414,7 @@ export default function Navbar() {
                 <Globe className="h-4 w-4 text-white/50" />
 
                 <p className="text-xs font-semibold uppercase tracking-wider text-white/40">
-                  Language
+                  {t("navbar.language")}
                 </p>
 
               </div>
@@ -505,7 +515,7 @@ export default function Navbar() {
             <div className="mt-5 border-t border-white/10 pt-5">
 
               <p className="mb-3 px-4 text-xs font-semibold uppercase tracking-wider text-white/40">
-                Follow Us
+                {t("navbar.follow_us")}
               </p>
 
               <div className="flex items-center gap-3 px-4">

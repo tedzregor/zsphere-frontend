@@ -1,0 +1,233 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "get_in_touch": "Get in touch with us",
+    "language": "Language",
+    "follow_us": "Follow us"
+  },
+
+  "hero": {
+    "title": "Build. Host. Scale.",
+    "get_started": "Get Started",
+    "paragraph_1": "We provide the technology your business needs to grow.",
+    "paragraph_2": "From custom website and mobile development to hosting, deployment, and infrastructure."
+  },
+
+  "services": {
+    "title_1": "Website & Mobile Development",
+    "description_1": "Modern, responsive, and high-performance applications built to help businesses establish a strong online presence and convert visitors into customers.",
+
+    "title_2": "Shared NVMe Cloud Hosting",
+    "description_2": "Reliable cloud hosting with NVMe storage, automated backups, enterprise-grade security, and scalable resources at an affordable price.",
+
+    "title_3": "Dedicated Cloud Server",
+    "description_3": "High-performance dedicated cloud servers designed for enterprise applications, databases, ERP systems, and mission-critical workloads.",
+
+    "title_4": "Digital Advertising & Marketing",
+    "description_4": "Data-driven digital marketing strategies that help businesses reach the right audience, increase brand awareness, and generate more leads and conversions.",
+
+    "title_5": "Point of Sale (POS)",
+    "description_5": "Smart and reliable POS solutions designed to streamline sales, inventory management, reporting, and day-to-day business operations.",
+
+    "title_6": "Branding & Design",
+    "description_6": "Creative branding and design solutions that build a strong visual identity and help your business stand out across digital and traditional platforms.",
+  
+    "view_pricing": "View Pricing",
+    "inquire_now": "Inquire Now"
+  
+  },
+
+  "web_pricing": {
+    "title": "Pricing Plans",
+    "paragraph_1": "Choose the Right Website for Your Business",
+    "paragraph_2": "Professional websites built to help your business establish an online presence, manage your content, and grow online.",
+
+    "plans": {
+      "standard_title": "Standard Website",
+      "standard_description": "A professional website solution for businesses that need a modern online presence.",
+      "standard_price": "₱19,998",
+      "standard_note": "One-time website development",
+      "standard_buy_button": "Buy Now",
+      "standard_whats_included": "What's included:",
+      "standard_included_1": "25 GB NVMe Storage Allocation",
+      "standard_included_2": "Responsive & Mobile-Friendly Design",
+      "standard_included_3": "SEO-Ready Website Structure",
+      "standard_included_4": "Google Analytics Integration",
+      "standard_included_5": "Google Maps Integration",
+      "standard_included_6": "Custom-Built CMS",
+      "standard_included_7": "5 Starting Pages Ready (Home, About, Services, Contact, News)",
+      "standard_included_8": "Content Management",
+      "standard_included_9": "Electronic Inquiry Form",
+      "standard_included_10": "Premium Control Panel",
+      "standard_included_11": "Database Included",
+      "standard_included_12": "Free SSL Certificate — 1 Year",
+      "standard_included_13": "Free Domain Registration — 1 Year",
+      "standard_included_14": "Complimentary Hosting — 1 Year",
+      "standard_included_15": "Multiple Professional Email Accounts*",
+      "standard_included_16": "Zero Setup Fee",
+      "standard_included_17": "24/7 Expert Support",
+
+      "ecom_title": "E-commerce Website",
+      "most_popular": "Most Popular",
+      "ecom_description": "A professional e-commerce website solution for businesses that want to sell products and accept online payments.",
+      "ecom_price": "₱54,998",
+      "ecom_note": "One-time website development",
+      "ecom_buy_button": "Buy Now",
+      "ecom_whats_included": "What's included:",
+      "ecom_included_1": "50 GB NVMe Storage Allocation",
+      "ecom_included_2": "Responsive & Mobile-Friendly Design",
+      "ecom_included_3": "SEO-Ready Website Structure",
+      "ecom_included_4": "Google Analytics Integration",
+      "ecom_included_5": "Google Maps Integration",
+      "ecom_included_6": "Custom-Built CMS",
+      "ecom_included_features": "E-Commerce Features",
+      "ecom_included_7": "Product Catalog & Product Details",
+      "ecom_included_8": "Category & Product Management",
+      "ecom_included_9": "Inventory Management",
+      "ecom_included_10": "Shopping Cart",
+      "ecom_included_11": "Checkout System",
+      "ecom_included_12": "Payment Gateway Integration",
+      "ecom_included_13": "Customer Account Management",
+      "ecom_included_14": "Customer Management",
+      "ecom_included_15": "Order Management",
+      "ecom_included_16": "Sales Transaction Manager",
+      "ecom_included_17": "Sales Reports & Analytics",
+      "ecom_included_18": "Electronic Inquiry Form",
+      "ecom_included_19": "Premium Control Panel",
+      "ecom_included_20": "Database Included",
+      "ecom_included_21": "Free SSL Certificate — 1 Year",
+      "ecom_included_22": "Complimentary Hosting — 1 Year",
+      "ecom_included_23": "Multiple Professional Email Accounts*",
+      "ecom_included_24": "Zero Setup Fee",
+      "ecom_included_25": "24/7 Expert Support",
+      "ecom_included_26": "ZCare+ Support and Maintenance",
+      "ecom_included_free_domain": "Free Domain Registration — 1 Year",
+      "why_this_plan": "Why this plan?",
+      "why_this_plan_answer": "A complete solution for businesses ready to sell products and accept online payments.",
+
+      "custom_title": "Customized Premium Website",
+      "custom_description": "Tailored website solutions with custom functionality, design, and business requirements.",
+      "custom_price": "Custom",
+      "custom_buy_button": "Buy Now",
+      "custom_notes": "Pricing based on requirements",
+      "custom_whats_included": "What's included:",
+      "custom_included_1": "Custom NVMe Storage Allocation",
+      "custom_included_2": "Responsive & Mobile-Friendly Design",
+      "custom_included_3": "SEO-Ready Website Structure",
+      "custom_included_4": "Google Analytics Integration",
+      "custom_included_5": "Google Maps Integration",
+      "custom_included_6": "Custom-Built CMS",
+      "custom_included_7": "Customized Admin Panel",
+      "custom_included_8": "Custom-Designed Web Pages",
+      "custom_included_9": "Advanced Features & Functionality",
+      "custom_included_10": "Database Included",
+      "custom_included_11": "Premium Control Panel",
+      "custom_included_12": "Free SSL Certificate — 1 Year",
+      "custom_included_13": "Free Domain Registration — 1 Year",
+      "custom_included_14": "Complimentary Hosting — 1 Year",
+      "custom_included_15": "Multiple Professional Email Accounts*",
+      "custom_included_16": "Zero Setup Fee",
+      "custom_included_17": "Free ZCare+ Support & Maintenance",
+
+      "web_pricing_notes": "* Professional email accounts are subject to available storage capacity. Domain, hosting, and SSL are complimentary for the first year."
+    }
+  },
+
+  "hosting_pricing": {
+    "title": "Hosting Plan",
+    "paragraph_1": "Launch your Website with High-Performance Cloud Hosting",
+    "paragraph_2": "Fast, secure, and reliable cloud hosting solutions designed to keep your website online, protected, and ready to grow with your business.",
+    
+    "plans": {
+      "basic_shared_title": "Basic Shared Cloud",
+      "basic_shared_description": "Affordable cloud hosting for startups, portfolios, and small business websites.",
+      "basic_shared_price": "₱8,998",
+      "basic_shared_note": "Annual subscription",
+      "basic_shared_buy_button": "Buy Now",
+      "basic_shared_included_1": "15 GB NVMe Storage Allocation",
+      "basic_shared_included_2": "500 GB Monthly Bandwidth Capacity",
+      "basic_shared_included_3": "1 Free Hosted Domain Name",
+      "basic_shared_included_4": "Easy To Use Control Panel Access",
+      "basic_shared_included_5": "Built-In Mailing List Integration",
+      "basic_shared_included_6": "Multiple Email Accounts",
+      "basic_shared_included_7": "Free MySQL Database",
+      "basic_shared_included_8": "Zero Setup Fee",
+      "basic_shared_included_9": "No Cost Backup Service",
+      "basic_shared_included_10": "24/7 Technical Support",
+
+      "business_shared_title": "Business Shared Cloud",
+      "business_shared_description": "Ideal for growing businesses that require more storage and bandwidth.",
+      "business_shared_price": "₱14,998",
+      "business_shared_note": "Annual subscription",
+      "business_shared_buy_button": "Buy Now",
+      "business_shared_included_1": "25 GB NVMe Storage Allocation",
+      "business_shared_included_2": "1 TB Monthly Bandwidth Capacity",
+      "business_shared_included_3": "1 Free Hosted Domain Name",
+      "business_shared_included_4": "Easy To Use Control Panel Access",
+      "business_shared_included_5": "Built-In Mailing List Integration",
+      "business_shared_included_6": "Multiple Email Accounts",
+      "business_shared_included_7": "Free MySQL Database",
+      "business_shared_included_8": "Zero Setup Fee",
+      "business_shared_included_9": "No Cost Backup Service",
+      "business_shared_included_10": "24/7 Technical Support",
+
+      "premium_shared_title": "Premium Shared Cloud",
+      "most_popular": "Most Popular",
+      "premium_shared_description": "Enhanced hosting with maintenance support for growing online businesses.",
+      "premium_shared_price": "₱49,998",
+      "premium_shared_note": "Annual subscription",
+      "premium_shared_buy_button": "Buy Now",
+      "premium_shared_included_1": "50 GB NVMe Storage Allocation",
+      "premium_shared_included_2": "1 TB Monthly Bandwidth Capacity",
+      "premium_shared_included_3": "1 Free Hosted Domain Name",
+      "premium_shared_included_4": "Easy To Use Control Panel Access",
+      "premium_shared_included_5": "Built-In Mailing List Integration",
+      "premium_shared_included_6": "Multiple Email Accounts",
+      "premium_shared_included_7": "Free MySQL Database",
+      "premium_shared_included_8": "Zero Setup Fee",
+      "premium_shared_included_9": "No Cost Backup Service",
+      "premium_shared_included_10": "24/7 Technical Support",
+      "premium_shared_included_11": "ZCare+ Support and Maintenance",
+
+      "dedicated_title": "Dedicated Cloud Server",
+      "dedicated_description": "Enterprise-grade cloud infrastructure tailored to your requirements.",
+      "dedicated_price": "Custom",
+      "dedicated_note": "Annual subscription",
+      "dedicated_buy_button": "Buy Now",
+      "dedicated_included_1": "Custom NVMe Storage Allocation",
+      "dedicated_included_2": "Custom CPU Allocation",
+      "dedicated_included_3": "Custom RAM Allocation",
+      "dedicated_included_4": "3 Domains Available",
+      "dedicated_included_5": "1 TB Monthly Bandwidth Capacity",
+      "dedicated_included_6": "1 Free Hosted Domain Name",
+      "dedicated_included_7": "Easy To Use Control Panel Access",
+      "dedicated_included_8": "Built-In Mailing List Integration",
+      "dedicated_included_9": "Multiple Email Accounts",
+      "dedicated_included_10": "Free MySQL Database",
+      "dedicated_included_11": "Zero Setup Fee",
+      "dedicated_included_12": "No Cost Backup Service",
+      "dedicated_included_13": "24/7 Technical Support",
+      "dedicated_included_14": "ZCare+ Support and Maintenance"
+
+    }
+  },
+
+  "development_process" : {
+    "title" : "OUR PROCESS",
+    "paragraph" : "How We Build Your Website",
+
+    "consultation" : "Consultation",
+    "consultation_description" : "We learn about your business, goals, audience, and requirements to create the right strategy for your website.",
+  
+    "development" : "Design & Development",
+    "development_description" : "We learn about your business, goals, audience, and requirements to create the right strategy for your website.",
+    
+    "deployment" : "Deployment & Hosting",
+    "deployment_description" : "We learn about your business, goals, audience, and requirements to create the right strategy for your website."
+
+  }
+
+}

@@ -15,6 +15,8 @@ import Link from "next/link";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 import {
   FaComments,
   FaLaptopCode,
@@ -92,6 +94,8 @@ export default function HomePage() {
     setIsModalOpen(true);
   };
 
+  const { t } = useLanguage();
+
   return (
     <main>
       {/* Floating Messenger Button */}
@@ -142,7 +146,7 @@ export default function HomePage() {
           showBorder={false}
           className="custom-class" 
         >
-        Build. Host. Scale.
+       {t("hero.title")}
         </GradientText>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -151,7 +155,7 @@ export default function HomePage() {
             // href="/contact"
             className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
           >
-            Get Started
+            {t("hero.get_started")}
           </a>
 
           {/* <a
@@ -166,8 +170,8 @@ export default function HomePage() {
         <TextType
           className="mt-4 text-lg md:text-4xl"
           text={[
-            "From custom website and mobile development to hosting, deployment, and infrastructure.",
-            "We provide the technology your business needs to grow.",
+            t("hero.paragraph_1"),
+            t("hero.paragraph_2"),
           ]}
           typingSpeed={40}
           pauseDuration={4500}
@@ -198,13 +202,11 @@ export default function HomePage() {
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Website & Mobile Development
+                {t("services.title_1")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                Modern, responsive, and high-performance applications built to help
-                businesses establish a strong online presence and convert visitors
-                into customers.
+                {t("services.description_1")}
               </p>
 
               <div className="mt-auto pt-6">
@@ -212,7 +214,7 @@ export default function HomePage() {
                   href="#website-pricing"
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  <span>View Pricing</span>
+                  <span>{t("services.view_pricing")}</span>
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
@@ -236,13 +238,11 @@ export default function HomePage() {
 
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Shared NVMe Cloud Hosting
+                {t("services.title_2")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                Reliable cloud hosting with NVMe storage, automated backups,
-                enterprise-grade security, and scalable resources at an affordable
-                price.
+                {t("services.description_2")}
               </p>
 
               <div className="mt-auto pt-6">
@@ -251,7 +251,7 @@ export default function HomePage() {
                   // href={`/contact?service=${encodeURIComponent("Shared Cloud Hosting")}`}
                    className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  View Pricing
+                  {t("services.view_pricing")}
                   <ArrowRight
                     size={24}
                     strokeWidth={2.5}
@@ -274,12 +274,11 @@ export default function HomePage() {
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Dedicated Cloud Server
+                {t("services.title_3")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                High-performance dedicated cloud servers designed for enterprise
-                applications, databases, ERP systems, and mission-critical workloads.
+                {t("services.description_3")}
               </p>
 
               <div className="mt-auto pt-6">
@@ -291,7 +290,7 @@ export default function HomePage() {
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Inquire Now
+                  {t("services.inquire_now")}
 
                   <ArrowRight
                     size={24}
@@ -315,13 +314,11 @@ export default function HomePage() {
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Digital Adversiting & Marketing
+                {t("services.title_4")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                Data-driven digital marketing strategies that help businesses reach
-                the right audience, increase brand awareness, and generate more leads
-                and conversions.
+                {t("services.description_4")}
               </p>
 
               <div className="mt-auto pt-6">
@@ -333,7 +330,7 @@ export default function HomePage() {
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Inquire Now
+                  {t("services.inquire_now")}
 
                   <ArrowRight
                     size={24}
@@ -357,14 +354,12 @@ export default function HomePage() {
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Point of Sale (POS)
+                {t("services.title_5")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                Smart and reliable POS solutions designed to streamline sales,
-                inventory management, reporting, and day-to-day business operations.
+                {t("services.description_5")}
               </p>
-
               <div className="mt-auto pt-6">
                 {/* Button */}
                 <button
@@ -374,7 +369,7 @@ export default function HomePage() {
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Inquire Now
+                  {t("services.inquire_now")}
 
                   <ArrowRight
                     size={24}
@@ -398,15 +393,13 @@ export default function HomePage() {
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                Branding & Design
+                {t("services.title_6")}
               </h3>
 
               <p className="flex-1 leading-relaxed text-gray-600">
-                Creative branding and design solutions that build a strong visual
-                identity and help your business stand out across digital and
-                traditional platforms.
+                {t("services.description_6")}
               </p>
-
+              
               <div className="mt-6">
               {/* Button */}
                 <button
@@ -416,7 +409,7 @@ export default function HomePage() {
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Inquire Now
+                  {t("services.inquire_now")}
 
                   <ArrowRight
                     size={24}
@@ -591,16 +584,15 @@ export default function HomePage() {
           {/* Section Heading */}
           <div className="mx-auto mb-6 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
-              Pricing Plans
+              {t("web_pricing.title")}
             </p>
 
             <h2 className="text-3xl font-bold tracking-tight text-[#101828] md:text-5xl">
-              Choose the Right Website for Your Business
+               {t("web_pricing.paragraph_1")}
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
-              Professional websites built to help your business establish an online
-              presence, manage your content, and grow online.
+              {t("web_pricing.paragraph_2")}
             </p>
 
             <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
@@ -614,12 +606,11 @@ export default function HomePage() {
 
               <div>
                 <h3 className="text-2xl font-bold text-[#101828]">
-                  Standard Website
+                  {t("web_pricing.plans.standard_title")}
                 </h3>
 
                 <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
-                  A professional website solution for businesses that need a
-                  modern online presence.
+                   {t("web_pricing.plans.standard_description")}
                 </p>
               </div>
 
@@ -627,12 +618,12 @@ export default function HomePage() {
               <div className="mt-6">
                 <div className="flex items-end gap-1">
                   <span className="text-4xl font-bold tracking-tight text-[#101828]">
-                    ₱19,998
+                    {t("web_pricing.plans.standard_price")}
                   </span>
                 </div>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  One-time website development
+                  {t("web_pricing.plans.standard_note")}
                 </p>
               </div>
 
@@ -640,11 +631,11 @@ export default function HomePage() {
               <button
                   type="button"
                   onClick={() =>
-                    handleBuyNow("Standard Website", "₱19,998")
+                    handleBuyNow(t("web_pricing.plans.standard_title"), t("web_pricing.plans.standard_price"))
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Buy Now
+                  {t("web_pricing.plans.standard_buy_button")}
 
                   <ArrowRight
                     size={24}
@@ -656,7 +647,7 @@ export default function HomePage() {
               <div className="my-7 h-px bg-gray-200" />
 
               <p className="mb-5 text-sm font-semibold text-[#101828]">
-                What's included:
+                {t("web_pricing.plans.standard_whats_included")}
               </p>
 
               {/* Features */}
@@ -664,87 +655,87 @@ export default function HomePage() {
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  25 GB NVMe Storage Allocation
+                 {t("web_pricing.plans.standard_included_1")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Responsive & Mobile-Friendly Design
+                  {t("web_pricing.plans.standard_included_2")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  SEO-Ready Website Structure
+                  {t("web_pricing.plans.standard_included_3")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Google Analytics Integration
+                  {t("web_pricing.plans.standard_included_4")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Google Maps Integration
+                  {t("web_pricing.plans.standard_included_5")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Custom-Built CMS
+                  {t("web_pricing.plans.standard_included_6")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  5 Starting Pages Ready (Home, About, Services, Contact, News)
+                  {t("web_pricing.plans.standard_included_7")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Content Management
+                  {t("web_pricing.plans.standard_included_8")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Electronic Inquiry Form
+                  {t("web_pricing.plans.standard_included_9")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Premium Control Panel
+                  {t("web_pricing.plans.standard_included_10")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Database Included
+                  {t("web_pricing.plans.standard_included_11")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Free SSL Certificate — 1 Year
+                  {t("web_pricing.plans.standard_included_12")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Free Domain Registration — 1 Year
+                   {t("web_pricing.plans.standard_included_13")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Complimentary Hosting — 1 Year
+                   {t("web_pricing.plans.standard_included_14")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Multiple Professional Email Accounts*
+                  {t("web_pricing.plans.standard_included_15")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Zero Setup Fee
+                   {t("web_pricing.plans.standard_included_16")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  24/7 Expert Support
+                  {t("web_pricing.plans.standard_included_17")}
                 </li>
 
               </ul>
@@ -757,18 +748,17 @@ export default function HomePage() {
               {/* Featured Badge */}
               <div className="absolute right-5 top-5">
                 <span className="rounded-full bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-lg">
-                  Most Popular
+                  {t("web_pricing.plans.most_popular")}
                 </span>
               </div>
 
               <div>
                 <h3 className="pr-28 text-2xl font-bold">
-                  E-Commerce Website
+                  {t("web_pricing.plans.ecom_title")}
                 </h3>
 
                 <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-300">
-                  A complete online store solution designed to help businesses
-                  sell products and manage online transactions.
+                 {t("web_pricing.plans.ecom_description")}
                 </p>
               </div>
 
@@ -776,12 +766,12 @@ export default function HomePage() {
               <div className="mt-6">
                 <div className="flex items-end gap-1">
                   <span className="text-4xl font-bold tracking-tight">
-                    ₱54,998
+                   {t("web_pricing.plans.ecom_price")}
                   </span>
                 </div>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  One-time website development
+                  {t("web_pricing.plans.ecom_note")}
                 </p>
               </div>
              
@@ -789,11 +779,11 @@ export default function HomePage() {
               <button
                   type="button"
                   onClick={() =>
-                    handleBuyNow("E-Commerce Website", "₱54,998")
+                    handleBuyNow(t("web_pricing.plans.ecom_title"), t("web_pricing.plans.ecom_price"))
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Buy Now
+                  {t("web_pricing.plans.ecom_buy_button")}
 
                   <ArrowRight
                     size={24}
@@ -805,7 +795,7 @@ export default function HomePage() {
               <div className="my-7 h-px bg-white/10" />
 
               <p className="mb-5 text-sm font-semibold text-white">
-                What's included:
+                {t("web_pricing.plans.ecom_whats_included")}
               </p>
 
               {/* Features */}
@@ -813,141 +803,142 @@ export default function HomePage() {
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  50 GB NVMe Storage Allocation
+                  {t("web_pricing.plans.ecom_included_1")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Responsive & Mobile-Friendly Design
+                  {t("web_pricing.plans.ecom_included_2")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  SEO-Ready Website Structure
+                  {t("web_pricing.plans.ecom_included_3")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Google Analytics Integration
+                  {t("web_pricing.plans.ecom_included_4")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Google Maps Integration
+                  {t("web_pricing.plans.ecom_included_5")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Custom-Built E-Commerce CMS
+                  {t("web_pricing.plans.ecom_included_6")}
                 </li>
 
                 <li className="mt-4 border-t border-white/10 pt-4 font-semibold text-white">
-                  E-Commerce Features
+                  {t("web_pricing.plans.ecom_included_features")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Product Catalog & Product Details
+                  {t("web_pricing.plans.ecom_included_7")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Category & Product Management
+                  {t("web_pricing.plans.ecom_included_8")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Inventory Management
+                  {t("web_pricing.plans.ecom_included_9")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Shopping Cart
+                  {t("web_pricing.plans.ecom_included_10")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Checkout System
+                  {t("web_pricing.plans.ecom_included_11")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Payment Gateway Integration
+                  {t("web_pricing.plans.ecom_included_12")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Customer Account Management
+                  {t("web_pricing.plans.ecom_included_13")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Customer Management
+                  {t("web_pricing.plans.ecom_included_14")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Order Management
+                  {t("web_pricing.plans.ecom_included_15")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Sales Transaction Manager
+                  {t("web_pricing.plans.ecom_included_16")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Sales Reports & Analytics
+                  {t("web_pricing.plans.ecom_included_17")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Electronic Inquiry Form
+                  {t("web_pricing.plans.ecom_included_18")}
                 </li>
 
                 <li className="mt-4 border-t border-white/10 pt-4">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Premium Control Panel
+                  {t("web_pricing.plans.ecom_included_19")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Database Included
+                  {t("web_pricing.plans.ecom_included_20")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Free SSL Certificate — 1 Year
+                  {t("web_pricing.plans.ecom_included_21")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Free Domain Registration — 1 Year
+                 
+                  {t("web_pricing.plans.ecom_included_free_domain")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Complimentary Hosting — 1 Year
+                  {t("web_pricing.plans.ecom_included_22")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Multiple Professional Email Accounts*
+                  {t("web_pricing.plans.ecom_included_23")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  Zero Setup Fee
+                   {t("web_pricing.plans.ecom_included_24")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  24/7 Expert Support
+                   {t("web_pricing.plans.ecom_included_25")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-blue-400">✓</span>
-                  ZCare+ Support and Maintenance
+                  {t("web_pricing.plans.ecom_included_26")}
                 </li>
             
               </ul>
@@ -955,12 +946,11 @@ export default function HomePage() {
               {/* Why this plan */}
               <div className="mt-7 rounded-xl bg-white/5 p-4">
                 <p className="text-xs font-semibold text-blue-400">
-                  Why this plan?
+                   {t("web_pricing.plans.why_this_plan")}
                 </p>
 
                 <p className="mt-2 text-sm leading-relaxed text-gray-300">
-                  A complete solution for businesses ready to sell products
-                  and accept online payments.
+                   {t("web_pricing.plans.why_this_plan_answer")}
                 </p>
               </div>
 
@@ -971,12 +961,11 @@ export default function HomePage() {
 
               <div>
                 <h3 className="text-2xl font-bold text-[#101828]">
-                  Customized Premium Website
+                 {t("web_pricing.plans.custom_title")}
                 </h3>
 
                 <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
-                  Tailored website solutions with custom functionality,
-                  design, and business requirements.
+                   {t("web_pricing.plans.custom_description")}
                 </p>
               </div>
 
@@ -984,12 +973,12 @@ export default function HomePage() {
               <div className="mt-6">
                 <div className="flex items-end gap-1">
                   <span className="text-4xl font-bold tracking-tight text-[#101828]">
-                    Custom
+                     {t("web_pricing.plans.custom_price")}
                   </span>
                 </div>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  Pricing based on requirements
+                  {t("web_pricing.plans.custom_notes")}
                 </p>
               </div>
 
@@ -1001,7 +990,7 @@ export default function HomePage() {
                   }
                   className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                 >
-                  Buy Now
+                   {t("web_pricing.plans.custom_buy_button")}
 
                   <ArrowRight
                     size={24}
@@ -1011,94 +1000,94 @@ export default function HomePage() {
                 </button>
 
               <p className="mb-5 text-sm font-semibold text-[#101828]">
-                What's included:
+                {t("web_pricing.plans.custom_whats_included")}
               </p>
 
               <ul className="space-y-3 text-sm text-gray-600">
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Custom NVMe Storage Allocation
+                 {t("web_pricing.plans.custom_included_1")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Responsive & Mobile-Friendly Design
+                  {t("web_pricing.plans.custom_included_2")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  SEO-Ready Website Structure
+                  {t("web_pricing.plans.custom_included_3")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Google Analytics Integration
+                  {t("web_pricing.plans.custom_included_4")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Google Maps Integration
+                  {t("web_pricing.plans.custom_included_5")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Custom-Built CMS
+                  {t("web_pricing.plans.custom_included_6")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Customized Admin Panel
+                  {t("web_pricing.plans.custom_included_7")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Custom-Designed Web Pages
+                  {t("web_pricing.plans.custom_included_8")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Advanced Features & Functionality
+                  {t("web_pricing.plans.custom_included_9")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Database Included
+                  {t("web_pricing.plans.custom_included_10")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Premium Control Panel
+                  {t("web_pricing.plans.custom_included_11")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Free SSL Certificate — 1 Year
+                  {t("web_pricing.plans.custom_included_12")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Free Domain Registration — 1 Year
+                  {t("web_pricing.plans.custom_included_13")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Complimentary Hosting — 1 Year
+                  {t("web_pricing.plans.custom_included_14")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Multiple Professional Email Accounts*
+                  {t("web_pricing.plans.custom_included_15")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Zero Setup Fee
+                  {t("web_pricing.plans.custom_included_16")}
                 </li>
 
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                  Free ZCare+ Support & Maintenance
+                  {t("web_pricing.plans.custom_included_17")}
                 </li>
 
               </ul>
@@ -1109,8 +1098,7 @@ export default function HomePage() {
 
           {/* Pricing Note */}
           <p className="mt-8 text-center text-xs text-gray-400">
-            * Professional email accounts are subject to available storage capacity.
-            Domain, hosting, and SSL are complimentary for the first year.
+            {t("web_pricing.plans.web_pricing_notes")}
           </p>
         </div>
 
@@ -1309,16 +1297,15 @@ export default function HomePage() {
 
         <div className="mt-0 mx-auto mb-16 max-w-3xl text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
-            Hosting Plans
+            {t("hosting_pricing.title")}
           </p>
 
         <h2 className="text-3xl font-bold tracking-tight text-[#101828] md:text-5xl">
-          Launch your Website with High-Performance Cloud Hosting
+          {t("hosting_pricing.paragraph_1")}
         </h2>
 
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
-          Fast, secure, and reliable cloud hosting solutions designed to keep your
-          website online, protected, and ready to grow with your business.
+          {t("hosting_pricing.paragraph_2")}
         </p>
 
         <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" /></div>
@@ -1329,20 +1316,20 @@ export default function HomePage() {
           <div className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
             <h3 className="text-2xl font-bold text-[#101828]">
-              Basic Shared Cloud
+              {t("hosting_pricing.plans.basic_shared_title")}
             </h3>
 
             <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
-              Affordable cloud hosting for startups, portfolios, and small business websites.
+              {t("hosting_pricing.plans.basic_shared_description")}
             </p>
 
             <div className="mt-6">
               <span className="text-4xl font-bold text-[#101828]">
-                ₱8,998
+                {t("hosting_pricing.plans.basic_shared_price")}
               </span>
 
               <p className="mt-1 text-sm text-gray-400">
-                Annual hosting subscription
+                {t("hosting_pricing.plans.basic_shared_note")}
               </p>
             </div>
 
@@ -1350,11 +1337,11 @@ export default function HomePage() {
             <button
                 type="button"
                 onClick={() =>
-                  handleBuyNow("Basic Shared Cloud", "8,998")
+                  handleBuyNow(t("hosting_pricing.plans.basic_shared_title"), t("hosting_pricing.plans.basic_shared_price"))
                 }
                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
-                Buy Now
+                {t("hosting_pricing.plans.basic_shared_buy_button")}
 
                 <ArrowRight
                   size={24}
@@ -1366,16 +1353,16 @@ export default function HomePage() {
             <div className="my-7 h-px bg-gray-200" />
 
             <ul className="space-y-3 text-sm text-gray-600">
-              <li className="flex gap-3"><span className="text-green-500">✓</span>15 GB NVMe Storage Allocation</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>500 GB Monthly Bandwidth Capacity</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>1 Free Hosted Domain Name</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Easy To Use Control Panel Access</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Built-In Mailing List Integration</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Multiple Email Accounts</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Free MySQL Database</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Zero Setup Fee</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>No Cost Backup Service</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>24/7 Technical Support</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_1")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_2")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_3")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_4")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_5")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_6")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_7")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_8")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_9")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.basic_shared_included_10")}</li>
             </ul>
 
           </div>
@@ -1385,25 +1372,25 @@ export default function HomePage() {
 
             <div className="absolute right-5 top-5">
               <span className="rounded-full bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white">
-                Most Popular
+                {t("hosting_pricing.plans.most_popular")}
               </span>
             </div>
 
             <h3 className="pr-24 text-2xl font-bold">
-              Business Shared Cloud
+              {t("hosting_pricing.plans.business_shared_title")}
             </h3>
 
             <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-300">
-              Ideal for growing businesses that require more storage and bandwidth.
+              {t("hosting_pricing.plans.business_shared_description")}
             </p>
 
             <div className="mt-6">
               <span className="text-4xl font-bold">
-                ₱14,998
+                {t("hosting_pricing.plans.business_shared_price")}
               </span>
 
               <p className="mt-1 text-sm text-gray-400">
-                Annual hosting subscription
+                {t("hosting_pricing.plans.business_shared_note")}
               </p>
             </div>
 
@@ -1411,11 +1398,11 @@ export default function HomePage() {
             <button
                 type="button"
                 onClick={() =>
-                  handleBuyNow("Business Shared Cloud", "14,998")
+                  handleBuyNow(t("hosting_pricing.plans.business_shared_title"), t("hosting_pricing.plans.business_shared_price"))
                 }
                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
-                Buy Now
+                {t("hosting_pricing.plans.business_shared_buy_button")}
 
                 <ArrowRight
                   size={24}
@@ -1427,16 +1414,16 @@ export default function HomePage() {
             <div className="my-7 h-px bg-white/10" />
 
             <ul className="space-y-3 text-sm text-gray-300">
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>25 GB NVMe Storage Allocation</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>1 TB Monthly Bandwidth Capacity</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>1 Free Hosted Domain Name</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>Easy To Use Control Panel Access</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>Built-In Mailing List Integration</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>Multiple Email Accounts</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>Free MySQL Database</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>Zero Setup Fee</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>No Cost Backup Service</li>
-              <li className="flex gap-3"><span className="text-blue-400">✓</span>24/7 Technical Support</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_1")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_2")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_3")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_4")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_5")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_6")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_7")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_8")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_9")}</li>
+              <li className="flex gap-3"><span className="text-blue-400">✓</span>{t("hosting_pricing.plans.business_shared_included_10")}</li>
             </ul>
 
           </div>
@@ -1445,20 +1432,20 @@ export default function HomePage() {
           <div className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
             <h3 className="text-2xl font-bold text-[#101828]">
-              Premium Shared Cloud
+              {t("hosting_pricing.plans.premium_shared_title")}
             </h3>
 
             <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
-              Enhanced hosting with maintenance support for growing online businesses.
+              {t("hosting_pricing.plans.premium_shared_description")}
             </p>
 
             <div className="mt-6">
               <span className="text-4xl font-bold text-[#101828]">
-                ₱49,998
+                {t("hosting_pricing.plans.premium_shared_price")}
               </span>
 
               <p className="mt-1 text-sm text-gray-400">
-                Annual hosting subscription
+                {t("hosting_pricing.plans.premium_shared_note")}
               </p>
             </div>
 
@@ -1466,11 +1453,11 @@ export default function HomePage() {
             <button
                 type="button"
                 onClick={() =>
-                  handleBuyNow("Premium Shared Cloud", "49,998")
+                  handleBuyNow(t("hosting_pricing.plans.premium_shared_title"), t("hosting_pricing.plans.premium_shared_price"))
                 }
                 className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
-                Buy Now
+                {t("hosting_pricing.plans.premium_shared_buy_button")}
 
                 <ArrowRight
                   size={24}
@@ -1482,17 +1469,17 @@ export default function HomePage() {
             <div className="my-7 h-px bg-gray-200" />
 
             <ul className="space-y-3 text-sm text-gray-600">
-              <li className="flex gap-3"><span className="text-green-500">✓</span>50 GB NVMe Storage Allocation</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>1 TB Monthly Bandwidth Capacity</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>1 Free Hosted Domain Name</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Easy To Use Control Panel Access</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Built-In Mailing List Integration</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Multiple Email Accounts</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Free MySQL Database</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>Zero Setup Fee</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>No Cost Backup Service</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>24/7 Technical Support</li>
-              <li className="flex gap-3"><span className="text-green-500">✓</span>ZCare+ Support and Maintenance</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_1")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_2")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_3")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_4")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_5")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_6")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_7")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_8")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_9")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_10")}</li>
+              <li className="flex gap-3"><span className="text-green-500">✓</span>{t("hosting_pricing.plans.premium_shared_included_11")}</li>
             </ul>
 
           </div>
@@ -1501,20 +1488,20 @@ export default function HomePage() {
           <div className="group flex h-full flex-col rounded-2xl border-2 border-indigo-500 bg-gradient-to-b from-indigo-50 to-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
             <h3 className="text-2xl font-bold text-[#101828]">
-              Dedicated Cloud Server
+              {t("hosting_pricing.plans.dedicated.title")}
             </h3>
 
             <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
-              Enterprise-grade cloud infrastructure tailored to your requirements.
+              {t("hosting_pricing.plans.dedicated_description")}
             </p>
 
             <div className="mt-6">
               <span className="text-4xl font-bold text-[#101828]">
-                Custom
+                {t("hosting_pricing.plans.dedicated_price")}
               </span>
 
               <p className="mt-1 text-sm text-gray-400">
-                Pricing based on requirements
+                {t("hosting_pricing.plans.dedicated_price")}
               </p>
             </div>
 
@@ -1522,11 +1509,11 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() =>
-                handleBuyNow("Dedicated Cloud Server", "Custom")
+                handleBuyNow(t("hosting_pricing.plans.dedicated_title"), t("hosting_pricing.plans.dedicated_price"))
               }
               className="group flex w-full items-center justify-center gap-1 bg-linear-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
             >
-              Buy Now
+              {t("hosting_pricing.plans.dedicated_buy_button")}
 
               <ArrowRight
                 size={24}
@@ -1538,20 +1525,20 @@ export default function HomePage() {
             <div className="my-7 h-px bg-gray-200" />
 
             <ul className="space-y-3 text-sm text-gray-600">
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Custom NVMe Storage Allocation</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Custom CPU Allocation</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Custom RAM Allocation</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>3 Domains Available</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>1 TB Monthly Bandwidth Capacity</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>1 Free Hosted Domain Name</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Easy To Use Control Panel Access</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Built-In Mailing List Integration</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Multiple Email Accounts</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Free MySQL Database</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>Zero Setup Fee</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>No Cost Backup Service</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>24/7 Technical Support</li>
-              <li className="flex gap-3"><span className="text-indigo-500">✓</span>ZCare+ Support and Maintenance</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_1")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_2")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_3")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_4")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_5")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_6")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_7")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_8")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_9")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_10")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_11")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_12")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_13")}</li>
+              <li className="flex gap-3"><span className="text-indigo-500">✓</span>{t("hosting_pricing.plans.dedicated_included_14")}</li>
             </ul>
           </div>
         </div>
@@ -1626,11 +1613,11 @@ export default function HomePage() {
           {/* Section Heading */}
           <div className="mb-10 text-center text-white">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-              Our Process
+               {t("development_process.title")}
             </p>
 
             <h2 className="text-3xl font-bold md:text-5xl">
-              How We Build Your Website
+              {t("development_process.paragraph")}
             </h2>
 
             <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-blue-500" />
@@ -1656,12 +1643,11 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="mb-4 text-2xl font-bold">
-                  Consultation
+                   {t("development_process.consultation")}
                 </h3>
 
                 <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  We learn about your business, goals, audience, and requirements
-                  to create the right strategy for your website.
+                   {t("development_process.consultation_description")}
                 </p>
               </div>
 
@@ -1677,12 +1663,11 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="mb-4 text-2xl font-bold">
-                  Design & Development
+                  {t("development_process.development")}
                 </h3>
 
                 <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  We transform the strategy into a modern design and develop a
-                  responsive, fast, and scalable website.
+                  {t("development_process.development_description")}
                 </p>
               </div>
 
@@ -1698,12 +1683,11 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="mb-4 text-2xl font-bold">
-                  Deployment & Hosting
+                  {t("development_process.deployment")}
                 </h3>
 
                 <p className="mx-auto max-w-xs leading-relaxed text-gray-400">
-                  Once everything is ready, we deploy your website and configure
-                  secure, reliable hosting for your business.
+                  {t("development_process.deployment_description")}
                 </p>
               </div>
             </div>
