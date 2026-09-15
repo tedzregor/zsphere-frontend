@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 import TextType from '@/components/website/TextType';
 import LogoLoop from '@/components/LogoLoop';
 import GradientText from '@/components/GradientText';
@@ -34,55 +33,53 @@ const techLogos = [
 
 // Alternative with image sources
 const imageLogos = [
-  { src: "/images/website/wordpress-logo.png", alt: "Wordpress Hosting", href: "#" },
-  { src: "/images/website/shopify-logo.png", alt: "Shopify Hosting", href: "#" },
-  { src: "/images/website/prestashop-logo.png", alt: "Prestashop Hosting", href: "#" },
-  { src: "/images/website/magento-logo.png", alt: "Magento Hosting", href: "#" },
-  { src: "/images/website/laravel-logo.png", alt: "PHP Laravel Hosting", href: "#" },
-  { src: "/images/website/nextjs-logo.png", alt: "NextJS Hosting", href: "#" },
-  { src: "/images/website/vuejs-logo.png", alt: "VueJS Hosting", href: "#" },
-  { src: "/images/website/mysql-logo.png", alt: "MySQL Hosting", href: "#" },
-  { src: "/images/website/ubuntu-logo.png", alt: "Ubuntu Server Hosting", href: "#" },
-  { src: "/images/website/cpanel-logo.png", alt: "Cpanel Hosting", href: "#" },
+  { src: "/images/website/wordpress-logo.png", alt: "Wordpress Hosting" },
+  { src: "/images/website/shopify-logo.png", alt: "Shopify Hosting" },
+  { src: "/images/website/prestashop-logo.png", alt: "Prestashop Hosting" },
+  { src: "/images/website/magento-logo.png", alt: "Magento Hosting" },
+  { src: "/images/website/laravel-logo.png", alt: "PHP Laravel Hosting" },
+  { src: "/images/website/nextjs-logo.png", alt: "NextJS Hosting" },
+  { src: "/images/website/vuejs-logo.png", alt: "VueJS Hosting" },
+  { src: "/images/website/mysql-logo.png", alt: "MySQL Hosting" },
+  { src: "/images/website/ubuntu-logo.png", alt: "Ubuntu Server Hosting" },
+  { src: "/images/website/cpanel-logo.png", alt: "Cpanel Hosting" },
 ];
 
 const driftwall_items = [
-  { image: '/images/website/real-estate-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/spa-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/construction-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/zsphere-website.png', title: 'Falls', href: '#' },
+  { image: '/images/website/real-estate-website.png', title: 'Falls' },
+  { image: '/images/website/spa-website.png', title: 'Falls' },
+  { image: '/images/website/construction-website.png', title: 'Falls' },
+  { image: '/images/website/zsphere-website.png', title: 'Falls' },
   
+  { image: '/images/website/pharmacy-website.png', title: 'Falls' },
+  { image: '/images/website/catering-website.png', title: 'Peaks' },
+  { image: '/images/website/law-firm-website.png', title: 'Peaks' },
+  { image: '/images/website/zsphere-website-admin.png', title: 'Falls' },
+
+  { image: '/images/website/dental-clinic-website.png', title: 'Peaks' },
+  { image: '/images/website/pamico-website.png', title: 'Peaks' },
+  { image: '/images/website/travel-and-tour-website.jpg', title: 'Falls' },
+  { image: '/images/website/spa-website.png', title: 'Falls' },
+
+  { image: '/images/website/zsphere-website.png', title: 'Peaks' },
+  { image: '/images/website/construction-website.png', title: 'Falls' },
+  { image: '/images/website/dental-clinic-website.png', title: 'Peaks' },
+  { image: '/images/website/pamico-website.png', title: 'Peaks' },
+
+  { image: '/images/website/restaurant-website.png', title: 'Peaks' },
+  { image: '/images/website/real-estate-website.png', title: 'Falls' },
+  { image: '/images/website/e-commerce-website.png', title: 'Falls' },
+  { image: '/images/website/salon-website.png', title: 'Peaks' },
+
+  { image: '/images/website/zsphere-website-admin-night.png', title: 'Falls' },
+  { image: '/images/website/medical-website.png', title: 'Falls' },
+  { image: '/images/website/hotel-website.png', title: 'Falls' },
+  { image: '/images/website/school-website.png', title: 'Peaks' },
   
-  { image: '/images/website/pharmacy-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/catering-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/law-firm-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/zsphere-website-admin.png', title: 'Falls', href: '#' },
-
-  { image: '/images/website/dental-clinic-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/pamico-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/travel-and-tour-website.jpg', title: 'Falls', href: '#' },
-  { image: '/images/website/spa-website.png', title: 'Falls', href: '#' },
-
-  { image: '/images/website/zsphere-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/construction-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/dental-clinic-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/pamico-website.png', title: 'Peaks', href: '#' },
-
-  { image: '/images/website/restaurant-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/real-estate-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/e-commerce-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/salon-website.png', title: 'Peaks', href: '#' },
-
-  { image: '/images/website/zsphere-website-admin-night.png', title: 'Falls', href: '#' },
-  { image: '/images/website/medical-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/hotel-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/school-website.png', title: 'Peaks', href: '#' },
-  
-  { image: '/images/website/gym-website.png', title: 'Peaks', href: '#' },
-  { image: '/images/website/financial-services-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/event-website.png', title: 'Falls', href: '#' },
-  { image: '/images/website/catering-website.png', title: 'Peaks', href: '#' },
- 
+  { image: '/images/website/gym-website.png', title: 'Peaks' },
+  { image: '/images/website/financial-services-website.png', title: 'Falls' },
+  { image: '/images/website/event-website.png', title: 'Falls' },
+  { image: '/images/website/catering-website.png', title: 'Peaks' },
 ];
 
 export default function HomePage() {
