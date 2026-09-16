@@ -263,6 +263,40 @@
     "peace_of_mind_para": "ビジネスに集中できます"
   },
 
+  "support": {
+    "title": "ZCare+ サポート＆メンテナンス",
+    "paragraph_1": "信頼できるサポート",
+    "paragraph_1_1": "あなたのデジタルプラットフォームのために",
+    "paragraph_2": "Webサイトとホスティングのための信頼性の高いアフターサポートです。ZCare+は、デジタルプラットフォームを安全かつ最適化された状態に保ち、監視し、お客様が必要とする時に利用できるよう支援します。",
+
+    "proactive_monitoring": "予防的モニタリング",
+    "proactive_monitoring_para": "継続的な監視により、問題がビジネスへ影響を与える前に発見します。",
+    "routine_maintenance": "定期メンテナンス",
+    "routine_maintenance_para": "定期的な更新、最適化、システムチェックでWebサイトを安定して効率的に保ちます。",
+    "backup_recovery": "バックアップと復旧",
+    "backup_recovery_para": "復旧支援によりダウンタイムを最小限に抑え、事業継続性を維持します。",
+    "priority_technical_support": "優先技術サポート",
+    "priority_technical_support_para": "技術的な問題が発生した際には、専門チームによる迅速なサポートを受けられます。",
+    "enhanced_security": "強化されたセキュリティ",
+    "enhanced_security_para": "セキュリティ対策と監視により、潜在的な脅威からWebサイトを保護します。",
+    "reduced_costs": "ITコスト削減",
+    "reduced_costs_para": "専門サポートにより社内ITチームへの依存を軽減できます。",
+
+    "focus_growing": "ビジネスの成長に集中",
+    "focus_growing_para": "技術面は私たちが担当するため、お客様は顧客対応や成長に集中できます。",
+    "included_with": "対象プラン",
+    "included_premium": "プレミアム共有クラウド",
+    "included_dedicated": "専用クラウドサーバー",
+    "system_status": "システム状況",
+    "system_status_para": "すべてのシステム正常稼働中",
+    "uptime": "稼働率",
+    "cpu": "CPU",
+    "status": "ステータス",
+
+    "security_monitoring": "セキュリティ監視",
+    "protection_active": "保護有効"
+  },
+
   "inquiry": {
     "title": "一緒にプロジェクトを実現しましょう",
     "paragraph_1": "プロジェクトをお考えですか？",
