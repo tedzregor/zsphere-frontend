@@ -465,6 +465,26 @@ export default function Navbar() {
                 </button>
 
 
+                {/* Filipino */}
+                <button
+                  type="button"
+                  onClick={() => selectLanguage("TL")}
+                  className={`flex flex-col items-center gap-1 rounded-lg px-2 py-3 text-xs font-medium transition ${
+                    language === "TL"
+                      ? "bg-blue-600 text-white"
+                      : "bg-white/10 text-white/70 hover:bg-white/15"
+                  }`}
+                >
+                  <span className="text-xl">
+                    🇵🇭
+                  </span>
+
+                  <span>
+                    FILIPINO
+                  </span>
+                </button>
+
+
                 {/* Korean */}
                 <button
                   type="button"
