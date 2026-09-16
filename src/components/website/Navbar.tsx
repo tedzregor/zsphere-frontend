@@ -484,7 +484,6 @@ export default function Navbar() {
                   </span>
                 </button>
 
-
                 {/* Korean */}
                 <button
                   type="button"
