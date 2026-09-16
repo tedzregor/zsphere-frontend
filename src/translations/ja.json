@@ -225,6 +225,44 @@
     "deployment_description": "Webサイトを安全に公開し、信頼性の高いクラウドホスティング環境で運用できるようサポートします。"
   },
 
+  "server": {
+    "title": "私たちはサーバーを過負荷にしません",
+    "paragraph": "NVMeを採用した高性能ホスティングインフラ。妥協のない品質。",
+
+    "zsphere_server": "ZSphere サーバー",
+    "dedicated_resources": "専用リソース",
+    "dedicated_resources_para": "過剰販売や過剰割り当てなし",
+    "high_performance": "高性能",
+    "high_performance_para": "24時間安定した高速性能",
+    "low_latency": "低レイテンシ",
+    "low_latency_para": "最適化されたネットワークルーティング",
+    "enterprise_grade_para": "エンタープライズグレード",
+    "enterprise_grade": "プレミアムハードウェアとNVMeストレージ",
+    "99_uptime": "99.9% 稼働率",
+    "99_uptime_para": "信頼性が高く常時オンライン",
+
+    "generic_servcers": "一般的なサーバー",
+    "oversold_resources": "過剰販売されたリソース",
+    "oversold_resources_para": "1台のサーバーに多すぎる利用者",
+    "slow_performance": "低速なパフォーマンス",
+    "slow_performance_para": "遅延と不安定な速度",
+    "high_latency": "高レイテンシ",
+    "high_latency_para": "最適化されていないネットワーク",
+    "low_reliability": "低い信頼性",
+    "low_reliability_para": "古いハードウェア",
+    "frequent_downtime": "頻繁なダウンタイム",
+    "frequent_downtime_para": "サービス停止が発生",
+
+    "no_overloading": "過負荷なし",
+    "no_overloading_para": "サーバーごとの利用者数を制限",
+    "realtime_monitoring": "リアルタイム監視",
+    "realtime_monitoring_para": "24時間365日のサーバー監視",
+    "instant_scaling": "即時スケーリング",
+    "instant_scaling_para": "必要に応じてリソースを拡張",
+    "peace_of_mind": "安心感",
+    "peace_of_mind_para": "ビジネスに集中できます"
+  },
+
   "inquiry": {
     "title": "一緒にプロジェクトを実現しましょう",
     "paragraph_1": "プロジェクトをお考えですか？",
