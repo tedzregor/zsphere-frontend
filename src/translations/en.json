@@ -227,7 +227,176 @@
     
     "deployment" : "Deployment & Hosting",
     "deployment_description" : "We learn about your business, goals, audience, and requirements to create the right strategy for your website."
+  },
 
+  "server" : {
+    "title" : "We Never Overload our Servers",
+    "paragraph" : "High-performance hosting infrastructure powered by NVMe. No Compromises.",
+    
+    "zsphere_server" : "ZSphere Servers",
+    "dedicated_resources" : "Dedicated Resources",
+    "dedicated_resources_para" : "Never oversold or oversubscribed",
+    "high_performance" : "High Performance",
+    "high_performance_para" :  "Consistent speed, 24/7",
+    "low_latency" : "Low Lantency", 
+    "low_latency_para" : "Optimized network routing",
+    "enterprise_grade_para" : "Enterprise Grade",
+    "enterprise_grade" : "Premium hardware & NVMe storage",
+    "99_uptime" : "99.9% Uptime",
+    "99_uptime_para" : "Reliable. Always online.",
+
+    "generic_servcers" : "Generic Servers",
+    "oversold_resources" : "Oversold Resources",
+    "oversold_resources_para" : "Too many users per server",
+    "slow_performance" : "Slow Performance",
+    "slow_performance_para" : "Lag and inconsistent speed",
+    "high_latency" : "High Latency",
+    "high_latency_para" : "Poor network optimization",
+    "low_reliability" : "Low Reliability",
+    "low_reliability_para" : "Outdated hardware",
+    "frequent_downtime" : "Frequent Downtime",
+    "frequent_downtime_para" : "Service interruptions",
+    
+    "no_overloading" : "No Overloading",
+    "no_overloading_para" : "We limit users per server",
+    "realtime_monitoring" : "Real-Time Monitoring",
+    "realtime_monitoring_para" : "24/7 server health monitoring",
+    "instant_scaling" : "Instant Scaling",
+    "instant_scaling_para" : "Resources scale with your needs",
+    "peace_of_mind" : "Peace of Mind",
+    "peace_of_mind_para" : "Focus on your business"
+  },
+
+  "support" : {
+    "title" : "ZCare+ Support & Maintenance",
+    "paragraph_1" : "Reliable Support for",
+    "paragraph_1_1" : "Your Digital Platform",
+    "paragraph_2" : "Reliable after-sales support for your website and hosting. ZCare+ helps keep your digital platform secure, optimized, monitored, and available when your customers need it most.",
+    
+    "proactive_monitoring" : "Proactive Monitoring",
+    "proactive_monitoring_para" : "Continuous monitoring helps identify potential issues before they affect your business.",
+    "routine_maintenance" : "Routine Maintenance",
+    "routine_maintenance_para" : "Regular updates, optimization, and system checks keep your website stable and efficient.",
+    "backup_recovery" : "Backup & Recovery",
+    "backup_recovery_para" : "Recovery assistance helps minimize downtime and maintain business continuity.",
+    "priority_technical_support" : "Priority Technical Support",
+    "priority_technical_support_para" : "Get timely assistance from our technical team whenever technical concerns arise.",
+    "enhanced_security" : "Enhanced Security",
+    "enhanced_security_para" : "Security best practices and monitoring help protect your website against potential threats.",
+    "reduced_costs" : "Reduced IT Costs", 
+    "reduced_costs_para" : "Reduce the need for a dedicated in-house IT team with professional support.",
+
+    "focus_growing" : "Focus on Growing Your Business",
+    "focus_growing_para" : "We handle the technical responsibilities so you can focus on innovation, customers, and growth.",
+    "included_with" : "INCLUDED WITH",
+    "included_premium" : "Premium Shared Cloud",
+    "included_dedicated" : "Dedicated Cloud Server",
+    "system_status" : "System Status",
+    "system_status_para" : "All Systems Operational",
+    "uptime" : "UPTIME",
+    "cpu" : "CPU",
+    "status" : "status",
+
+    "security_monitoring" : "Security Monitoring",
+    "protection_active" : "Protection Active"
+
+  },
+
+  "inquiry" : {
+    "title" : "Let's Work Together",
+    "paragraph_1" : "Have a project in mind?",
+    "paragraph_2" : "Let's talk.",
+    "paragraph_3" : "Whether you need a new website, reliable hosting, cloud infrastructure, or ongoing technical support, our team is ready to help you find the right solution for your business.",
+
+    "email_us" : "EMAIL US",
+    "call_us" : "CALL US",
+    "support" : "SUPPORT",
+
+    "professional_support" : "Professional support",
+    "tailored_solutions" : "Tailored solutions",
+
+    "fast_response" : "Fast response",
+    "reliable_technology" : "Reliable Technology",
+
+    "send_inqury" : "SEND AN INQUIRY",
+    "tell_us" : "Tell us how we can help",
+    "fill_out" : "Fill out the form and our team will get back to you.",
+    "full_name" : "Full Name",
+    "your_name" : "Your name",
+    "email_address" : "Email Address",
+    "your_email_address" : "you@example.com",
+    "phone_number" : "Phone Number",
+    "optional" : "Optional",
+    "service" : "Service",
+    "select_service" : "Select a service",
+    "message" : "Message",
+    "message_tell_us" : "Tell us about your project, requirements, or questions...",
+    "send_message_button" : "Send Message",
+    "by_submitting" : "By submitting this form, you agree to be contacted by Zsphere Technologies regarding your inquiry."
+  },
+
+  "footer" : {
+    "technology_solutions" : "Technology solutions designed to help businesses build, manage, and grow their digital presence with confidence.",
+    
+    "company" : "COMPANY",
+    "about_us" : "About Us",
+    "company_services" : "Services",
+    "contact_us" : "Contact Us",
+    "blog" : "Blog",
+
+    "services" : "SERVICES",
+    "web_development" : "Web Development",
+    "web_hosting" : "Web Hosting",
+    "cloud_solutions" : "Cloud Solutions",
+    "zcare_support" : "ZCare+ Support",
+    
+    "resources" : "RESOURCES",
+    "support_center" : "Support Center",
+    "knowledge_base" : "Knowledge Base",
+    "get_support" : "Get Support",
+    "system_status" : "System Status",
+
+    "data_privacy" : "DATA PRIVACY",
+    "registered_with" : "Registered with the National Privacy Commission",
+
+    "we_accept" : "We Accept",
+    "secure_convenient" : "Secure and convenient payment options are available for our products, hosting services, and technology solutions.",
+
+    "all_rights" : "© 2026 Zsphere Technologies. All Rights Reserved.",
+
+    "terms_service" : "Terms of Service",
+    "privacy_policy" : "Privacy Policy",
+    "contact_us_2" : "Contact Us"
+  },
+
+  "modal" : {
+    "title" : "Submit Your Inquiry",
+    "paragraph" : "Fill out the form below and our team will get in touch with you.",
+    "service" : "SERVICE",
+    "price" : "PRICE",
+
+    "full_name" : "Full Name",
+    "your_fullname" : "Enter your full name",
+
+    "email_address" : "Email Address",
+    "your_email_address_" : "Enter your email address",
+    "contact_number" : "Phone Number",
+    "enter_contact_number" : "Enter your contact number",
+
+    "submit_button" : "Submit",
+
+    "inquiry_submitted" : "Inquiry Submitted!",
+    "submitted_paragraph_1" : "Thank you for your interest in",
+    "submitted_paragraph_2" : "Digital Advertising & Marketing.",
+
+    "received_paragaraph_1" : "We have received your inquiry and our team will review your request. We will contact you within",
+    "recevied_paragarahp_2" : "24 hours",
+    "recevied_paragarahp_3" : "using the contact information you provided.",
+
+    "received_service" : "Service",
+    "received_price" : "Price",
+
+    "done_button" : "Done"
   }
 
 }

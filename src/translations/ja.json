@@ -223,5 +223,102 @@
 
     "deployment": "公開・ホスティング",
     "deployment_description": "Webサイトを安全に公開し、信頼性の高いクラウドホスティング環境で運用できるようサポートします。"
+  },
+
+  "inquiry": {
+    "title": "一緒にプロジェクトを実現しましょう",
+    "paragraph_1": "プロジェクトをお考えですか？",
+    "paragraph_2": "ぜひご相談ください。",
+    "paragraph_3": "新しいWebサイト、信頼性の高いホスティング、クラウドインフラ、または継続的な技術サポートが必要な場合でも、最適なソリューションをご提案いたします。",
+
+    "email_us": "メールでお問い合わせ",
+    "call_us": "お電話でお問い合わせ",
+    "support": "サポート",
+
+    "professional_support": "プロフェッショナルサポート",
+    "tailored_solutions": "信頼できるテクノロジー",
+
+    "fast_response": "迅速な対応",
+    "reliable_technology": "信頼できるテクノロジー",
+
+    "send_inqury": "お問い合わせを送信",
+    "tell_us": "どのようにお手伝いできるかお聞かせください",
+    "fill_out": "フォームにご記入いただければ、担当チームよりご連絡いたします。",
+    "full_name": "氏名",
+    "your_name": "お名前を入力してください",
+    "email_address": "メールアドレス",
+    "your_email_address": "you@example.com",
+    "phone_number": "電話番号",
+    "optional": "任意",
+    "service": "サービス",
+    "select_service": "サービスを選択",
+    "message": "メッセージ",
+    "message_tell_us": "プロジェクト、要件、ご質問についてお聞かせください...",
+    "send_message_button": "メッセージを送信",
+    "by_submitting": "このフォームを送信することで、お問い合わせに関して Zsphere Technologies から連絡を受けることに同意したものとみなされます。"
+  },
+
+  "footer": {
+    "technology_solutions": "企業が安心してデジタルプレゼンスを構築・管理・成長できるよう支援するテクノロジーソリューションです。",
+
+    "company": "会社情報",
+    "about_us": "会社概要",
+    "company_services": "サービス",
+    "contact_us": "お問い合わせ",
+    "blog": "ブログ",
+
+    "services": "サービス",
+    "web_development": "Web開発",
+    "web_hosting": "Webホスティング",
+    "cloud_solutions": "クラウドソリューション",
+    "zcare_support": "ZCare+ サポート",
+
+    "resources": "リソース",
+    "support_center": "サポートセンター",
+    "knowledge_base": "ナレッジベース",
+    "get_support": "サポートを受ける",
+    "system_status": "システム状況",
+
+    "data_privacy": "データプライバシー",
+    "registered_with": "国家プライバシー委員会（NPC）登録済み",
+
+    "we_accept": "お支払い方法",
+    "secure_convenient": "製品、ホスティングサービス、テクノロジーソリューション向けに安全で便利なお支払い方法をご利用いただけます。",
+
+    "all_rights": "© 2026 Zsphere Technologies. All Rights Reserved.",
+
+    "terms_service": "利用規約",
+    "privacy_policy": "プライバシーポリシー",
+    "contact_us_2": "お問い合わせ"
+  },
+
+  "modal": {
+    "title": "お問い合わせを送信",
+    "paragraph": "以下のフォームにご入力いただければ、担当チームよりご連絡いたします。",
+    "service": "サービス",
+    "price": "料金",
+
+    "full_name": "氏名",
+    "your_fullname": "氏名を入力してください",
+
+    "email_address": "メールアドレス",
+    "your_email_address_": "メールアドレスを入力してください",
+    "enter_contact_number": "電話番号を入力してください",
+    "contact_number": "電話番号",
+
+    "submit_button": "送信",
+
+    "inquiry_submitted": "お問い合わせを受け付けました！",
+    "submitted_paragraph_1": "ご関心をお寄せいただきありがとうございます：",
+    "submitted_paragraph_2": "デジタル広告・マーケティング",
+
+    "received_paragaraph_1": "お問い合わせを受け付けました。内容を確認のうえ、",
+    "recevied_paragarahp_2": "24時間以内に",
+    "recevied_paragarahp_3": "ご提供いただいた連絡先へご連絡いたします。",
+
+    "received_service": "サービス",
+    "received_price": "料金",
+
+    "done_button": "完了"
   }
 }

@@ -3,7 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function Footer() {
+    
+  const { t } = useLanguage();
+
   return (
     <footer className="w-full bg-[#061633] text-white">
 
@@ -34,8 +39,7 @@ export default function Footer() {
             </Link>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-blue-100/60">
-              Technology solutions designed to help businesses build,
-              manage, and grow their digital presence with confidence.
+              {t("footer.technology_solutions")}
             </p>
 
 
@@ -130,7 +134,7 @@ export default function Footer() {
           <div>
 
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Company
+              {t("footer.company")}
             </h3>
 
             <div className="mt-5 h-0.5 w-7 bg-blue-500" />
@@ -142,7 +146,7 @@ export default function Footer() {
                   href="#about-us"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  About Us
+                  {t("footer.about_us")}
                 </Link>
               </li>
 
@@ -151,7 +155,7 @@ export default function Footer() {
                   href="#services"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Services
+                  {t("footer.company_services")}
                 </Link>
               </li>
 
@@ -160,7 +164,7 @@ export default function Footer() {
                   href="#inquire-now"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Contact Us
+                  {t("footer.contact_us")}
                 </Link>
               </li>
 
@@ -169,7 +173,7 @@ export default function Footer() {
                   href="#blog"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Blog
+                  {t("footer.blog")}
                 </Link>
               </li>
 
@@ -184,7 +188,7 @@ export default function Footer() {
           <div>
 
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Services
+              {t("footer.services")}
             </h3>
 
             <div className="mt-5 h-0.5 w-7 bg-blue-500" />
@@ -196,7 +200,7 @@ export default function Footer() {
                   href="#website-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Web Development
+                  {t("footer.web_development")}
                 </Link>
               </li>
 
@@ -205,7 +209,7 @@ export default function Footer() {
                   href="#hosting-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Web Hosting
+                  {t("footer.web_hosting")}
                 </Link>
               </li>
 
@@ -214,7 +218,7 @@ export default function Footer() {
                   href="#hosting-pricing"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Cloud Solutions
+                  {t("footer.cloud_solutions")}
                 </Link>
               </li>
 
@@ -223,7 +227,7 @@ export default function Footer() {
                   href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  ZCare+ Support
+                  {t("footer.zcare_support")}
                 </Link>
               </li>
 
@@ -238,7 +242,7 @@ export default function Footer() {
           <div>
 
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Resources
+              {t("footer.resources")}
             </h3>
 
             <div className="mt-5 h-0.5 w-7 bg-blue-500" />
@@ -250,7 +254,7 @@ export default function Footer() {
                   href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Support Center
+                  {t("footer.support_center")}
                 </Link>
               </li>
 
@@ -259,7 +263,7 @@ export default function Footer() {
                   href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Knowledge Base
+                  {t("footer.knowledge_base")}
                 </Link>
               </li>
 
@@ -268,7 +272,7 @@ export default function Footer() {
                   href="#zcare-support"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  Get Support
+                  {t("footer.get_support")}
                 </Link>
               </li>
 
@@ -277,7 +281,7 @@ export default function Footer() {
                   href="#zsphere-server"
                   className="text-sm text-blue-100/60 transition hover:text-white"
                 >
-                  System Status
+                  {t("footer.system_status")}
                 </Link>
               </li>
 
@@ -291,7 +295,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-end">
 
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              DATA PRIVACY
+                {t("footer.data_privacy")}
             </h3>
 
             <div className="mt-5 h-0.5 w-7 bg-blue-500" />
@@ -307,7 +311,7 @@ export default function Footer() {
             </div> */}
 
             <p className="mt-3 text-center text-xs leading-5 text-blue-100/60 lg:text-right">
-              Registered with the National Privacy Commission
+              {t("footer.registered_with")}
             </p>
 
           </div>
@@ -329,7 +333,7 @@ export default function Footer() {
           <div>
 
             <p className="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">
-              We Accept
+             {t("footer.we_accept")}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -396,9 +400,7 @@ export default function Footer() {
           <div className="max-w-sm">
 
             <p className="text-sm leading-6 text-blue-100/50">
-              Secure and convenient payment options are available
-              for our products, hosting services, and technology
-              solutions.
+              {t("footer.secure_convenient")}
             </p>
 
           </div>
@@ -419,7 +421,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-blue-100/50">
-            © 2026 Zsphere Technologies. All Rights Reserved.
+            {t("footer.all_rights")}
           </p>
 
 
@@ -430,21 +432,21 @@ export default function Footer() {
               href="#"
               className="text-blue-100/50 transition hover:text-white"
             >
-              Terms of Service
+              {t("footer.terms_service")}
             </Link>
 
             <Link
               href="#"
               className="text-blue-100/50 transition hover:text-white"
             >
-              Privacy Policy
+              {t("footer.privacy_policy")}
             </Link>
 
             <Link
               href="#inquire-now"
               className="text-blue-100/50 transition hover:text-white"
             >
-              Contact Us
+              {t("footer.contact_us_2")}
             </Link>
 
           </div>

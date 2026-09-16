@@ -16,6 +16,8 @@ import {
   AlertCircle,
 } from "lucide-react";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function InquirySection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -29,6 +31,8 @@ export default function InquirySection() {
   const [submitError, setSubmitError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { t } = useLanguage();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -163,17 +167,17 @@ export default function InquirySection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-blue-600">
               <span className="h-2 w-2 rounded-full bg-blue-600" />
-              Let's Work Together
+              {t("inquiry.title")}
             </div>
 
 
             {/* Heading */}
             <h2 className="mt-6 max-w-xl text-4xl font-bold leading-tight tracking-tight text-[#101828] md:text-5xl lg:text-6xl">
 
-              Have a project in mind?
+              {t("inquiry.paragraph_1")}
 
               <span className="block text-blue-600">
-                Let's talk.
+                {t("inquiry.paragraph_2")}
               </span>
 
             </h2>
@@ -181,9 +185,7 @@ export default function InquirySection() {
 
             {/* Description */}
             <p className="mt-6 max-w-xl text-base leading-7 text-gray-500 md:text-lg">
-              Whether you need a new website, reliable hosting, cloud
-              infrastructure, or ongoing technical support, our team is
-              ready to help you find the right solution for your business.
+              {t("inquiry.paragraph_3")}
             </p>
 
 
@@ -201,7 +203,7 @@ export default function InquirySection() {
 
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Email Us
+                    {t("inquiry.email_us")}
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-[#101828]">
@@ -221,7 +223,7 @@ export default function InquirySection() {
 
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Call Us
+                    {t("inquiry.call_us")}
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-[#101828]">
@@ -241,7 +243,7 @@ export default function InquirySection() {
 
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Support
+                    {t("inquiry.support")}
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-[#101828]">
@@ -263,22 +265,22 @@ export default function InquirySection() {
 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle2 className="h-4 w-4 text-blue-600" />
-                  Professional support
+                  {t("inquiry.professional_support")}
                 </div>
 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle2 className="h-4 w-4 text-blue-600" />
-                  Fast response
+                  {t("inquiry.fast_response")}
                 </div>
 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle2 className="h-4 w-4 text-blue-600" />
-                  Tailored solutions
-                </div>
+                  {t("inquiry.tailored_solutions")}
+                </div> 
 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle2 className="h-4 w-4 text-blue-600" />
-                  Reliable technology
+                  {t("inquiry.reliable_technology")}
                 </div>
 
               </div>
@@ -306,15 +308,15 @@ export default function InquirySection() {
               <div className="mb-8">
 
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-blue-600">
-                  Send an Inquiry
+                  {t("inquiry.send_inqury")}
                 </p>
 
                 <h3 className="mt-2 text-2xl font-bold text-[#101828] md:text-3xl">
-                  Tell us how we can help
+                  {t("inquiry.tell_us")}
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-gray-500">
-                  Fill out the form and our team will get back to you.
+                  {t("inquiry.fill_out")}
                 </p>
 
               </div>
@@ -384,7 +386,7 @@ export default function InquirySection() {
                       htmlFor="name"
                       className="mb-2 block text-sm font-semibold text-[#101828]"
                     >
-                      Full Name
+                      {t("inquiry.full_name")}
                     </label>
 
                     <input
@@ -394,7 +396,7 @@ export default function InquirySection() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your name"
+                      placeholder={t("inquiry.your_name")}
                       disabled={isSubmitting}
                       className={`w-full rounded-xl border bg-gray-50 px-4 py-3.5 text-sm text-[#101828] outline-none transition placeholder:text-gray-400 focus:bg-white focus:ring-4 focus:ring-blue-500/10 disabled:cursor-not-allowed disabled:opacity-60 ${
                         getFieldError("name")
@@ -419,7 +421,7 @@ export default function InquirySection() {
                       htmlFor="email"
                       className="mb-2 block text-sm font-semibold text-[#101828]"
                     >
-                      Email Address
+                      {t("inquiry.email_address")}
                     </label>
 
                     <input
@@ -429,7 +431,7 @@ export default function InquirySection() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="you@example.com"
+                      placeholder= {t("inquiry.your_email_address")}
                       disabled={isSubmitting}
                       className={`w-full rounded-xl border bg-gray-50 px-4 py-3.5 text-sm text-[#101828] outline-none transition placeholder:text-gray-400 focus:bg-white focus:ring-4 focus:ring-blue-500/10 disabled:cursor-not-allowed disabled:opacity-60 ${
                         getFieldError("email")
@@ -461,10 +463,10 @@ export default function InquirySection() {
                       htmlFor="phone"
                       className="mb-2 block text-sm font-semibold text-[#101828]"
                     >
-                      Phone Number
+                      {t("inquiry.phone_number")}
 
                       <span className="ml-1 font-normal text-gray-400">
-                        (Optional)
+                        ({t("inquiry.optional")})
                       </span>
                     </label>
 
@@ -499,7 +501,7 @@ export default function InquirySection() {
                       htmlFor="service"
                       className="mb-2 block text-sm font-semibold text-[#101828]"
                     >
-                      Service
+                      {t("inquiry.service")}
                     </label>
 
                     <select
@@ -517,7 +519,7 @@ export default function InquirySection() {
                     >
 
                       <option value="">
-                        Select a service
+                          {t("inquiry.select_service")}
                       </option>
 
                       <option value="web-development">
@@ -562,7 +564,7 @@ export default function InquirySection() {
                     htmlFor="message"
                     className="mb-2 block text-sm font-semibold text-[#101828]"
                   >
-                    Message
+                    {t("inquiry.message")}
                   </label>
 
                   <textarea
@@ -572,7 +574,7 @@ export default function InquirySection() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your project, requirements, or questions..."
+                    placeholder={t("inquiry.message_tell_us")}
                     disabled={isSubmitting}
                     className={`w-full resize-none rounded-xl border bg-gray-50 px-4 py-3.5 text-sm leading-6 text-[#101828] outline-none transition placeholder:text-gray-400 focus:bg-white focus:ring-4 focus:ring-blue-500/10 disabled:cursor-not-allowed disabled:opacity-60 ${
                       getFieldError("message")
@@ -606,7 +608,7 @@ export default function InquirySection() {
                     </>
                   ) : (
                     <>
-                      Send Message
+                      {t("inquiry.send_message_button")}
 
                       <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </>
@@ -617,8 +619,7 @@ export default function InquirySection() {
 
                 {/* Privacy */}
                 <p className="text-center text-xs leading-5 text-gray-400">
-                  By submitting this form, you agree to be contacted by
-                  Zsphere Technologies regarding your inquiry.
+                  {t("inquiry.by_submitting")}
                 </p>
 
               </form>

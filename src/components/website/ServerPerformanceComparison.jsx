@@ -18,84 +18,9 @@ import {
 
 import ElectricBorder from '@/components/ElectricBorder';
 
-const zSphereFeatures = [
-  {
-    title: "Dedicated Resources",
-    description: "Never oversold or oversubscribed",
-    icon: ShieldCheck,
-  },
-  {
-    title: "High Performance",
-    description: "Consistent speed, 24/7",
-    icon: Gauge,
-  },
-  {
-    title: "Low Latency",
-    description: "Optimized network routing",
-    icon: Network,
-  },
-  {
-    title: "Enterprise Grade",
-    description: "Premium hardware & NVMe storage",
-    icon: Server,
-  },
-  {
-    title: "99.9% Uptime",
-    description: "Reliable. Always online.",
-    icon: Clock3,
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
-const genericFeatures = [
-  {
-    title: "Oversold Resources",
-    description: "Too many users per server",
-    icon: UsersRound,
-  },
-  {
-    title: "Slow Performance",
-    description: "Lag and inconsistent speed",
-    icon: CircleAlert,
-  },
-  {
-    title: "High Latency",
-    description: "Poor network optimization",
-    icon: WifiOff,
-  },
-  {
-    title: "Low Reliability",
-    description: "Outdated hardware",
-    icon: TriangleAlert,
-  },
-  {
-    title: "Frequent Downtime",
-    description: "Service interruptions",
-    icon: PowerOff,
-  },
-];
 
-const bottomFeatures = [
-  {
-    title: "No Overloading",
-    description: "We limit users per server",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Real-Time Monitoring",
-    description: "24/7 server health monitoring",
-    icon: Activity,
-  },
-  {
-    title: "Instant Scaling",
-    description: "Resources scale with your needs",
-    icon: Maximize,
-  },
-  {
-    title: "Peace of Mind",
-    description: "Focus on your business",
-    icon: ChartNoAxesCombined,
-  },
-];
 
 function ServerFeatureCard({ feature, variant }) {
   const Icon = feature.icon;
@@ -158,6 +83,88 @@ function BottomFeatureCard({ feature }) {
 }
 
 export default function ServerPerformanceComparison() {
+
+  const { t } = useLanguage();
+
+  const zSphereFeatures = [
+    {
+      title: t("server.dedicated_resources"),
+      description: t("server.dedicated_resources_para"),
+      icon: ShieldCheck,
+    },
+    {
+      title: t("server.high_performance"),
+      description: t("server.high_performance_para"),
+      icon: Gauge,
+    },
+    {
+      title: t("server.low_latency"),
+      description: t("server.low_latency_para"),
+      icon: Network,
+    },
+    {
+      title: t("server.enterprise_grade_para"),
+      description: t("server.enterprise_grade"),
+      icon: Server,
+    },
+    {
+      title: t("server.99_uptime"),
+      description: t("server.99_uptime_para"),
+      icon: Clock3,
+    },
+  ];
+
+  const genericFeatures = [
+    {
+      title: t("server.oversold_resources"),
+      description: t("server.oversold_resources_para"),
+      icon: UsersRound,
+    },
+    {
+      title: t("server.slow_performance"),
+      description: t("server.slow_performance_para"),
+      icon: CircleAlert,
+    },
+    {
+      title: t("server.high_latency"),
+      description: t("server.high_latency_para"),
+      icon: WifiOff,
+    },
+    {
+      title: t("server.low_reliability"),
+      description: t("server.low_reliability_para"),
+      icon: TriangleAlert,
+    },
+    {
+      title: t("server.frequent_downtime"),
+      description: t("server.frequent_downtime_para"),
+      icon: PowerOff,
+    },
+  ];
+
+  const bottomFeatures = [
+    {
+      title: t("server.no_overloading"),
+      description: t("server.no_overloading_para"),
+      icon: ShieldCheck,
+    },
+    {
+      title: t("server.realtime_monitoring"),
+      description: t("server.realtime_monitoring_para"),
+      icon: Activity,
+    },
+    {
+      title: t("server.instant_scaling"),
+      description: t("server.instant_scaling_para"),
+      icon: Maximize,
+    },
+    {
+      title: t("server.peace_of_mind"),
+      description: t("server.peace_of_mind_para"),
+      icon: ChartNoAxesCombined,
+    },
+  ];
+
   return (
     <section
       id="server-performance"
@@ -213,12 +220,12 @@ export default function ServerPerformanceComparison() {
                 style={{ margin: "6px 0 0", opacity: 0.8 }}
                 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
               >
-                We Never Overload our Servers
+                 
+                {t("server.title")}
               </h2>
 
               <p className="mt-3 text-sm text-gray-400 sm:text-base md:text-lg">
-                High-performance hosting infrastructure powered by NVMe. No
-                Compromises.
+                {t("server.paragraph")}
               </p>
             </div>
           </ElectricBorder>

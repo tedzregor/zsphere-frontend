@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   const selectLanguage = (
-    language: "EN" | "KO" | "JA"
+    language: "EN" | "KO" | "JA" | "TL"
   ) => {
     setLanguage(language);
     setLanguageOpen(false);
@@ -244,7 +244,31 @@ export default function Navbar() {
                   )}
 
                 </button>
+                
+                {/* Filipino */}
+                <button
+                  type="button"
+                  onClick={() => selectLanguage("TL")}
+                  className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition hover:bg-blue-50 ${
+                    language === "TL"
+                      ? "font-semibold text-blue-600"
+                      : "text-gray-700"
+                  }`}
+                >
+                  <span className="text-lg leading-none">
+                    🇵🇭
+                  </span>
 
+                  <span className="flex-1">
+                    Filipino
+                  </span>
+
+                  {language === "TL" && (
+                    <span className="text-blue-600">
+                      ✓
+                    </span>
+                  )}
+                </button>
 
                 {/* Korean */}
                 <button

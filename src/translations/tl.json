@@ -1,0 +1,415 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Mga Serbisyo",
+        "about": "Tungkol sa Amin",
+        "contact": "Makipag-ugnayan",
+        "get_in_touch": "Makipag-ugnayan sa Amin",
+        "language": "Wika",
+        "follow_us": "Sundan Kami"
+    },
+
+    "hero": {
+        "title": "Build. Host. Scale.",
+        "get_started": "Magsimula Na",
+        "paragraph_1": "Nagbibigay kami ng technology solutions na kailangan ng iyong negosyo para lumago.",
+        "paragraph_2": "Mula sa custom website at mobile development hanggang sa hosting, deployment, at infrastructure."
+    },
+
+    "services": {
+        "title_1": "Website & Mobile Development",
+        "description_1": "Modern, responsive, at high-performance applications na ginawa para makatulong sa iyong negosyo na magkaroon ng malakas na online presence at gawing customers ang mga website visitors.",
+
+        "title_2": "Shared NVMe Cloud Hosting",
+        "description_2": "Reliable cloud hosting na may NVMe storage, automated backups, enterprise-grade security, at scalable resources sa abot-kayang presyo.",
+
+        "title_3": "Dedicated Cloud Server",
+        "description_3": "High-performance dedicated cloud servers na dinisenyo para sa enterprise applications, databases, ERP systems, at mission-critical workloads.",
+
+        "title_4": "Digital Advertising & Marketing",
+        "description_4": "Data-driven digital marketing strategies na tumutulong sa iyong negosyo na maabot ang tamang audience, mapalakas ang brand awareness, at makakuha ng mas maraming leads at conversions.",
+
+        "title_5": "Point of Sale (POS)",
+        "description_5": "Smart at reliable POS solutions na ginawa para mas mapadali ang sales, inventory management, reporting, at araw-araw na business operations.",
+
+        "title_6": "Branding & Design",
+        "description_6": "Creative branding at design solutions na tumutulong bumuo ng strong visual identity at gawing mas kapansin-pansin ang iyong negosyo sa digital at traditional platforms.",
+
+        "view_pricing": "Tingnan ang Presyo",
+        "inquire_now": "Magtanong Ngayon"
+
+    },
+
+    "web_pricing": {
+        "title": "Mga Website Pricing Plan",
+        "paragraph_1": "Piliin ang Tamang Website para sa Iyong Negosyo",
+        "paragraph_2": "Professional websites na ginawa para makatulong sa iyong negosyo na magkaroon ng online presence, mapamahalaan ang content, at lumago online.",
+
+        "plans": {
+            "standard_title": "Standard Website",
+            "standard_description": "Professional website solution para sa mga negosyong nangangailangan ng modernong online presence.",
+            "standard_price": "₱19,998",
+            "standard_note": "One-time website development",
+            "standard_buy_button": "Bumili Ngayon",
+            "standard_whats_included": "Kasama sa package:",
+            "standard_included_1": "25 GB NVMe Storage Allocation",
+            "standard_included_2": "Responsive & Mobile-Friendly Design",
+            "standard_included_3": "SEO-Ready Website Structure",
+            "standard_included_4": "Google Analytics Integration",
+            "standard_included_5": "Google Maps Integration",
+            "standard_included_6": "Custom-Built CMS",
+            "standard_included_7": "5 Starting Pages Ready (Home, About, Services, Contact, News)",
+            "standard_included_8": "Content Management",
+            "standard_included_9": "Electronic Inquiry Form",
+            "standard_included_10": "Premium Control Panel",
+            "standard_included_11": "Kasama ang Database",
+            "standard_included_12": "Libreng SSL Certificate — 1 Taon",
+            "standard_included_13": "Libreng Domain Registration — 1 Taon",
+            "standard_included_14": "Libreng Hosting — 1 Taon",
+            "standard_included_15": "Maraming Professional Email Accounts*",
+            "standard_included_16": "Walang Setup Fee",
+            "standard_included_17": "24/7 Expert Support",
+
+            "ecom_title": "E-commerce Website",
+            "most_popular": "Pinaka-Patok",
+            "ecom_description": "Professional e-commerce website solution para sa mga negosyong gustong magbenta ng products at tumanggap ng online payments.",
+            "ecom_price": "₱54,998",
+            "ecom_note": "One-time website development",
+            "ecom_buy_button": "Bumili Ngayon",
+            "ecom_whats_included": "Kasama sa package:",
+            "ecom_included_1": "50 GB NVMe Storage Allocation",
+            "ecom_included_2": "Responsive & Mobile-Friendly Design",
+            "ecom_included_3": "SEO-Ready Website Structure",
+            "ecom_included_4": "Google Analytics Integration",
+            "ecom_included_5": "Google Maps Integration",
+            "ecom_included_6": "Custom-Built CMS",
+            "ecom_included_features": "E-Commerce Features",
+            "ecom_included_7": "Product Catalog & Product Details",
+            "ecom_included_8": "Category & Product Management",
+            "ecom_included_9": "Inventory Management",
+            "ecom_included_10": "Shopping Cart",
+            "ecom_included_11": "Checkout System",
+            "ecom_included_12": "Payment Gateway Integration",
+            "ecom_included_13": "Customer Account Management",
+            "ecom_included_14": "Customer Management",
+            "ecom_included_15": "Order Management",
+            "ecom_included_16": "Sales Transaction Manager",
+            "ecom_included_17": "Sales Reports & Analytics",
+            "ecom_included_18": "Electronic Inquiry Form",
+            "ecom_included_19": "Premium Control Panel",
+            "ecom_included_20": "Kasama ang Database",
+            "ecom_included_21": "Libreng SSL Certificate — 1 Taon",
+            "ecom_included_22": "Libreng Hosting — 1 Taon",
+            "ecom_included_23": "Maraming Professional Email Accounts*",
+            "ecom_included_24": "Walang Setup Fee",
+            "ecom_included_25": "24/7 Expert Support",
+            "ecom_included_26": "ZCare+ Support at Maintenance",
+            "ecom_included_free_domain": "Libreng Domain Registration — 1 Taon",
+            "why_this_plan": "Bakit ito ang plan?",
+            "why_this_plan_answer": "Complete solution para sa mga negosyong handa nang magbenta ng products at tumanggap ng online payments.",
+
+            "custom_title": "Customized Premium Website",
+            "custom_description": "Tailored website solutions na naka-customize ayon sa functionality, design, at business requirements ng iyong negosyo.",
+            "custom_price": "Custom",
+            "custom_buy_button": "Magtanong Ngayon",
+            "custom_notes": "Ang presyo ay depende sa requirements",
+            "custom_whats_included": "Kasama sa package:",
+            "custom_included_1": "Custom NVMe Storage Allocation",
+            "custom_included_2": "Responsive & Mobile-Friendly Design",
+            "custom_included_3": "SEO-Ready Website Structure",
+            "custom_included_4": "Google Analytics Integration",
+            "custom_included_5": "Google Maps Integration",
+            "custom_included_6": "Custom-Built CMS",
+            "custom_included_7": "Customized Admin Panel",
+            "custom_included_8": "Custom-Designed Web Pages",
+            "custom_included_9": "Advanced Features & Functionality",
+            "custom_included_10": "Kasama ang Database",
+            "custom_included_11": "Premium Control Panel",
+            "custom_included_12": "Libreng SSL Certificate — 1 Taon",
+            "custom_included_13": "Libreng Domain Registration — 1 Taon",
+            "custom_included_14": "Libreng Hosting — 1 Taon",
+            "custom_included_15": "Maraming Professional Email Accounts*",
+            "custom_included_16": "Walang Setup Fee",
+            "custom_included_17": "Libreng ZCare+ Support & Maintenance",
+
+            "web_pricing_notes": "* Ang professional email accounts ay depende sa available storage capacity. Libre ang domain, hosting, at SSL sa unang taon."
+        }
+    },
+
+    "hosting_pricing": {
+        "title": "Hosting Plans",
+        "paragraph_1": "I-launch ang Iyong Website gamit ang High-Performance Cloud Hosting",
+        "paragraph_2": "Fast, secure, at reliable cloud hosting solutions na ginawa para manatiling online, protected, at ready lumago ang iyong website kasama ng iyong negosyo.",
+
+        "plans": {
+            "basic_shared_title": "Basic Shared Cloud",
+            "basic_shared_description": "Affordable cloud hosting para sa startups, portfolios, at small business websites.",
+            "basic_shared_price": "₱8,998",
+            "basic_shared_note": "Annual subscription",
+            "basic_shared_buy_button": "Bumili Ngayon",
+            "basic_shared_included_1": "15 GB NVMe Storage Allocation",
+            "basic_shared_included_2": "500 GB Monthly Bandwidth Capacity",
+            "basic_shared_included_3": "1 Libreng Hosted Domain Name",
+            "basic_shared_included_4": "Easy-to-Use Control Panel Access",
+            "basic_shared_included_5": "Built-In Mailing List Integration",
+            "basic_shared_included_6": "Maraming Email Accounts",
+            "basic_shared_included_7": "Libreng MySQL Database",
+            "basic_shared_included_8": "Walang Setup Fee",
+            "basic_shared_included_9": "Libreng Backup Service",
+            "basic_shared_included_10": "24/7 Technical Support",
+
+            "business_shared_title": "Business Shared Cloud",
+            "business_shared_description": "Ideal para sa mga lumalaking negosyo na nangangailangan ng mas malaking storage at bandwidth.",
+            "business_shared_price": "₱14,998",
+            "business_shared_note": "Annual subscription",
+            "business_shared_buy_button": "Bumili Ngayon",
+            "business_shared_included_1": "25 GB NVMe Storage Allocation",
+            "business_shared_included_2": "1 TB Monthly Bandwidth Capacity",
+            "business_shared_included_3": "1 Libreng Hosted Domain Name",
+            "business_shared_included_4": "Easy-to-Use Control Panel Access",
+            "business_shared_included_5": "Built-In Mailing List Integration",
+            "business_shared_included_6": "Maraming Email Accounts",
+            "business_shared_included_7": "Libreng MySQL Database",
+            "business_shared_included_8": "Walang Setup Fee",
+            "business_shared_included_9": "Libreng Backup Service",
+            "business_shared_included_10": "24/7 Technical Support",
+
+            "premium_shared_title": "Premium Shared Cloud",
+            "most_popular": "Pinaka-Patok",
+            "premium_shared_description": "Enhanced hosting na may maintenance support para sa mga lumalaking online businesses.",
+            "premium_shared_price": "₱49,998",
+            "premium_shared_note": "Annual subscription",
+            "premium_shared_buy_button": "Bumili Ngayon",
+            "premium_shared_included_1": "50 GB NVMe Storage Allocation",
+            "premium_shared_included_2": "1 TB Monthly Bandwidth Capacity",
+            "premium_shared_included_3": "1 Libreng Hosted Domain Name",
+            "premium_shared_included_4": "Easy-to-Use Control Panel Access",
+            "premium_shared_included_5": "Built-In Mailing List Integration",
+            "premium_shared_included_6": "Maraming Email Accounts",
+            "premium_shared_included_7": "Libreng MySQL Database",
+            "premium_shared_included_8": "Walang Setup Fee",
+            "premium_shared_included_9": "Libreng Backup Service",
+            "premium_shared_included_10": "24/7 Technical Support",
+            "premium_shared_included_11": "ZCare+ Support at Maintenance",
+
+            "dedicated_title": "Dedicated Cloud Server",
+            "dedicated_description": "Enterprise-grade cloud infrastructure na naka-tailor ayon sa requirements ng iyong negosyo.",
+            "dedicated_price": "Custom",
+            "dedicated_note": "Annual subscription",
+            "dedicated_buy_button": "Magtanong Ngayon",
+            "dedicated_included_1": "Custom NVMe Storage Allocation",
+            "dedicated_included_2": "Custom CPU Allocation",
+            "dedicated_included_3": "Custom RAM Allocation",
+            "dedicated_included_4": "3 Available na Domains",
+            "dedicated_included_5": "1 TB Monthly Bandwidth Capacity",
+            "dedicated_included_6": "1 Libreng Hosted Domain Name",
+            "dedicated_included_7": "Easy-to-Use Control Panel Access",
+            "dedicated_included_8": "Built-In Mailing List Integration",
+            "dedicated_included_9": "Maraming Email Accounts",
+            "dedicated_included_10": "Libreng MySQL Database",
+            "dedicated_included_11": "Walang Setup Fee",
+            "dedicated_included_12": "Libreng Backup Service",
+            "dedicated_included_13": "24/7 Technical Support",
+            "dedicated_included_14": "ZCare+ Support at Maintenance"
+        }
+    },
+
+    "development_process": {
+        "title": "ANG AMING PROSESO",
+        "paragraph": "Paano Namin Binubuo ang Iyong Website",
+
+        "consultation": "Consultation",
+        "consultation_description": "Inaalam namin ang tungkol sa iyong negosyo, goals, target audience, at requirements para makagawa ng tamang strategy para sa iyong website.",
+
+        "development": "Design & Development",
+        "development_description": "Inaalam namin ang tungkol sa iyong negosyo, goals, target audience, at requirements para makagawa ng tamang strategy para sa iyong website.",
+
+        "deployment": "Deployment & Hosting",
+        "deployment_description": "Inaalam namin ang tungkol sa iyong negosyo, goals, target audience, at requirements para makagawa ng tamang strategy para sa iyong website."
+    },
+
+    "server": {
+        "title": "Hindi Namin Sine-saturate ang Aming Servers",
+        "paragraph": "High-performance hosting infrastructure na powered by NVMe. Walang Compromise.",
+
+        "zsphere_server": "ZSphere Servers",
+        "dedicated_resources": "Dedicated Resources",
+        "dedicated_resources_para": "Hindi oversold o oversubscribed",
+        "high_performance": "High Performance",
+        "high_performance_para": "Consistent na speed, 24/7",
+        "low_latency": "Low Latency",
+        "low_latency_para": "Optimized network routing",
+        "enterprise_grade_para": "Enterprise Grade",
+        "enterprise_grade": "Premium hardware & NVMe storage",
+        "99_uptime": "99.9% Uptime",
+        "99_uptime_para": "Reliable. Laging online.",
+
+        "generic_servcers": "Generic Servers",
+        "oversold_resources": "Oversold Resources",
+        "oversold_resources_para": "Masyadong maraming users sa isang server",
+        "slow_performance": "Mabagal na Performance",
+        "slow_performance_para": "Lag at hindi consistent na speed",
+        "high_latency": "High Latency",
+        "high_latency_para": "Mahinang network optimization",
+        "low_reliability": "Mababang Reliability",
+        "low_reliability_para": "Luma o outdated na hardware",
+        "frequent_downtime": "Madalas na Downtime",
+        "frequent_downtime_para": "Mga service interruption",
+
+        "no_overloading": "Walang Overloading",
+        "no_overloading_para": "Nililimitahan namin ang users bawat server",
+        "realtime_monitoring": "Real-Time Monitoring",
+        "realtime_monitoring_para": "24/7 server health monitoring",
+        "instant_scaling": "Instant Scaling",
+        "instant_scaling_para": "Ang resources ay nag-scale ayon sa iyong pangangailangan",
+        "peace_of_mind": "Panatag Ka",
+        "peace_of_mind_para": "Mag-focus sa iyong negosyo"
+
+    },
+
+    "support": {
+        "title": "ZCare+ Support & Maintenance",
+        "paragraph_1": "Reliable Support para sa",
+        "paragraph_1_1": "Iyong Digital Platform",
+        "paragraph_2": "Reliable after-sales support para sa iyong website at hosting. Tinutulungan ng ZCare+ na panatilihing secure, optimized, monitored, at available ang iyong digital platform kapag kailangan ito ng iyong customers.",
+
+        "proactive_monitoring": "Proactive Monitoring",
+        "proactive_monitoring_para": "Ang continuous monitoring ay tumutulong na matukoy ang mga posibleng problema bago pa ito makaapekto sa iyong negosyo.",
+
+        "routine_maintenance": "Routine Maintenance",
+        "routine_maintenance_para": "Regular updates, optimization, at system checks para manatiling stable at efficient ang iyong website.",
+
+        "backup_recovery": "Backup & Recovery",
+        "backup_recovery_para": "Recovery assistance na tumutulong mabawasan ang downtime at mapanatili ang business continuity.",
+
+        "priority_technical_support": "Priority Technical Support",
+        "priority_technical_support_para": "Makakuha ng mabilis at napapanahong assistance mula sa aming technical team kapag may technical concerns.",
+
+        "enhanced_security": "Enhanced Security",
+        "enhanced_security_para": "Security best practices at monitoring na tumutulong protektahan ang iyong website laban sa mga posibleng threats.",
+
+        "reduced_costs": "Mas Mababang IT Costs",
+        "reduced_costs_para": "Bawasan ang pangangailangan para sa dedicated in-house IT team gamit ang professional support.",
+
+        "focus_growing": "Mag-Focus sa Pagpapalago ng Iyong Negosyo",
+        "focus_growing_para": "Kami ang bahala sa technical responsibilities para makapag-focus ka sa innovation, customers, at growth.",
+
+        "included_with": "KASAMA SA",
+        "included_premium": "Premium Shared Cloud",
+        "included_dedicated": "Dedicated Cloud Server",
+
+        "system_status": "System Status",
+        "system_status_para": "All Systems Operational",
+        "uptime": "UPTIME",
+        "cpu": "CPU",
+        "status": "status",
+
+        "security_monitoring": "Security Monitoring",
+        "protection_active": "Active ang Protection"
+
+    },
+
+    "inquiry": {
+        "title": "Magtulungan Tayo",
+        "paragraph_1": "May project ka ba sa isip?",
+        "paragraph_2": "Pag-usapan natin.",
+        "paragraph_3": "Kailangan mo man ng bagong website, reliable hosting, cloud infrastructure, o ongoing technical support, handa ang aming team na tulungan kang makahanap ng tamang solution para sa iyong negosyo.",
+
+        "email_us": "I-EMAIL KAMI",
+        "call_us": "TAWAGAN KAMI",
+        "support": "SUPPORT",
+
+        "professional_support": "Professional support",
+        "tailored_solutions": "Tailored solutions",
+
+        "fast_response": "Mabilis na response",
+        "reliable_technology": "Reliable Technology",
+
+        "send_inqury": "MAGPADALA NG INQUIRY",
+        "tell_us": "Sabihin sa amin kung paano kami makakatulong",
+        "fill_out": "Sagutan ang form at makikipag-ugnayan sa iyo ang aming team.",
+
+        "full_name": "Buong Pangalan",
+        "your_name": "Iyong pangalan",
+        "email_address": "Email Address",
+        "your_email_address": "you@example.com",
+        "phone_number": "Phone Number",
+        "optional": "Optional",
+        "service": "Serbisyo",
+        "select_service": "Pumili ng serbisyo",
+        "message": "Mensahe",
+        "message_tell_us": "Sabihin sa amin ang tungkol sa iyong project, requirements, o mga tanong...",
+        "send_message_button": "Ipadala ang Mensahe",
+        "by_submitting": "Sa pagsusumite ng form na ito, sumasang-ayon kang makipag-ugnayan sa iyo ang Zsphere Technologies tungkol sa iyong inquiry."
+
+    },
+
+    "footer": {
+        "technology_solutions": "Technology solutions na ginawa para tulungan ang mga negosyo na bumuo, mamahala, at palaguin ang kanilang digital presence nang may confidence.",
+
+        "company": "KOMPANYA",
+        "about_us": "Tungkol sa Amin",
+        "company_services": "Mga Serbisyo",
+        "contact_us": "Makipag-ugnayan",
+        "blog": "Blog",
+
+        "services": "MGA SERBISYO",
+        "web_development": "Web Development",
+        "web_hosting": "Web Hosting",
+        "cloud_solutions": "Cloud Solutions",
+        "zcare_support": "ZCare+ Support",
+
+        "resources": "MGA RESOURCE",
+        "support_center": "Support Center",
+        "knowledge_base": "Knowledge Base",
+        "get_support": "Humingi ng Support",
+        "system_status": "System Status",
+
+        "data_privacy": "DATA PRIVACY",
+        "registered_with": "Registered sa National Privacy Commission",
+
+        "we_accept": "Tumatanggap Kami ng",
+        "secure_convenient": "Available ang secure at convenient na payment options para sa aming products, hosting services, at technology solutions.",
+
+        "all_rights": "© 2026 Zsphere Technologies. Lahat ng Karapatan ay Nakalaan.",
+
+        "terms_service": "Terms of Service",
+        "privacy_policy": "Privacy Policy",
+        "contact_us_2": "Makipag-ugnayan"
+
+    },
+
+    "modal": {
+        "title": "I-submit ang Iyong Inquiry",
+        "paragraph": "Sagutan ang form sa ibaba at makikipag-ugnayan sa iyo ang aming team.",
+
+        "service": "SERBISYO",
+        "price": "PRESYO",
+
+        "full_name": "Buong Pangalan",
+        "your_fullname": "Ilagay ang iyong buong pangalan",
+
+        "email_address": "Email Address",
+        "your_email_address_": "Ilagay ang iyong email address",
+
+        "contact_number": "Phone Number",
+        "enter_contact_number": "Ilagay ang iyong contact number",
+
+        "submit_button": "I-submit",
+
+        "inquiry_submitted": "Na-submit na ang Inquiry!",
+        "submitted_paragraph_1": "Salamat sa iyong interes sa",
+        "submitted_paragraph_2": "Digital Advertising & Marketing.",
+
+        "received_paragaraph_1": "Natanggap na namin ang iyong inquiry at rereviewhin ng aming team ang iyong request. Makikipag-ugnayan kami sa iyo sa loob ng",
+        "recevied_paragarahp_2": "24 oras",
+        "recevied_paragarahp_3": "gamit ang contact information na iyong ibinigay.",
+
+        "received_service": "Serbisyo",
+        "received_price": "Presyo",
+
+        "done_button": "Tapos Na"
+
+
+    }
+}

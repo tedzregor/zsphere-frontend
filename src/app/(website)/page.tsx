@@ -1490,7 +1490,7 @@ export default function HomePage() {
           <div className="group flex h-full flex-col rounded-2xl border-2 border-indigo-500 bg-gradient-to-b from-indigo-50 to-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
             <h3 className="text-2xl font-bold text-[#101828]">
-              {t("hosting_pricing.plans.dedicated.title")}
+              {t("hosting_pricing.plans.dedicated_title")}
             </h3>
 
             <p className="mt-3 min-h-[48px] text-sm leading-relaxed text-gray-500">
@@ -1763,7 +1763,7 @@ export default function HomePage() {
               <span className="h-2 w-2 rounded-full bg-blue-600" />
 
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-600 sm:text-sm">
-                ZCare+ Support & Maintenance
+                {t("support.title")}
               </span>
 
             </div>
@@ -1772,19 +1772,17 @@ export default function HomePage() {
             {/* Heading */}
             <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-[#101828] sm:text-5xl xl:text-6xl">
 
-              Reliable Support for
+              {t("support.paragraph_1")}
 
               <span className="block text-blue-600">
-                Your Digital Platform
+                {t("support.paragraph_1_1")}
               </span>
 
             </h2>
 
             {/* Description */}
             <p className="mt-6 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
-              Reliable after-sales support for your website and hosting.
-              ZCare+ helps keep your digital platform secure, optimized,
-              monitored, and available when your customers need it most.
+               {t("support.paragraph_2")}
             </p>
 
             {/* =================================================
@@ -1811,12 +1809,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Proactive Monitoring
+                    {t("support.proactive_monitoring")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Continuous monitoring helps identify potential issues
-                    before they affect your business.
+                    {t("support.proactive_monitoring_para")}
                   </p>
                 </div>
 
@@ -1844,12 +1841,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Priority Technical Support
+                     {t("support.priority_technical_support")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Get timely assistance from our technical team whenever
-                    technical concerns arise.
+                    {t("support.priority_technical_support_para")}
                   </p>
                 </div>
               </div>
@@ -1873,12 +1869,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Routine Maintenance
+                    {t("support.routine_maintenance")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Regular updates, optimization, and system checks keep
-                    your website stable and efficient.
+                    {t("support.routine_maintenance_para")}
                   </p>
                 </div>
 
@@ -1904,12 +1899,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Enhanced Security
+                    {t("support.enhanced_security")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Security best practices and monitoring help protect
-                    your website against potential threats.
+                    {t("support.enhanced_security_para")}
                   </p>
                 </div>
 
@@ -1936,12 +1930,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Backup & Recovery
+                    {t("support.backup_recovery")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Recovery assistance helps minimize downtime and maintain
-                    business continuity.
+                    {t("support.backup_recovery_para")}
                   </p>
                 </div>
 
@@ -1967,12 +1960,11 @@ export default function HomePage() {
 
                 <div>
                   <h3 className="font-semibold text-[#101828]">
-                    Reduced IT Costs
+                    {t("support.reduced_costs")}
                   </h3>
 
                   <p className="mt-1.5 text-sm leading-6 text-gray-500">
-                    Reduce the need for a dedicated in-house IT team with
-                    professional support.
+                    {t("support.reduced_costs_para")}
                   </p>
                 </div>
 
@@ -1992,12 +1984,11 @@ export default function HomePage() {
 
                   <h3 className="flex items-center gap-2 font-semibold text-[#101828]">
                     <span className="text-blue-600">✦</span>
-                    Focus on Growing Your Business
+                    {t("support.focus_growing")}
                   </h3>
 
                   <p className="mt-2 text-sm leading-6 text-gray-500">
-                    We handle the technical responsibilities so you can
-                    focus on innovation, customers, and growth.
+                    {t("support.focus_growing_para")}
                   </p>
 
                 </div>
@@ -2006,19 +1997,19 @@ export default function HomePage() {
                 <div className="border-t border-gray-200 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0">
 
                   <p className="mb-2 text-xs font-semibold text-gray-400">
-                    INCLUDED WITH
+                    {t("support.included_with")}
                   </p>
 
                   <div className="space-y-1.5 text-sm text-gray-600">
 
                     <div className="flex items-center gap-2">
                       <span className="text-blue-600">✓</span>
-                      Premium Shared Cloud
+                      {t("support.included_premium")}
                     </div>
 
                     <div className="flex items-center gap-2">
                       <span className="text-blue-600">✓</span>
-                      Dedicated Cloud Server
+                       {t("support.included_dedicated")}
                     </div>
 
                   </div>
@@ -2044,11 +2035,11 @@ export default function HomePage() {
 
               <div>
                 <p className="text-xs uppercase tracking-[0.12em] text-gray-400">
-                  System Status
+                  {t("support.system_status")}
                 </p>
 
                 <p className="mt-1 font-semibold text-[#101828]">
-                  All Systems Operational
+                  {t("support.system_status_para")}
                 </p>
               </div>
 
@@ -2115,7 +2106,7 @@ export default function HomePage() {
               <div>
 
                 <p className="text-xs text-gray-400">
-                  Security Monitoring
+                  {t("support.security_monitoring")}
                 </p>
 
                 <div className="mt-1 flex items-center gap-2">
@@ -2123,7 +2114,7 @@ export default function HomePage() {
                   <span className="h-2 w-2 rounded-full bg-emerald-500" />
 
                   <p className="font-semibold text-[#101828]">
-                    Protection Active
+                    {t("support.protection_active")}
                   </p>
 
                 </div>

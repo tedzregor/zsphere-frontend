@@ -223,5 +223,174 @@
 
     "deployment": "배포 및 호스팅",
     "deployment_description": "웹사이트를 안전하게 배포하고 안정적인 클라우드 호스팅 환경에서 운영할 수 있도록 지원합니다."
+  },
+
+  "server": {
+    "title": "우리는 서버를 과부하시키지 않습니다",
+    "paragraph": "NVMe 기반의 고성능 호스팅 인프라. 타협 없는 성능.",
+
+    "zsphere_server": "ZSphere 서버",
+    "dedicated_resources": "전용 리소스",
+    "dedicated_resources_para": "과도한 판매 및 초과 할당 없음",
+    "high_performance": "고성능",
+    "high_performance_para": "24시간 안정적인 속도",
+    "low_latency": "낮은 지연 시간",
+    "low_latency_para": "최적화된 네트워크 라우팅",
+    "enterprise_grade_para": "엔터프라이즈급",
+    "enterprise_grade": "프리미엄 하드웨어 및 NVMe 스토리지",
+    "99_uptime": "99.9% 가동 시간",
+    "99_uptime_para": "안정적이고 항상 온라인 상태",
+
+    "generic_servcers": "일반 서버",
+    "oversold_resources": "과도하게 판매된 리소스",
+    "oversold_resources_para": "서버당 너무 많은 사용자",
+    "slow_performance": "느린 성능",
+    "slow_performance_para": "지연 및 불안정한 속도",
+    "high_latency": "높은 지연 시간",
+    "high_latency_para": "비효율적인 네트워크 최적화",
+    "low_reliability": "낮은 신뢰성",
+    "low_reliability_para": "구형 하드웨어",
+    "frequent_downtime": "빈번한 다운타임",
+    "frequent_downtime_para": "서비스 중단 발생",
+
+    "no_overloading": "과부하 없음",
+    "no_overloading_para": "서버당 사용자 수를 제한합니다",
+    "realtime_monitoring": "실시간 모니터링",
+    "realtime_monitoring_para": "24시간 서버 상태 모니터링",
+    "instant_scaling": "즉시 확장",
+    "instant_scaling_para": "필요에 따라 리소스 자동 확장",
+    "peace_of_mind": "안심 서비스",
+    "peace_of_mind_para": "비즈니스에 집중하세요"
+  },
+
+  "support": {
+    "title": "ZCare+ 지원 및 유지보수",
+    "paragraph_1": "신뢰할 수 있는 지원",
+    "paragraph_1_1": "귀하의 디지털 플랫폼을 위해",
+    "paragraph_2": "웹사이트와 호스팅을 위한 신뢰할 수 있는 사후 지원 서비스입니다. ZCare+는 고객이 필요로 할 때 디지털 플랫폼이 안전하고 최적화되며 모니터링되고 항상 이용 가능하도록 지원합니다.",
+
+    "proactive_monitoring": "사전 모니터링",
+    "proactive_monitoring_para": "지속적인 모니터링을 통해 문제가 비즈니스에 영향을 미치기 전에 발견합니다.",
+    "routine_maintenance": "정기 유지보수",
+    "routine_maintenance_para": "정기적인 업데이트, 최적화 및 시스템 점검으로 웹사이트를 안정적이고 효율적으로 유지합니다.",
+    "backup_recovery": "백업 및 복구",
+    "backup_recovery_para": "복구 지원을 통해 다운타임을 최소화하고 비즈니스 연속성을 유지합니다.",
+    "priority_technical_support": "우선 기술 지원",
+    "priority_technical_support_para": "기술적 문제가 발생할 때마다 기술팀의 신속한 지원을 받을 수 있습니다.",
+    "enhanced_security": "강화된 보안",
+    "enhanced_security_para": "보안 모범 사례와 모니터링을 통해 잠재적인 위협으로부터 웹사이트를 보호합니다.",
+    "reduced_costs": "IT 비용 절감",
+    "reduced_costs_para": "전문 지원을 통해 사내 IT 팀 운영 부담을 줄일 수 있습니다.",
+
+    "focus_growing": "비즈니스 성장에 집중",
+    "focus_growing_para": "기술적인 업무는 저희가 처리하므로 혁신, 고객 및 성장에 집중할 수 있습니다.",
+    "included_with": "포함 플랜",
+    "included_premium": "프리미엄 공유 클라우드",
+    "included_dedicated": "전용 클라우드 서버",
+    "system_status": "시스템 상태",
+    "system_status_para": "모든 시스템 정상 운영",
+    "uptime": "가동 시간",
+    "cpu": "CPU",
+    "status": "상태",
+
+    "security_monitoring": "보안 모니터링",
+    "protection_active": "보호 활성화"
+  },
+
+  "inquiry": {
+    "title": "함께 일해봅시다",
+    "paragraph_1": "프로젝트를 계획하고 계신가요?",
+    "paragraph_2": "이야기를 나눠보세요.",
+    "paragraph_3": "새로운 웹사이트, 안정적인 호스팅, 클라우드 인프라 또는 지속적인 기술 지원이 필요하시다면, 저희 팀이 귀사의 비즈니스에 적합한 솔루션을 찾을 수 있도록 도와드리겠습니다.",
+
+    "email_us": "이메일 문의",
+    "call_us": "전화 문의",
+    "support": "지원",
+
+    "professional_support": "전문 지원",
+    "tailored_solutions": "신뢰할 수 있는 기술",
+
+    "fast_response": "빠른 응답",
+    "reliable_technology": "신뢰할 수 있는 기술",
+
+    "send_inqury": "문의 보내기",
+    "tell_us": "어떻게 도와드릴 수 있는지 알려주세요",
+    "fill_out": "양식을 작성해 주시면 저희 팀이 연락드리겠습니다.",
+    "full_name": "성명",
+    "your_name": "이름을 입력하세요",
+    "email_address": "이메일 주소",
+    "your_email_address": "you@example.com",
+    "phone_number": "전화번호",
+    "optional": "선택 사항",
+    "service": "서비스",
+    "select_service": "서비스 선택",
+    "message": "메시지",
+    "message_tell_us": "프로젝트, 요구사항 또는 문의사항을 알려주세요...",
+    "send_message_button": "메시지 보내기",
+    "by_submitting": "이 양식을 제출함으로써 귀하는 문의와 관련하여 Zsphere Technologies로부터 연락을 받는 데 동의하게 됩니다."
+  },
+
+  "footer": {
+    "technology_solutions": "기업이 자신 있게 디지털 존재감을 구축, 관리 및 성장시킬 수 있도록 지원하는 기술 솔루션입니다.",
+
+    "company": "회사",
+    "about_us": "회사 소개",
+    "company_services": "서비스",
+    "contact_us": "문의하기",
+    "blog": "블로그",
+
+    "services": "서비스",
+    "web_development": "웹 개발",
+    "web_hosting": "웹 호스팅",
+    "cloud_solutions": "클라우드 솔루션",
+    "zcare_support": "ZCare+ 지원",
+
+    "resources": "자료",
+    "support_center": "지원 센터",
+    "knowledge_base": "지식 베이스",
+    "get_support": "지원 받기",
+    "system_status": "시스템 상태",
+
+    "data_privacy": "개인정보 보호",
+    "registered_with": "국가 개인정보보호위원회(NPC) 등록",
+
+    "we_accept": "결제 수단",
+    "secure_convenient": "제품, 호스팅 서비스 및 기술 솔루션에 대해 안전하고 편리한 결제 옵션을 제공합니다.",
+
+    "all_rights": "© 2026 Zsphere Technologies. 모든 권리 보유.",
+
+    "terms_service": "서비스 이용약관",
+    "privacy_policy": "개인정보 처리방침",
+    "contact_us_2": "문의하기"
+  },
+
+  "modal": {
+    "title": "문의 제출",
+    "paragraph": "아래 양식을 작성해 주시면 저희 팀이 연락드리겠습니다.",
+    "service": "서비스",
+    "price": "가격",
+
+    "full_name": "성명",
+    "your_fullname": "성명을 입력하세요",
+
+    "email_address": "이메일 주소",
+    "your_email_address_": "이메일 주소를 입력하세요",
+    "enter_contact_number": "연락처를 입력하세요",
+    "contact_number" : "전화번호",
+
+    "submit_button": "제출",
+
+    "inquiry_submitted": "문의가 접수되었습니다!",
+    "submitted_paragraph_1": "관심을 가져주셔서 감사합니다:",
+    "submitted_paragraph_2": "디지털 광고 및 마케팅",
+
+    "received_paragaraph_1": "문의가 정상적으로 접수되었습니다. 저희 팀이 요청 사항을 검토한 후",
+    "recevied_paragarahp_2": "24시간 이내에",
+    "recevied_paragarahp_3": "제공해 주신 연락처로 연락드리겠습니다.",
+
+    "received_service": "서비스",
+    "received_price": "가격",
+
+    "done_button": "확인"
   }
 }

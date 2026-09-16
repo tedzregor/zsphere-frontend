@@ -5,6 +5,8 @@ import { submitInquiry, InquiryApiError } from "@/services/inquiry.service";
 import { useEffect, useState } from "react";
 import { CheckCircle2, X } from "lucide-react";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 interface PricingInquiryModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -28,6 +30,8 @@ export default function PricingInquiryModal({
     email: "",
     contactNumber: "",
   });
+
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (!isOpen) {
@@ -113,11 +117,11 @@ const handleSubmit = async (e: React.FormEvent) => {
             {/* Header */}
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-[#101828]">
-                Submit Your Inquiry
+                {t("modal.title")}
               </h2>
 
               <p className="mt-2 text-sm text-gray-500">
-                Fill out the form below and our team will get in touch with you.
+                {t("modal.paragraph")}
               </p>
             </div>
 
@@ -126,7 +130,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
-                    Service
+                    {t("modal.service")}
                   </p>
                   <p className="mt-1 font-semibold text-[#101828]">
                     {service}
@@ -135,7 +139,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                 <div className="text-right">
                   <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
-                    Price
+                    {t("modal.price")}
                   </p>
                   <p className="mt-1 font-bold text-indigo-600">
                     {price}
@@ -154,7 +158,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               {/* Full Name */}
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Full Name
+                  {t("modal.full_name")}
                 </label>
                 {errors.name && (
                   <p className="mt-1 text-sm text-red-600">
@@ -172,7 +176,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       fullName: e.target.value,
                     })
                   }
-                  placeholder="Enter your full name"
+                  placeholder={t("modal.your_fullname")}
                   className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
                 />
               </div>
@@ -180,7 +184,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               {/* Email */}
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Email Address
+                  {t("modal.email_address")}
                 </label>
 
                 {errors.email && (
@@ -199,7 +203,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       email: e.target.value,
                     })
                   }
-                  placeholder="Enter your email address"
+                  placeholder={t("modal.your_email_address_")}
                   className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
                 />
               </div>
@@ -207,7 +211,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               {/* Contact Number */}
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Contact Number
+                  {t("modal.contact_number")}
                 </label>
 
                 {errors.phone && (
@@ -226,7 +230,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       contactNumber: e.target.value,
                     })
                   }
-                  placeholder="Enter your contact number"
+                  placeholder= {t("modal.enter_contact_number")}
                   className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
                 />
               </div>
@@ -237,7 +241,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 disabled={isSubmitting}
                 className="w-full rounded-lg bg-gradient-to-r from-teal-900 via-indigo-600 to-teal-900 px-6 py-3 font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {isSubmitting ? "Submitting..." : "Submit"}
+                {isSubmitting ? "Submitting..." : t("modal.submit_button")}
               </button>
             </form>
           </>
@@ -253,11 +257,11 @@ const handleSubmit = async (e: React.FormEvent) => {
             </div>
 
             <h2 className="text-2xl font-bold text-[#101828]">
-              Inquiry Submitted!
+              {t("modal.inquiry_submitted")}
             </h2>
 
             <p className="mt-3 max-w-md text-gray-600">
-              Thank you for your interest in{" "}
+              {t("modal.submitted_paragraph_1")}{" "}
               <span className="font-semibold text-[#101828]">
                 {service}
               </span>
@@ -265,26 +269,25 @@ const handleSubmit = async (e: React.FormEvent) => {
             </p>
 
             <p className="mt-3 max-w-md text-sm leading-6 text-gray-500">
-              We have received your inquiry and our team will review your
-              request. We will contact you within{" "}
+               {t("modal.received_paragaraph_1")}
               <span className="font-semibold text-gray-700">
-                24 hours
+                  {t("modal.recevied_paragarahp_2")}
               </span>{" "}
-              using the contact information you provided.
+              {t("modal.recevied_paragarahp_3")}
             </p>
 
             {/* Submitted Service */}
             <div className="mt-6 w-full rounded-xl bg-gray-50 p-4 text-left">
               <div className="flex justify-between gap-4">
                 <div>
-                  <p className="text-xs text-gray-500">Service</p>
+                  <p className="text-xs text-gray-500">{t("modal.received_service")}</p>
                   <p className="mt-1 font-semibold text-[#101828]">
                     {service}
                   </p>
                 </div>
 
                 <div className="text-right">
-                  <p className="text-xs text-gray-500">Price</p>
+                  <p className="text-xs text-gray-500">{t("modal.received_price")}</p>
                   <p className="mt-1 font-bold text-indigo-600">
                     {price}
                   </p>
@@ -297,7 +300,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               onClick={onClose}
               className="mt-6 w-full rounded-lg bg-[#101828] px-6 py-3 font-semibold text-white transition hover:bg-gray-800"
             >
-              Done
+              {t("modal.done_button")}
             </button>
           </div>
         )}
