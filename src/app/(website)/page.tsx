@@ -94,7 +94,7 @@ export default function HomePage() {
     setIsModalOpen(true);
   };
 
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
 
   return (
     <main>
@@ -139,47 +139,117 @@ export default function HomePage() {
         {/* Content */}
        
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
-          
-        <GradientText
-          colors={["#0085fa", "#ffffff" ,"#a7f8f4"]}
-          animationSpeed={11}
-          showBorder={false}
-          className="custom-class" 
-        >
-       {t("hero.title")}
-        </GradientText>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#website-pricing"
-            // href="/contact"
-            className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
-          >
-            {t("hero.get_started")}
-          </a>
+          {/* Language Selector */}
+          <div className="mb-8 flex justify-center">
+            <div className="flex items-center gap-1">
+              {/* English */}
+              <button
+                type="button"
+                onClick={() => setLanguage("EN")}
+                aria-label="English"
+                className={`
+                  flex h-10 w-12 items-center justify-center
+                  rounded-md transition-all duration-200
+                  ${language === "EN" ? "bg-white/15" : "hover:bg-white/10"}
+                `}
+              >
+                <span className="text-2xl">🇺🇸</span>
+              </button>
 
-          {/* <a
-            href="#inquire-now"
-            // href="/pricing"
-            className="rounded-md border border-white bg-transparent px-8 py-2 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
+              {/* Horizontal Divider */}
+              <div className="h-[2px] w-8 bg-white/60" />
+
+              {/* Filipino */}
+              <button
+                type="button"
+                onClick={() => setLanguage("TL")}
+                aria-label="Filipino"
+                className={`
+                  flex h-10 w-12 items-center justify-center
+                  rounded-md transition-all duration-200
+                  ${language === "TL" ? "bg-white/15" : "hover:bg-white/10"}
+                `}
+              >
+                <span className="text-2xl">🇵🇭</span>
+              </button>
+
+              {/* Horizontal Divider */}
+              <div className="h-[2px] w-8 bg-white/60" />
+
+              {/* Korean */}
+              <button
+                type="button"
+                onClick={() => setLanguage("KO")}
+                aria-label="Korean"
+                className={`
+                  flex h-10 w-12 items-center justify-center
+                  rounded-md transition-all duration-200
+                  ${language === "KO" ? "bg-white/15" : "hover:bg-white/10"}
+                `}
+              >
+                <span className="text-2xl">🇰🇷</span>
+              </button>
+
+              {/* Horizontal Divider */}
+              <div className="h-[2px] w-8 bg-white/60" />
+
+              {/* Japanese */}
+              <button
+                type="button"
+                onClick={() => setLanguage("JA")}
+                aria-label="Japanese"
+                className={`
+                  flex h-10 w-12 items-center justify-center
+                  rounded-md transition-all duration-200
+                  ${language === "JA" ? "bg-white/15" : "hover:bg-white/10"}
+                `}
+              >
+                <span className="text-2xl">🇯🇵</span>
+              </button>
+            </div>
+          </div>
+            
+          <GradientText
+            colors={["#0085fa", "#ffffff" ,"#a7f8f4"]}
+            animationSpeed={11}
+            showBorder={false}
+            className="custom-class" 
           >
-            Get Started
-          </a> */}
-        </div>
-     
-        <TextType
-          className="mt-4 text-lg md:text-4xl"
-          text={[
-            t("hero.paragraph_1"),
-            t("hero.paragraph_2"),
-          ]}
-          typingSpeed={40}
-          pauseDuration={4500}
-          showCursor
-          cursorCharacter="_"
-          deletingSpeed={10}
-          cursorBlinkDuration={0.5}
-        />
+        {t("hero.title")}
+          </GradientText>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="#website-pricing"
+              // href="/contact"
+              className="rounded-md bg-white px-8 py-2 text-lg font-semibold text-black transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
+            >
+              {t("hero.get_started")}
+            </a>
+
+            {/* <a
+              href="#inquire-now"
+              // href="/pricing"
+              className="rounded-md border border-white bg-transparent px-8 py-2 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
+            >
+              Get Started
+            </a> */}
+          </div>
+      
+          <TextType
+            className="mt-4 text-lg md:text-4xl"
+            text={[
+              t("hero.paragraph_1"),
+              t("hero.paragraph_2"),
+            ]}
+            typingSpeed={40}
+            pauseDuration={4500}
+            showCursor
+            cursorCharacter="_"
+            deletingSpeed={10}
+            cursorBlinkDuration={0.5}
+          />
         </div>
       </section>
 
