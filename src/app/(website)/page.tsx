@@ -141,7 +141,7 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
 
           {/* Language Selector */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-15 mt-[-90] flex justify-center">
             <div className="flex items-center gap-1">
               {/* English */}
               <button
