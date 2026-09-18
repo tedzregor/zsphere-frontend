@@ -3,6 +3,7 @@ import "../globals.css";
 import Navbar from "@/components/website/Navbar";
 import Footer from "@/components/website/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
+import CookieBanner from "@/components/website/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function WebsiteLayout({
           {children}
         </main>
         <Footer />
+        <CookieBanner />
       </div>
     </LanguageProvider>
   );
