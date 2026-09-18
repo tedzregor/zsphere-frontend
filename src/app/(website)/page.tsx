@@ -88,6 +88,19 @@ export default function HomePage() {
   const [selectedService, setSelectedService] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
 
+  const [expandedPlans, setExpandedPlans] = useState({
+    standard: false,
+    ecommerce: false,
+    custom: false,
+  });
+
+  const togglePlan = (plan: "standard" | "ecommerce" | "custom") => {
+    setExpandedPlans((prev) => ({
+      ...prev,
+      [plan]: !prev[plan],
+    }));
+  };
+
   const handleBuyNow = (service: string, price: string) => {
     setSelectedService(service);
     setSelectedPrice(price);
@@ -130,18 +143,18 @@ export default function HomePage() {
       <section
         className="relative flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/website/homepage-banner19.png')",
+          backgroundImage: "url('/images/website/homepage-banner23.png')",
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/0" />
 
         {/* Content */}
        
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
 
           {/* Language Selector */}
-          <div className="mb-15 mt-[-90] flex justify-center">
+          <div className="mb-15 mt-[-150] flex justify-center">
             <div className="flex items-center gap-1">
               {/* English */}
               <button
@@ -211,7 +224,7 @@ export default function HomePage() {
           </div>
             
           <GradientText
-            colors={["#0085fa", "#ffffff" ,"#a7f8f4"]}
+            colors={["#48c1fd", "#4c67ff" ,"#48c1fd"]}
             animationSpeed={11}
             showBorder={false}
             className="custom-class" 
@@ -238,13 +251,13 @@ export default function HomePage() {
           </div>
       
           <TextType
-            className="mt-4 text-lg md:text-4xl"
+          className="mt-4 text-lg md:text-4xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
             text={[
               t("hero.paragraph_1"),
               t("hero.paragraph_2"),
             ]}
-            typingSpeed={40}
-            pauseDuration={4500}
+            typingSpeed={20}
+            pauseDuration={3500}
             showCursor
             cursorCharacter="_"
             deletingSpeed={10}
@@ -491,10 +504,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '4rem' }}>
+        <div style={{ height: '150px', position: 'relative', overflow: 'hidden', marginTop: '6rem' }}>
           <LogoLoop
             logos={imageLogos}
-            speed={30}
+            speed={300}
             direction="left"
             logoHeight={60}
             gap={60}
@@ -506,11 +519,11 @@ export default function HomePage() {
           />
           
           {/* Vertical loop with deceleration on hover */}
-          <LogoLoop
+          {/* <LogoLoop
             logos={imageLogos}
             useCustomRender={false}
             speed={70}
-          />
+          /> */}
         </div>
       </section>
 
@@ -672,8 +685,11 @@ export default function HomePage() {
           <div className="grid items-stretch gap-6 lg:grid-cols-3">
 
             {/* STANDARD WEBSITE */}
-            <div className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-
+            <div
+                className={`group flex flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                  expandedPlans.standard ? "h-auto" : "h-[660px]"
+                }`}
+              >
               <div>
                 <h3 className="text-2xl font-bold text-[#101828]">
                   {t("web_pricing.plans.standard_title")}
@@ -720,12 +736,12 @@ export default function HomePage() {
                 {t("web_pricing.plans.standard_whats_included")}
               </p>
 
-              {/* Features */}
-              <ul className="space-y-3 text-sm text-gray-600">
+             <ul className="space-y-3 text-sm text-gray-600">
 
+                {/* ALWAYS VISIBLE */}
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
-                 {t("web_pricing.plans.standard_included_1")}
+                  {t("web_pricing.plans.standard_included_1")}
                 </li>
 
                 <li className="flex gap-3">
@@ -753,68 +769,98 @@ export default function HomePage() {
                   {t("web_pricing.plans.standard_included_6")}
                 </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_7")}
-                </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_8")}
-                </li>
+                {/* HIDDEN UNTIL VIEW MORE */}
+                {expandedPlans.standard && (
+                  <>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_7")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_9")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_8")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_10")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_9")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_11")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_10")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_12")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_11")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                   {t("web_pricing.plans.standard_included_13")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_12")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                   {t("web_pricing.plans.standard_included_14")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_13")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_15")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_14")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                   {t("web_pricing.plans.standard_included_16")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_15")}
+                    </li>
 
-                <li className="flex gap-3">
-                  <span className="font-semibold text-green-500">✓</span>
-                  {t("web_pricing.plans.standard_included_17")}
-                </li>
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_16")}
+                    </li>
+
+                    <li className="flex gap-3">
+                      <span className="font-semibold text-green-500">✓</span>
+                      {t("web_pricing.plans.standard_included_17")}
+                    </li>
+                  </>
+                )}
 
               </ul>
+
+            {!expandedPlans.standard && (
+              <button
+                type="button"
+                onClick={() => togglePlan("standard")}
+                className="mt-6 w-full rounded-lg border border-gray-200 py-2.5 text-sm font-semibold text-gray-600 transition hover:border-indigo-500 hover:text-indigo-600"
+              >
+                View More
+              </button>
+            )}
+
+            {expandedPlans.standard && (
+              <button
+                type="button"
+                onClick={() => togglePlan("standard")}
+                className="mt-6 w-full rounded-lg border border-gray-200 py-2.5 text-sm font-semibold text-gray-600 transition hover:border-indigo-500 hover:text-indigo-600"
+              >
+                View Less
+              </button>
+            )}
+
             </div>
 
 
             {/* E-COMMERCE WEBSITE - FEATURED */}
-            <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-[#101828] p-7 text-white shadow-2xl transition-all duration-300 hover:-translate-y-2">
-
+            <div
+              className={`group relative flex flex-col overflow-hidden rounded-2xl bg-[#101828] p-7 text-white shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
+                expandedPlans.ecommerce ? "h-auto" : "h-[660px]"
+              }`}
+            >
               {/* Featured Badge */}
               <div className="absolute right-5 top-5">
                 <span className="rounded-full bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-lg">
@@ -900,6 +946,9 @@ export default function HomePage() {
                   <span className="font-semibold text-blue-400">✓</span>
                   {t("web_pricing.plans.ecom_included_6")}
                 </li>
+
+                {expandedPlans.ecommerce && (
+                <>
 
                 <li className="mt-4 border-t border-white/10 pt-4 font-semibold text-white">
                   {t("web_pricing.plans.ecom_included_features")}
@@ -1010,8 +1059,29 @@ export default function HomePage() {
                   <span className="font-semibold text-blue-400">✓</span>
                   {t("web_pricing.plans.ecom_included_26")}
                 </li>
-            
+                </>
+                )}
               </ul>
+
+              {!expandedPlans.ecommerce && (
+                <button
+                  type="button"
+                  onClick={() => togglePlan("ecommerce")}
+                  className="mt-6 w-full rounded-lg border border-white/10 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-blue-400 hover:text-blue-400"
+                >
+                  View More
+                </button>
+              )}
+
+              {expandedPlans.ecommerce && (
+                <button
+                  type="button"
+                  onClick={() => togglePlan("ecommerce")}
+                  className="mt-6 w-full rounded-lg border border-white/10 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-blue-400 hover:text-blue-400"
+                >
+                  View Less
+                </button>
+              )}
 
               {/* Why this plan */}
               <div className="mt-7 rounded-xl bg-white/5 p-4">
@@ -1027,8 +1097,11 @@ export default function HomePage() {
             </div>
 
             {/* CUSTOMIZED PREMIUM WEBSITE */}
-            <div className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-
+            <div
+                className={`group flex flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                  expandedPlans.custom ? "h-auto" : "h-[660px]"
+                }`}
+              >
               <div>
                 <h3 className="text-2xl font-bold text-[#101828]">
                  {t("web_pricing.plans.custom_title")}
@@ -1107,6 +1180,9 @@ export default function HomePage() {
                   {t("web_pricing.plans.custom_included_6")}
                 </li>
 
+                {expandedPlans.custom && (
+                <>
+
                 <li className="flex gap-3">
                   <span className="font-semibold text-green-500">✓</span>
                   {t("web_pricing.plans.custom_included_7")}
@@ -1161,11 +1237,33 @@ export default function HomePage() {
                   <span className="font-semibold text-green-500">✓</span>
                   {t("web_pricing.plans.custom_included_17")}
                 </li>
+                
+                </>
+                )}
 
               </ul>
 
-            </div>
+              {!expandedPlans.custom && (
+                <button
+                  type="button"
+                  onClick={() => togglePlan("custom")}
+                  className="mt-6 w-full rounded-lg border border-gray-200 py-2.5 text-sm font-semibold text-gray-600 transition hover:border-indigo-500 hover:text-indigo-600"
+                >
+                  View More
+                </button>
+              )}
 
+              {expandedPlans.custom && (
+                <button
+                  type="button"
+                  onClick={() => togglePlan("custom")}
+                  className="mt-6 w-full rounded-lg border border-gray-200 py-2.5 text-sm font-semibold text-gray-600 transition hover:border-indigo-500 hover:text-indigo-600"
+                >
+                  View Less
+                </button>
+              )}
+
+            </div>
           </div>
 
           {/* Pricing Note */}

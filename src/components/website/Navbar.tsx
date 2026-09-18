@@ -32,7 +32,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="absolute left-0 top-0 z-50 w-full bg-black/70 backdrop-blur-md">
+    <nav className="absolute left-0 top-0 z-50 w-full bg-black/100 backdrop-blur-md">
 
       {/* =====================================================
           MAIN NAVBAR
