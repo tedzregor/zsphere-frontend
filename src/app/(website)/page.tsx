@@ -224,7 +224,7 @@ export default function HomePage() {
           </div>
             
           <GradientText
-            colors={["#48c1fd", "#4c67ff" ,"#48c1fd"]}
+            colors={["#001259f6", "#00c3ff" ,"#00c3ff"]}
             animationSpeed={11}
             showBorder={false}
             className="custom-class" 

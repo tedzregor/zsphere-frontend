@@ -390,7 +390,7 @@ export default function Navbar() {
           MOBILE MENU
       ===================================================== */}
       {isMenuOpen && (
-        <div className="border-t border-white/10 bg-[#07152f]/98 px-5 py-5 shadow-2xl backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/10 bg-black/100 px-5 py-5 shadow-2xl backdrop-blur-xl md:hidden">
 
           <div className="flex flex-col gap-1">
 
